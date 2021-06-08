@@ -42,7 +42,7 @@ export default {
   .MainTitle {
     text-align: center;
     color: #515a6e;
-    margin-top: 50px;
+    margin-top: 80px;
   }
   // 副标题
   .Subtitle {

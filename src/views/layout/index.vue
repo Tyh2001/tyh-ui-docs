@@ -7,13 +7,15 @@
 
       <div>
         <Tyh-Menu-Item color="#000" url="/">首页</Tyh-Menu-Item>
-        <Tyh-Menu-Item color="#000" url="component">组件</Tyh-Menu-Item>
+        <Tyh-Menu-Item color="#000" url="/component">组件</Tyh-Menu-Item>
         <Tyh-Menu-Item color="#000">指南</Tyh-Menu-Item>
         <Tyh-Menu-Item color="#000">资源</Tyh-Menu-Item>
       </div>
     </Tyh-Menu>
 
-    <router-view></router-view>
+    <div id="content">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -36,9 +38,17 @@ export default {
 <style lang='less' scoped>
 .tyh-menu {
   justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
   .logo {
     height: 50px;
     cursor: pointer;
   }
+}
+// 内容出口
+#content {
+  margin-top: 60px;
 }
 </style>
