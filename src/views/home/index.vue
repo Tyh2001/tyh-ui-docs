@@ -16,7 +16,7 @@
     </div>
 
     <!-- 页脚 -->
-    <div class="footer">这是页脚内容</div>
+    <div class="footer">这是页脚内容-</div>
   </div>
 </template>
 
