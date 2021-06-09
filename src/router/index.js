@@ -33,6 +33,26 @@ const routes = [
           {
             path: '/component/card',
             component: () => import('@/components/card')
+          },
+          {
+            path: '/component/tag',
+            component: () => import('@/components/tag')
+          },
+          {
+            path: '/component/link',
+            component: () => import('@/components/link')
+          },
+          {
+            path: '/component/input',
+            component: () => import('@/components/input')
+          },
+          {
+            path: '/component/tips',
+            component: () => import('@/components/tips')
+          },
+          {
+            path: '/component/menu',
+            component: () => import('@/components/menu')
           }
         ]
       }

@@ -25,7 +25,12 @@ export default {
         { name: '快速上手', url: '/component/install' },
         { name: 'Button 按钮', url: '/component/button' },
         { name: 'List 列表', url: '/component/list' },
-        { name: 'Card 卡片', url: '/component/card' }
+        { name: 'Card 卡片', url: '/component/card' },
+        { name: 'Tag 标签', url: '/component/tag' },
+        { name: 'Link 链接', url: '/component/link' },
+        { name: 'Input 输入框', url: '/component/input' },
+        { name: 'Tips 提示', url: '/component/tips' },
+        { name: 'Menu 导航栏', url: '/component/menu' }
       ]
     }
   },
