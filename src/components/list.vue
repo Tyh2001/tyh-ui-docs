@@ -20,5 +20,4 @@ export default {
 }
 </script>
 
-<style lang='less' scoped>
-</style>
+<style src="./style/index.css" scoped></style>

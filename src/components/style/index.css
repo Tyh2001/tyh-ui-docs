@@ -1,0 +1,32 @@
+.title {
+  font-weight: 500;
+  color: #1f2f3d;
+  margin-bottom: 50px;
+  user-select: none;
+}
+.Subtitle {
+  color: #515a6e;
+  line-height: 60px;
+  user-select: none;
+}
+.explain {
+  color: #515a6e;
+  line-height: 40px;
+  font-size: 15px;
+  margin-top: 50px;
+  user-select: none;
+}
+#myCode {
+  background: #f7f7f7;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  border: 1px solid #eee;
+}
+.table {
+  width: 100%;
+}
+.table tr {
+  height: 50px;
+  background: #f7f7f7;
+  text-align: center;
+}

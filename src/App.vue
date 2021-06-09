@@ -14,8 +14,8 @@ export default {
   },
   computed: {},
   watch: {},
-  created () {},
-  mounted () {},
+  created () { },
+  mounted () { },
   methods: {}
 }
 </script>
@@ -29,6 +29,5 @@ body,
 html,
 #app {
   width: 100%;
-  height: 100%;
 }
 </style>

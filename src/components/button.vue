@@ -53,13 +53,6 @@
 
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
-    <!-- <table
-      class="table"
-      cellspacing="1"
-      bordercolor="#000"
-      cellpadding="1"
-      border="1"
-    > -->
     <table class="table">
       <tr>
         <th>参数</th>
@@ -101,39 +94,4 @@ export default {
 }
 </script>
 
-<style lang='less' scoped>
-// 主标题
-.title {
-  font-weight: 500;
-  color: #1f2f3d;
-  margin-bottom: 50px;
-}
-// 副标题
-.Subtitle {
-  color: #515a6e;
-  line-height: 60px;
-}
-// 说明
-.explain {
-  color: #515a6e;
-  line-height: 40px;
-  font-size: 15px;
-  margin-top: 50px;
-}
-// 代码段
-#myCode {
-  background: rgb(247, 247, 247);
-  font-family: "微软雅黑";
-  font-size: 16px;
-  border: 1px solid #eee;
-}
-// 表格
-.table {
-  width: 100%;
-  tr {
-    height: 50px;
-    background: rgb(247, 247, 247);
-    text-align: center;
-  }
-}
-</style>
+<style src="./style/index.css" scoped></style>

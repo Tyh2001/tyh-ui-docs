@@ -22,9 +22,10 @@ export default {
   data () {
     return {
       listPush: [
-        { name: '按钮组件', url: '/component/button' },
-        { name: '列表组件', url: '/component/list' },
-        { name: '卡片组件', url: '/component/card' }
+        { name: '快速上手', url: '/component/install' },
+        { name: 'Button 按钮', url: '/component/button' },
+        { name: 'List 列表', url: '/component/list' },
+        { name: 'Card 卡片', url: '/component/card' }
       ]
     }
   },
@@ -39,17 +40,17 @@ export default {
 <style lang='less' scoped>
 #conponentIndex {
   display: flex;
-  width: 1200px;
+  width: 1100px;
   margin: auto;
 
   .contentList {
-    width: 300px;
+    width: 200px;
     border-right: 1px solid #eee;
     overflow: auto;
     ul {
       li {
         list-style: none;
-        line-height: 35px;
+        line-height: 40px;
         a {
           text-decoration: none;
           color: #333;
