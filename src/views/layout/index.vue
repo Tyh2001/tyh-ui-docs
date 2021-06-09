@@ -49,6 +49,6 @@ export default {
 }
 // 内容出口
 #content {
-  margin-top: 60px;
+  margin-top: 120px;
 }
 </style>

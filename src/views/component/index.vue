@@ -44,7 +44,7 @@ export default {
 
   .contentList {
     width: 300px;
-    border-right: 1px solid #000;
+    border-right: 1px solid #eee;
     overflow: auto;
     ul {
       li {
@@ -58,6 +58,8 @@ export default {
     }
   }
   .content {
+    padding: 24px;
+    box-sizing: border-box;
     width: 900px;
   }
 }

@@ -1,6 +1,81 @@
 <template>
   <div>
-    <h1>按钮组件</h1>
+    <h1 class="title">Button 按钮</h1>
+
+    <h3 class="Subtitle">基本使用：</h3>
+    <p class="explain">基础使用</p>
+    <Tyh-button>默认按钮</Tyh-button>
+    <Tyh-button type="primary">主要按钮</Tyh-button>
+    <Tyh-button type="success">成功按钮</Tyh-button>
+    <Tyh-button type="danger">危险按钮</Tyh-button>
+    <Tyh-button type="warning">警告按钮</Tyh-button>
+    <pre v-highlightjs>
+      <code id="myCode" class="html">
+&lt;Tyh-button&gt;默认按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button type="primary"&gt;主要按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button type="success"&gt;成功按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button type="danger"&gt;危险按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button type="warning"&gt;警告按钮&lt;/Tyh-button&gt;
+      </code>
+    </pre>
+
+    <p class="explain">禁用状态</p>
+    <Tyh-button prohibit>默认按钮</Tyh-button>
+    <Tyh-button prohibit type="primary">主要按钮</Tyh-button>
+    <Tyh-button prohibit type="success">成功按钮</Tyh-button>
+    <Tyh-button prohibit type="danger">危险按钮</Tyh-button>
+    <Tyh-button prohibit type="warning">警告按钮</Tyh-button>
+    <pre v-highlightjs>
+      <code id="myCode" class="html">
+&lt;Tyh-button prohibit&gt;默认按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button prohibit type="primary"&gt;主要按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button prohibit type="success"&gt;成功按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button prohibit type="danger"&gt;危险按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button prohibit type="warning"&gt;警告按钮&lt;/Tyh-button&gt;
+      </code>
+    </pre>
+
+    <p class="explain">圆角按钮</p>
+    <Tyh-button round>默认按钮</Tyh-button>
+    <Tyh-button round type="primary">主要按钮</Tyh-button>
+    <Tyh-button round type="success">成功按钮</Tyh-button>
+    <Tyh-button round type="danger">危险按钮</Tyh-button>
+    <Tyh-button round type="warning">警告按钮</Tyh-button>
+    <pre v-highlightjs>
+      <code id="myCode" class="html">
+&lt;Tyh-button round&gt;默认按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button round type="primary"&gt;主要按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button round type="success"&gt;成功按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button round type="danger"&gt;危险按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button round type="warning"&gt;警告按钮&lt;/Tyh-button&gt;
+      </code>
+    </pre>
+
+    <!-- 配置项 -->
+    <h3 class="Subtitle">配置项：</h3>
+    <!-- <table
+      class="table"
+      cellspacing="1"
+      bordercolor="#000"
+      cellpadding="1"
+      border="1"
+    > -->
+    <table class="table">
+      <tr>
+        <th>参数</th>
+        <th>说明</th>
+        <th>类型</th>
+        <th>可选值</th>
+        <th>默认值</th>
+      </tr>
+      <tr v-for="(configure, index) in configures" :key="index">
+        <td>{{ configure.param }}</td>
+        <td>{{ configure.explain }}</td>
+        <td>{{ configure.type }}</td>
+        <td>{{ configure.value }}</td>
+        <td>{{ configure.default }}</td>
+      </tr>
+    </table>
   </div>
 </template>
 
@@ -10,7 +85,13 @@ export default {
   components: {},
   props: {},
   data () {
-    return {}
+    return {
+      configures: [
+        { param: 'type', explain: '按钮的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+        { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: 'true / false', default: 'false' },
+        { param: 'prohibit', explain: '按钮是否禁用', type: 'boolean', value: 'true / false', default: 'false' }
+      ]
+    }
   },
   computed: {},
   watch: {},
@@ -21,4 +102,38 @@ export default {
 </script>
 
 <style lang='less' scoped>
+// 主标题
+.title {
+  font-weight: 500;
+  color: #1f2f3d;
+  margin-bottom: 50px;
+}
+// 副标题
+.Subtitle {
+  color: #515a6e;
+  line-height: 60px;
+}
+// 说明
+.explain {
+  color: #515a6e;
+  line-height: 40px;
+  font-size: 15px;
+  margin-top: 50px;
+}
+// 代码段
+#myCode {
+  background: rgb(247, 247, 247);
+  font-family: "微软雅黑";
+  font-size: 16px;
+  border: 1px solid #eee;
+}
+// 表格
+.table {
+  width: 100%;
+  tr {
+    height: 50px;
+    background: rgb(247, 247, 247);
+    text-align: center;
+  }
+}
 </style>
