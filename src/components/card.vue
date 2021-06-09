@@ -1,6 +1,137 @@
 <template>
-  <div>
-    <h1>card 卡片</h1>
+  <div id="component-item">
+    <h1 class="title">Card 卡片</h1>
+
+    <h3 class="Subtitle">基本使用：</h3>
+    <p class="explain">title 自定义卡片的主标题</p>
+    <p class="explain">subtitle 自定义卡片的副标题</p>
+    <Tyh-card>
+      <template>
+        <div slot="title">主标题</div>
+        <div slot="subtitle">副标题</div>
+      </template>
+      <p>这是内容部分1</p>
+      <p>这是内容部分2</p>
+      <p>这是内容部分3</p>
+      <p>这是内容部分4</p>
+    </Tyh-card>
+    <pre v-highlightjs>
+      <code id="myCode" class="html">
+&lt;Tyh-card&gt;
+  &lt;template&gt;
+    &lt;div slot="title"&gt;主标题&lt;/div&gt;
+    &lt;div slot="subtitle"&gt;副标题&lt;/div&gt;
+  &lt;/template&gt;
+  &lt;p&gt;这是内容部分1&lt;/p&gt;
+  &lt;p&gt;这是内容部分2&lt;/p&gt;
+  &lt;p&gt;这是内容部分3&lt;/p&gt;
+  &lt;p&gt;这是内容部分4&lt;/p&gt;
+&lt;/Tyh-card&gt;
+      </code>
+    </pre>
+
+    <p class="explain">简约卡片（没有表头栏）：</p>
+    <p class="explain">simple 属性可以配置简约卡片</p>
+    <Tyh-card simple>
+      <template>
+        <div slot="title">主标题</div>
+        <div slot="subtitle">副标题</div>
+      </template>
+      <p>这是内容部分1</p>
+      <p>这是内容部分2</p>
+      <p>这是内容部分3</p>
+      <p>这是内容部分4</p>
+    </Tyh-card>
+    <pre v-highlightjs>
+      <code id="myCode" class="html">
+&lt;Tyh-card simple&gt;
+  &lt;template&gt;
+    &lt;div slot="title"&gt;主标题&lt;/div&gt;
+    &lt;div slot="subtitle"&gt;副标题&lt;/div&gt;
+  &lt;/template&gt;
+  &lt;p&gt;这是内容部分1&lt;/p&gt;
+  &lt;p&gt;这是内容部分2&lt;/p&gt;
+  &lt;p&gt;这是内容部分3&lt;/p&gt;
+  &lt;p&gt;这是内容部分4&lt;/p&gt;
+&lt;/Tyh-card&gt;
+      </code>
+    </pre>
+
+    <p class="explain">阴影显示时机：</p>
+    <p class="explain">shadow 属性可以配置阴影显示时机</p>
+    <Tyh-card shadow="always" style="width: 30%; display: inline-block">
+      <template>
+        <div slot="title">主标题</div>
+        <div slot="subtitle">副标题</div>
+      </template>
+      <p>总是显示阴影</p>
+    </Tyh-card>
+    <Tyh-card
+      shadow="hover"
+      style="width: 30%; display: inline-block; margin-left: 10px"
+    >
+      <template>
+        <div slot="title">主标题</div>
+        <div slot="subtitle">副标题</div>
+      </template>
+      <p>鼠标移入显示</p>
+    </Tyh-card>
+    <Tyh-card
+      shadow="noShadow"
+      style="width: 30%; display: inline-block; margin-left: 10px"
+    >
+      <template>
+        <div slot="title">主标题</div>
+        <div slot="subtitle">副标题</div>
+      </template>
+      <p>从不显示</p>
+    </Tyh-card>
+    <pre v-highlightjs>
+      <code id="myCode" class="html">
+&lt;Tyh-card shadow="always"&gt;
+  &lt;template&gt;
+    &lt;div slot="title"&gt;主标题&lt;/div&gt;
+    &lt;div slot="subtitle"&gt;副标题&lt;/div&gt;
+  &lt;/template&gt;
+  &lt;p&gt;这是内容部分1&lt;/p&gt;
+&lt;/Tyh-card&gt;
+
+&lt;Tyh-card shadow="hover"&gt;
+  &lt;template&gt;
+    &lt;div slot="title"&gt;主标题&lt;/div&gt;
+    &lt;div slot="subtitle"&gt;副标题&lt;/div&gt;
+  &lt;/template&gt;
+  &lt;p&gt;这是内容部分1&lt;/p&gt;
+&lt;/Tyh-card&gt;
+
+&lt;Tyh-card shadow="noShadow"&gt;
+  &lt;template&gt;
+    &lt;div slot="title"&gt;主标题&lt;/div&gt;
+    &lt;div slot="subtitle"&gt;副标题&lt;/div&gt;
+  &lt;/template&gt;
+  &lt;p&gt;这是内容部分1&lt;/p&gt;
+&lt;/Tyh-card&gt;
+      </code>
+    </pre>
+
+    <!-- 配置项 -->
+    <h3 class="Subtitle">配置项：</h3>
+    <table class="table">
+      <tr>
+        <th>参数</th>
+        <th>说明</th>
+        <th>类型</th>
+        <th>可选值</th>
+        <th>默认值</th>
+      </tr>
+      <tr v-for="(configure, index) in configures" :key="index">
+        <td>{{ configure.param }}</td>
+        <td>{{ configure.explain }}</td>
+        <td>{{ configure.type }}</td>
+        <td>{{ configure.value }}</td>
+        <td>{{ configure.default }}</td>
+      </tr>
+    </table>
   </div>
 </template>
 
@@ -10,12 +141,19 @@ export default {
   components: {},
   props: {},
   data () {
-    return {}
+    return {
+      configures: [
+        { param: 'simple', explain: '简约卡片', type: 'boolean', value: 'true / false', default: 'false' },
+        { param: 'shadow', explain: '阴影显示时机', type: 'string', value: 'always / hover / noShadow', default: '——' },
+        { param: 'title（具名插槽）', explain: '自定义卡片的主标题', type: '——', value: '——', default: '——' },
+        { param: 'subtitle（具名插槽）', explain: '自定义卡片的副标题', type: '——', value: '——', default: '——' }
+      ]
+    }
   },
   computed: {},
   watch: {},
-  created () {},
-  mounted () {},
+  created () { },
+  mounted () { },
   methods: {}
 }
 </script>
