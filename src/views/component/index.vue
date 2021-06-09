@@ -1,9 +1,17 @@
 <template>
   <div id="conponentIndex">
     <div class="contentList">
-      <ul>
+      <ul ref="ulList">
+        <!-- <li
+          v-for="(item, index) in listPush"
+          :key="index"
+          @click="routerPush(item, index)"
+        > -->
         <li v-for="(item, index) in listPush" :key="index">
-          <router-link :to="item.url">{{ item.name }}</router-link>
+          <router-link :to="item.url">
+            {{ item.name }}
+          </router-link>
+          <!-- {{ item.name }} -->
         </li>
       </ul>
     </div>
@@ -34,11 +42,31 @@ export default {
       ]
     }
   },
-  computed: {},
+  computed: {
+    listLiang () {
+      // return
+      const a = 1
+      const b = 2
+      return a + b
+    }
+  },
   watch: {},
   created () { },
   mounted () { },
-  methods: {}
+  methods: {
+    // routerPush (item, index) {
+    //   this.$router.push(item.url)
+    //   // console.log(index)
+    //   // this.$refs.ulList.querySelectorAll('li')[index].style.color = 'blue'
+    //   console.log(this.$route.path)
+    //   const a = this.$refs.ulList.querySelectorAll('li')[index]
+    //   if (item.url === this.$route.path) {
+    //     // this.$refs.ulList.querySelectorAll('li')[index].style.color = 'blue'
+    //     console.log(a)
+    //     a.style.color = 'red'
+    //   }
+    // }
+  }
 }
 </script>
 
@@ -62,6 +90,7 @@ export default {
     padding-top: 60px;
     bottom: 0px;
     z-index: 100;
+    user-select: none;
     ul {
       li {
         list-style: none;
