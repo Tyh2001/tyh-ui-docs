@@ -42,26 +42,47 @@ export default {
   display: flex;
   width: 1100px;
   margin: auto;
-
+  background: skyblue;
+  position: relative;
+  // 列表
   .contentList {
     width: 200px;
     border-right: 1px solid #eee;
     overflow: auto;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    top: 60px;
+    padding-top: 60px;
+    bottom: 0px;
+    z-index: 100;
     ul {
       li {
         list-style: none;
         line-height: 40px;
         a {
+          padding-left: 20px;
+          width: 100%;
+          display: inline-block;
           text-decoration: none;
           color: #333;
+          font-size: 15px;
+          &:hover {
+            background: rgb(247, 247, 247);
+          }
         }
       }
     }
   }
+  // 内容
   .content {
     padding: 24px;
     box-sizing: border-box;
     width: 900px;
+    position: absolute;
+    right: 0px;
+    z-index: 50;
   }
 }
 </style>

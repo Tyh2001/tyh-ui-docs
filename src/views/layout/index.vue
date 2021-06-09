@@ -42,6 +42,7 @@ export default {
   top: 0px;
   right: 0px;
   left: 0px;
+  z-index: 800;
   .logo {
     height: 50px;
     cursor: pointer;
