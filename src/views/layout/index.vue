@@ -1,9 +1,10 @@
 <template>
   <div>
     <Tyh-Menu backgroundColor="#f8faff" bottomType="shadow">
-      <a href="/">
-        <img class="logo" src="./images/TyhUI.png" alt="" />
-      </a>
+      <Tyh-link url="/">
+        <img class="logo" src="./images/logo.png" alt="" />
+        <span class="name">Tyh UI</span>
+      </Tyh-link>
 
       <div>
         <Tyh-Menu-Item color="#000" url="/">首页</Tyh-Menu-Item>
@@ -43,9 +44,20 @@ export default {
   right: 0px;
   left: 0px;
   z-index: 800;
-  .logo {
-    height: 50px;
-    cursor: pointer;
+  .tyh-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo {
+      height: 36px;
+      cursor: pointer;
+    }
+    .name {
+      font-size: 20px;
+      color: #6c63ff;
+      font-weight: 600;
+      margin-left: 10px;
+    }
   }
 }
 // 内容出口
