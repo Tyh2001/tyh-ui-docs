@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'conponentIndex',
+  name: 'componentIndex',
   components: {},
   props: {},
   data () {

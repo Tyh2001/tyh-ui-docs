@@ -74,7 +74,7 @@
 
 <script>
 export default {
-  name: 'button',
+  name: '',
   components: {},
   props: {},
   data () {

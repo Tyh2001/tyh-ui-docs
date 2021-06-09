@@ -137,7 +137,7 @@
 
 <script>
 export default {
-  name: 'card',
+  name: '',
   components: {},
   props: {},
   data () {

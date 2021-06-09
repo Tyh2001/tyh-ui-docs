@@ -123,7 +123,7 @@ export default {
 
 <script>
 export default {
-  name: 'list',
+  name: '',
   components: {},
   props: {},
   data () {

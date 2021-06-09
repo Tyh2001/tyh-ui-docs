@@ -22,7 +22,7 @@ Vue.use(tyhUI)
 
 <script>
 export default {
-  name: 'install',
+  name: '',
   components: {},
   props: {},
   data () {

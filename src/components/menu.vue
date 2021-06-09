@@ -106,7 +106,7 @@
 
 <script>
 export default {
-  name: 'menu',
+  name: '',
   components: {},
   props: {},
   data () {

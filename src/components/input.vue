@@ -96,7 +96,7 @@ export default {
 
 <script>
 export default {
-  name: 'input',
+  name: '',
   components: {},
   props: {},
   data () {
