@@ -1,6 +1,6 @@
 <template>
   <div id="component-item">
-    <h1 class="title">Card 卡片</h1>
+    <h1 class="title">Menu 导航栏</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
     <Tyh-Menu>

@@ -1,6 +1,6 @@
 <template>
   <div id="component-item">
-    <h1 class="title">Link 链接</h1>
+    <h1 class="title">Input 输入框</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
     <p class="explain">基础使用</p>
