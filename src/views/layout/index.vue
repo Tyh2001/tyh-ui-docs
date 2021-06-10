@@ -6,11 +6,10 @@
         <span class="name">Tyh UI</span>
       </Tyh-link>
 
-      <div>
+      <div class="card">
         <Tyh-Menu-Item color="#000" url="/">首页</Tyh-Menu-Item>
         <Tyh-Menu-Item color="#000" url="/component">组件</Tyh-Menu-Item>
-        <Tyh-Menu-Item color="#000">指南</Tyh-Menu-Item>
-        <Tyh-Menu-Item color="#000">资源</Tyh-Menu-Item>
+        <Tyh-Menu-Item color="#000" url="/guide">指南</Tyh-Menu-Item>
       </div>
     </Tyh-Menu>
 
@@ -48,6 +47,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
     .logo {
       height: 36px;
       cursor: pointer;
@@ -58,6 +58,9 @@ export default {
       font-weight: 600;
       margin-left: 10px;
     }
+  }
+  .card {
+    margin-right: 30px;
   }
 }
 // 内容出口

@@ -14,6 +14,11 @@ const routes = [
         component: () => import('@/views/home')
       },
       {
+        path: '/guide',
+        name: 'guide',
+        component: () => import('@/views/guide')
+      },
+      {
         path: '/component',
         redirect: '/component/install',
         component: () => import('@/views/component'),
