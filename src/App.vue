@@ -30,4 +30,12 @@ html,
 #app {
   width: 100%;
 }
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  border-radius: 8px;
+}
 </style>

@@ -66,10 +66,23 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  // 解决 vue 中跳转页面后滚动条没有在最顶端问题
+  scrollBehavior (to, from, saveTop) {
+    if (saveTop) {
+      return saveTop
+    } else {
+      return {
+        x: 0,
+        y: 0,
+        // 配置动画平滑滚动
+        behavior: 'smooth'
+      }
+    }
+  }
 })
 
-// 解决 冗余导航报错问题
+// 解决路由冗余导航报错问题
 const originalPush = VueRouter.prototype.push
 VueRouter.prototype.push = function push (location) {
   return originalPush.call(this, location).catch(err => err)

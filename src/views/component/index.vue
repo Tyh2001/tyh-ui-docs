@@ -2,16 +2,10 @@
   <div id="conponentIndex">
     <div class="contentList">
       <ul ref="ulList">
-        <!-- <li
-          v-for="(item, index) in listPush"
-          :key="index"
-          @click="routerPush(item, index)"
-        > -->
         <li v-for="(item, index) in listPush" :key="index">
           <router-link :to="item.url">
             {{ item.name }}
           </router-link>
-          <!-- {{ item.name }} -->
         </li>
       </ul>
     </div>
@@ -42,31 +36,11 @@ export default {
       ]
     }
   },
-  computed: {
-    listLiang () {
-      // return
-      const a = 1
-      const b = 2
-      return a + b
-    }
-  },
+  computed: {},
   watch: {},
   created () { },
   mounted () { },
-  methods: {
-    // routerPush (item, index) {
-    //   this.$router.push(item.url)
-    //   // console.log(index)
-    //   // this.$refs.ulList.querySelectorAll('li')[index].style.color = 'blue'
-    //   console.log(this.$route.path)
-    //   const a = this.$refs.ulList.querySelectorAll('li')[index]
-    //   if (item.url === this.$route.path) {
-    //     // this.$refs.ulList.querySelectorAll('li')[index].style.color = 'blue'
-    //     console.log(a)
-    //     a.style.color = 'red'
-    //   }
-    // }
-  }
+  methods: {}
 }
 </script>
 
