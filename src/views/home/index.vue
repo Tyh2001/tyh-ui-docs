@@ -60,33 +60,33 @@
           <ul class="link-ul">
             <li>
               <Tyh-link target="_blank" url="https://github.com/Tyh2001"
-                >Github</Tyh-link
+                >Tyh2001 Github</Tyh-link
               >
             </li>
             <li>
               <Tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui"
-                >源码仓库</Tyh-link
-              >
-            </li>
-            <li>
-              <Tyh-link
-                target="_blank"
-                url="https://github.com/Tyh2001/tyh-ui/issues"
-                >Lssues</Tyh-link
+                >tyh-ui 源码仓库</Tyh-link
               >
             </li>
             <li>
               <Tyh-link
                 target="_blank"
                 url="https://github.com/Tyh2001/tyh-ui-web"
-                >官网仓库</Tyh-link
+                >tyh-ui 官网仓库</Tyh-link
               >
             </li>
             <li>
               <Tyh-link
                 target="_blank"
                 url="https://www.npmjs.com/package/tyh-ui"
-                >NPM</Tyh-link
+                >tyh-ui NPM 仓库</Tyh-link
+              >
+            </li>
+            <li>
+              <Tyh-link
+                target="_blank"
+                url="https://github.com/Tyh2001/tyh-ui/issues"
+                >tyh-ui Lssues</Tyh-link
               >
             </li>
           </ul>
