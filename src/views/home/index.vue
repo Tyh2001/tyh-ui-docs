@@ -24,7 +24,7 @@
             组件库。
             <br /><br />
             如果您在使用中有什么问题或 BUG 不妨可以来仓库的 Lssuse
-            中反馈一下，我很乐意来进行改进。
+            中反馈一下，我也非常乐意来进行改进。
           </p>
         </div>
         <div class="summary-right">
@@ -34,7 +34,8 @@
             是一个极其轻量的组件库，它并没有那么多复杂的目录结构和冗余的代码，清晰明了。
             <br /><br />
             但同时 Tyh-ui
-            还有很多地方需要维护改进，远远不够完美，我正在努力改进中。
+            还有很多地方需要维护改进，远远不够完美，我正在努力改进中，也很需要您一个小小的
+            Star。
           </p>
         </div>
       </div>
@@ -60,64 +61,19 @@
           <ul class="link-ul">
             <li>
               <Tyh-link target="_blank" url="https://github.com/Tyh2001"
-                >Tyh2001 Github</Tyh-link
+                >Github</Tyh-link
               >
             </li>
             <li>
               <Tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui"
-                >tyh-ui 源码仓库</Tyh-link
-              >
-            </li>
-            <li>
-              <Tyh-link
-                target="_blank"
-                url="https://github.com/Tyh2001/tyh-ui-web"
-                >tyh-ui 官网仓库</Tyh-link
+                >官方仓库</Tyh-link
               >
             </li>
             <li>
               <Tyh-link
                 target="_blank"
                 url="https://www.npmjs.com/package/tyh-ui"
-                >tyh-ui NPM 仓库</Tyh-link
-              >
-            </li>
-            <li>
-              <Tyh-link
-                target="_blank"
-                url="https://github.com/Tyh2001/tyh-ui/issues"
-                >tyh-ui Lssues</Tyh-link
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- 相关文档 -->
-        <div class="link">
-          <h4 class="lint-title">相关文档</h4>
-          <ul class="link-ul">
-            <li>
-              <Tyh-link target="_blank" url="https://element.eleme.cn/#/zh-CN"
-                >Element</Tyh-link
-              >
-            </li>
-            <li>
-              <Tyh-link target="_blank" url="https://www.iviewui.com"
-                >View UI</Tyh-link
-              >
-            </li>
-            <li>
-              <Tyh-link
-                target="_blank"
-                url="https://at-ui.github.io/at-ui/#/zh/"
-                >at-ui</Tyh-link
-              >
-            </li>
-            <li>
-              <Tyh-link
-                target="_blank"
-                url="https://youzan.github.io/vant/#/zh-CN/quickstart"
-                >Vant</Tyh-link
+                >NPM</Tyh-link
               >
             </li>
           </ul>

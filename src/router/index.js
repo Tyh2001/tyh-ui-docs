@@ -58,6 +58,10 @@ const routes = [
           {
             path: '/component/menu',
             component: () => import('@/components/menu')
+          },
+          {
+            path: '/component/alert',
+            component: () => import('@/components/alert')
           }
         ]
       }
