@@ -33,7 +33,7 @@ export default {
         { name: 'Input 输入框', url: '/component/input' },
         { name: 'Tips 提示', url: '/component/tips' },
         { name: 'Menu 导航栏', url: '/component/menu' },
-        { name: 'Alert 消息通知', url: '/component/alert' }
+        { name: 'Message 消息通知', url: '/component/message' }
       ]
     }
   },

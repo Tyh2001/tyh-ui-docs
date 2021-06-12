@@ -60,8 +60,8 @@ const routes = [
             component: () => import('@/components/menu')
           },
           {
-            path: '/component/alert',
-            component: () => import('@/components/alert')
+            path: '/component/message',
+            component: () => import('@/components/message')
           }
         ]
       }

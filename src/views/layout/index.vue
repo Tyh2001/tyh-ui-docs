@@ -2,7 +2,7 @@
   <div>
     <Tyh-Menu backgroundColor="#f8faff" bottomType="shadow">
       <Tyh-link url="/">
-        <img class="logo" src="./images/TyhUILogo.svg" alt="" />
+        <img class="logo" src="../../images/TyhUILogo.svg" alt="" />
         <span class="name">Tyh UI</span>
       </Tyh-link>
 
