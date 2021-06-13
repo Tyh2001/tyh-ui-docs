@@ -62,6 +62,10 @@ const routes = [
           {
             path: '/component/message',
             component: () => import('@/components/message')
+          },
+          {
+            path: '/component/division',
+            component: () => import('@/components/division')
           }
         ]
       }

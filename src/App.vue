@@ -31,11 +31,11 @@ html,
   width: 100%;
 }
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   background-color: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cfcfcf;
-  border-radius: 8px;
+  background: #dddddd;
+  border-radius: 6px;
 }
 </style>

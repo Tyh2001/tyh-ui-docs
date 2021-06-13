@@ -33,7 +33,8 @@ export default {
         { name: 'Input 输入框', url: '/component/input' },
         { name: 'Tips 提示', url: '/component/tips' },
         { name: 'Menu 导航栏', url: '/component/menu' },
-        { name: 'Message 消息通知', url: '/component/message' }
+        { name: 'Message 消息通知', url: '/component/message' },
+        { name: 'Division 分割线', url: '/component/division' }
       ]
     }
   },
@@ -67,6 +68,7 @@ export default {
     z-index: 100;
     user-select: none;
     ul {
+      padding-bottom: 150px;
       li {
         list-style: none;
         line-height: 40px;
@@ -76,7 +78,7 @@ export default {
           display: inline-block;
           text-decoration: none;
           color: #333;
-          font-size: 15px;
+          font-size: 14px;
           &:hover {
             background: rgb(247, 247, 247);
           }
