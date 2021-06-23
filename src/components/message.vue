@@ -82,7 +82,7 @@ export default {
 
     <p class="explain">显示市场：</p>
     <p class="explain">
-      times 属性可以配置提示框的显示市场，并在 xxxx 毫秒后消失
+      times 属性可以配置提示框的显示时长，并在 xxxx 毫秒后消失
     </p>
     <Tyh-button type="primary" @click="open6">提示3000毫秒后消失</Tyh-button>
     <pre v-highlightjs>
@@ -178,7 +178,7 @@ export default {
     },
     open6 () {
       this.$message({
-        message: '这是一个警告提示',
+        message: '这个是一个消息',
         type: 'primary',
         times: 3000
       })

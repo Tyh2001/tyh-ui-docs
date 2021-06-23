@@ -34,7 +34,9 @@ export default {
         { name: 'Tips 提示', url: '/component/tips' },
         { name: 'Menu 导航栏', url: '/component/menu' },
         { name: 'Message 消息通知', url: '/component/message' },
-        { name: 'Division 分割线', url: '/component/division' }
+        { name: 'Division 分割线', url: '/component/division' },
+        { name: 'BackTop 回到顶部', url: '/component/backTop' },
+        { name: 'Icon 图标', url: '/component/icon' }
       ]
     }
   },

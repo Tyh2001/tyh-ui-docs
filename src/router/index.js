@@ -66,6 +66,14 @@ const routes = [
           {
             path: '/component/division',
             component: () => import('@/components/division')
+          },
+          {
+            path: '/component/backTop',
+            component: () => import('@/components/backTop')
+          },
+          {
+            path: '/component/icon',
+            component: () => import('@/components/icon')
           }
         ]
       }
