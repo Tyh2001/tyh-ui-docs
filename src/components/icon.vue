@@ -1,7 +1,75 @@
 <template>
-  <div>
-    <h1>icon 图标</h1>
-    <p>后续更新</p>
+  <div id="component-item">
+    <h1 class="title">Icon 图标</h1>
+
+    <h3 class="Subtitle">基本使用：</h3>
+    <p class="explain">通过 icon 属性来给 icon 添加类名，来显示不同的图标</p>
+    <Tyh-icon icon="tyh-ui-tyhui" />
+    <Tyh-icon icon="tyh-ui-huojian-01" />
+    <Tyh-icon icon="tyh-ui-PaperPlane-01" />
+    <pre v-highlightjs>
+      <code id="myCode" class="vue">
+&lt;Tyh-icon icon="tyh-ui-tyhui" /&gt;
+&lt;Tyh-icon icon="tyh-ui-huojian-01" /&gt;
+&lt;Tyh-icon icon="tyh-ui-PaperPlane-01" /&gt;
+      </code>
+    </pre>
+
+    <p class="explain">color 属性改变 icon 的颜色</p>
+    <Tyh-icon color="skyblue" icon="tyh-ui-tyhui" />
+    <Tyh-icon color="origin" icon="tyh-ui-huojian-01" />
+    <Tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" />
+    <pre v-highlightjs>
+      <code id="myCode" class="vue">
+&lt;Tyh-icon color="skyblue" icon="tyh-ui-tyhui" /&gt;
+&lt;Tyh-icon color="origin" icon="tyh-ui-huojian-01" /&gt;
+&lt;Tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" /&gt;
+      </code>
+    </pre>
+
+    <p class="explain">size 属性可以改变 icon 的大小</p>
+    <p class="explain">
+      这里采用的是字体大小形式，只需要传递具体数值，并不需要传递单位
+    </p>
+    <Tyh-icon size="50" icon="tyh-ui-tyhui" />
+    <Tyh-icon size="40" icon="tyh-ui-huojian-01" />
+    <Tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
+    <pre v-highlightjs>
+      <code id="myCode" class="vue">
+&lt;Tyh-icon size="50" icon="tyh-ui-tyhui" /&gt;
+&lt;Tyh-icon size="40" icon="tyh-ui-huojian-01" /&gt;
+&lt;Tyh-icon size="30" icon="tyh-ui-PaperPlane-01" /&gt;
+      </code>
+    </pre>
+
+    <!-- 配置项 -->
+    <h3 class="Subtitle">配置项：</h3>
+    <table class="table">
+      <tr>
+        <th>参数</th>
+        <th>说明</th>
+        <th>类型</th>
+        <th>可选值</th>
+        <th>默认值</th>
+      </tr>
+      <tr v-for="(configure, index) in configures" :key="index">
+        <td>{{ configure.param }}</td>
+        <td>{{ configure.explain }}</td>
+        <td>{{ configure.type }}</td>
+        <td>{{ configure.value }}</td>
+        <td>{{ configure.default }}</td>
+      </tr>
+    </table>
+
+    <h3 class="Subtitle">Icon 集合：</h3>
+    <div id="allIcon">
+      <ul class="allIcon-ui">
+        <li class="allIcon-li" v-for="(icon, index) in iconList" :key="index">
+          <Tyh-icon size="34" :icon="icon" />
+          <p class="iconTitle">{{ icon }}</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -11,7 +79,33 @@ export default {
   components: {},
   props: {},
   data () {
-    return {}
+    return {
+      // 配置项
+      configures: [
+        { param: 'icon', explain: 'icon 的类名', type: 'string', value: '——', default: '——' },
+        { param: 'color', explain: 'icon 的颜色', type: 'string', value: '——', default: '#606266' },
+        { param: 'size', explain: 'icon 的尺寸', type: 'string', value: '——', default: '——' }
+      ],
+      // icon 集合
+      iconList: [
+        'tyh-ui-tyhui',
+        'tyh-ui-huojian-01',
+        'tyh-ui-home-01',
+        'tyh-ui-right-01',
+        'tyh-ui-top-01',
+        'tyh-ui-bottom-01',
+        'tyh-ui-left-01',
+        'tyh-ui-close-01',
+        'tyh-ui-add-01',
+        'tyh-ui-sub-01',
+        'tyh-ui-top-02',
+        'tyh-ui-bottom-02',
+        'tyh-ui-setting-01',
+        'tyh-ui-phone-01',
+        'tyh-ui-PaperPlane-01',
+        'tyh-ui-trash-01'
+      ]
+    }
   },
   computed: {},
   watch: {},
@@ -21,5 +115,36 @@ export default {
 }
 </script>
 
+<style src="./style/index.css" scoped></style>
+
 <style lang='less' scoped>
+#allIcon {
+  width: 100%;
+  .allIcon-ui {
+    display: flex;
+    flex-wrap: wrap;
+    .allIcon-li {
+      width: 140px;
+      height: 120px;
+      border: 1px solid #eee;
+      list-style: none;
+      cursor: pointer;
+      padding: 5px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .iconTitle {
+        margin-top: 10px;
+        font-size: 12px;
+        color: rgb(138, 138, 138);
+      }
+      &:hover {
+        transition: background 0.3s;
+        background: #eef5fd;
+      }
+    }
+  }
+}
 </style>
