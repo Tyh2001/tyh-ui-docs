@@ -17,12 +17,12 @@
 
     <p class="explain">color 属性改变 icon 的颜色</p>
     <Tyh-icon color="skyblue" icon="tyh-ui-tyhui" />
-    <Tyh-icon color="origin" icon="tyh-ui-huojian-01" />
+    <Tyh-icon color="orange" icon="tyh-ui-huojian-01" />
     <Tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;Tyh-icon color="skyblue" icon="tyh-ui-tyhui" /&gt;
-&lt;Tyh-icon color="origin" icon="tyh-ui-huojian-01" /&gt;
+&lt;Tyh-icon color="orange" icon="tyh-ui-huojian-01" /&gt;
 &lt;Tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" /&gt;
       </code>
     </pre>
