@@ -62,9 +62,16 @@
     </table>
 
     <h3 class="Subtitle">Icon 集合：</h3>
+    <p class="explain">点击即可复制代码</p>
     <div id="allIcon">
       <ul class="allIcon-ui">
-        <li class="allIcon-li" v-for="(icon, index) in iconList" :key="index">
+        <li
+          class="allIcon-li"
+          v-for="(icon, index) in iconList"
+          :key="index"
+          :data-clipboard-text="icon"
+          @click="copy"
+        >
           <Tyh-icon size="34" :icon="icon" />
           <p class="iconTitle">{{ icon }}</p>
         </li>
@@ -74,6 +81,7 @@
 </template>
 
 <script>
+import Clipboard from 'clipboard'
 export default {
   name: '',
   components: {},
@@ -103,7 +111,11 @@ export default {
         'tyh-ui-setting-01',
         'tyh-ui-phone-01',
         'tyh-ui-PaperPlane-01',
-        'tyh-ui-trash-01'
+        'tyh-ui-trash-01',
+        'tyh-ui-primary-01',
+        'tyh-ui-success-01',
+        'tyh-ui-danger-01',
+        'tyh-ui-warning-01'
       ]
     }
   },
@@ -111,7 +123,29 @@ export default {
   watch: {},
   created () { },
   mounted () { },
-  methods: {}
+  methods: {
+    copy () {
+      const clipboard = new Clipboard('.allIcon-li')
+      // 复制成功
+      clipboard.on('success', e => {
+        this.$message({
+          message: '复制成功',
+          type: 'danger',
+          iconClass: 'tyh-ui-success-01'
+        })
+        clipboard.destroy()
+      })
+      // 复制失败
+      clipboard.on('error', e => {
+        this.$message({
+          message: '您的浏览器不支持复制',
+          type: 'warning',
+          iconClass: 'tyh-ui-warning-01'
+        })
+        clipboard.destroy()
+      })
+    }
+  }
 }
 </script>
 

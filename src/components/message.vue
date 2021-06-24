@@ -32,6 +32,9 @@ export default {
 
     <p class="explain">不同类型的：</p>
     <p class="explain">type 属性可以配置提示框的类型</p>
+    <p class="explain">
+      iconClass 属性可以配置 icon 的 class 属性，来展示 icon
+    </p>
     <Tyh-button type="primary" @click="open2">消息提示</Tyh-button>
     <Tyh-button type="primary" @click="open3">成功提示</Tyh-button>
     <Tyh-button type="primary" @click="open4">危险提示</Tyh-button>
@@ -53,25 +56,29 @@ export default {
     open2 () {
       this.$message({
         message: '这是一个消息提示',
-        type: 'primary'
+        type: 'primary',
+        iconClass: 'tyh-ui-primary-01'
       })
     },
     open3 () {
       this.$message({
         message: '这是一个成功提示',
-        type: 'danger'
+        type: 'danger',
+        iconClass: 'tyh-ui-success-01'
       })
     },
     open4 () {
       this.$message({
         message: '这是一个危险提示',
-        type: 'success'
+        type: 'success',
+        iconClass: 'tyh-ui-danger-01'
       })
     },
     open5 () {
       this.$message({
         message: '这是一个警告提示',
-        type: 'warning'
+        type: 'warning',
+        iconClass: 'tyh-ui-warning-01'
       })
     }
   }
@@ -138,7 +145,8 @@ export default {
       configures: [
         { param: 'message', explain: '显示的文字内容', type: 'string', value: '——', default: '——' },
         { param: 'times', explain: '持续显示的时间', type: 'number', value: '——', default: '1400' },
-        { param: 'type', explain: '提示的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' }
+        { param: 'type', explain: '提示的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+        { param: 'iconClass', explain: '定义 icon 的类名', type: 'string', value: '——', default: '——' }
       ]
     }
   },
@@ -155,25 +163,29 @@ export default {
     open2 () {
       this.$message({
         message: '这是一个消息提示',
-        type: 'primary'
+        type: 'primary',
+        iconClass: 'tyh-ui-primary-01'
       })
     },
     open3 () {
       this.$message({
         message: '这是一个成功提示',
-        type: 'danger'
+        type: 'danger',
+        iconClass: 'tyh-ui-success-01'
       })
     },
     open4 () {
       this.$message({
         message: '这是一个危险提示',
-        type: 'success'
+        type: 'success',
+        iconClass: 'tyh-ui-danger-01'
       })
     },
     open5 () {
       this.$message({
         message: '这是一个警告提示',
-        type: 'warning'
+        type: 'warning',
+        iconClass: 'tyh-ui-warning-01'
       })
     },
     open6 () {

@@ -135,7 +135,7 @@ export default {
     change7 () {
       this.$tips({
         title: '这是标题',
-        message: '&lt;h1&gt;欢迎使用Tyh ui！&lt;/h1&gt;',
+        message: '&lt;h2&gt;欢迎使用Tyh ui！&lt;/h2&gt;',
         isHtml: true
       })
     }
@@ -233,7 +233,7 @@ export default {
     change7 () {
       this.$tips({
         title: '这是标题',
-        message: '<h1>欢迎使用Tyh ui！</h1>',
+        message: '<h2>欢迎使用Tyh ui！</h2>',
         isHtml: true
       })
     }

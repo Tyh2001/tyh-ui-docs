@@ -11,10 +11,22 @@
     </pre>
 
     <p class="explain">bottom 和 right 属性可以配置距离右边和下边的距离</p>
-    <Tyh-backTop bottom="100" right="100">Top</Tyh-backTop>
+    <Tyh-backTop bottom="100" right="40">Top</Tyh-backTop>
     <pre v-highlightjs>
       <code id="myCode" class="html">
  &lt;Tyh-backTop bottom="100" right="100"&gt;Top&lt;/Tyh-backTop&gt;
+      </code>
+    </pre>
+
+    <p class="explain">也可以插入 icon 图标</p>
+    <Tyh-backTop bottom="160" right="40">
+      <Tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
+    </Tyh-backTop>
+    <pre v-highlightjs>
+      <code id="myCode" class="html">
+&lt;Tyh-backTop bottom="160" right="40"&gt;
+  &lt;Tyh-icon icon="tyh-ui-huojian-01" color="#409eff" /&gt;
+&lt;/Tyh-backTop&gt;
       </code>
     </pre>
 
