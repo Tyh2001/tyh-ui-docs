@@ -74,6 +74,10 @@ const routes = [
           {
             path: '/component/icon',
             component: () => import('@/components/icon')
+          },
+          {
+            path: '/component/color',
+            component: () => import('@/components/color')
           }
         ]
       }

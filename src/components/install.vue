@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="component-item">
     <h1 class="title">快速上手</h1>
 
     <h3 class="Subtitle">安装：</h3>
