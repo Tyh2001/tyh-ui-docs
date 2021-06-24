@@ -3,6 +3,9 @@
     <h1 class="title">Color 色彩</h1>
     <p class="explain">tyh-ui 在这里提供了一些比较鲜艳、友好的颜色提供使用</p>
     <h3 class="Subtitle">内部颜色：</h3>
+    <p class="explain">
+      下面是 tyh-ui 内部使用的颜色色号，采用的比较鲜亮的颜色
+    </p>
     <p class="explain">点击即可复制颜色色号</p>
 
     <!-- 颜色列表1 -->
@@ -22,6 +25,7 @@
 
     <!-- 颜色列表2 -->
     <h3 class="Subtitle">字体边框：</h3>
+    <p class="explain">下面是 tyh-ui 内部使用的字体边框色号</p>
     <p class="explain">点击即可复制颜色色号</p>
     <div id="colorList2">
       <div
@@ -39,6 +43,7 @@
 
     <!-- 颜色列表3 -->
     <h3 class="Subtitle">其他推荐：</h3>
+    <p class="explain">下面是 tyh-ui 推荐的一些其他色彩</p>
     <p class="explain">点击即可复制颜色色号</p>
     <div id="colorList3">
       <div
@@ -79,42 +84,42 @@ export default {
         { color: '#dcdfe6', type: '边框' }
       ],
       colorList3: [
-        { color: '#eea2a4', type: '牡丹粉红' },
-        { color: '#ef475d', type: '草茉莉红' },
-        { color: '#73575c', type: '鼠背灰' },
-        { color: '#eea6b7', type: '晶红' },
-        { color: '#33141e', type: '火鹅紫' },
-        { color: '#e16c96', type: '初荷红' },
-        { color: '#8b2671', type: '青莲' },
-        { color: '#e2e1e4', type: '芡食白' },
         { color: '#0f1423', type: '钢蓝' },
+        { color: '#481e1c', type: '豆沙' },
+        { color: '#33141e', type: '火鹅紫' },
+        { color: '#393733', type: '河豚灰' },
+        { color: '#732e12', type: '筍皮棕' },
+        { color: '#503e2a', type: '橄榄灰' },
+        { color: '#5e665b', type: '田螺绿' },
+        { color: '#73575c', type: '鼠背灰' },
+        { color: '#8b2671', type: '青莲' },
+        { color: '#f04b22', type: '大红' },
+        { color: '#ef475d', type: '草茉莉红' },
+        { color: '#e16c96', type: '初荷红' },
+        { color: '#134857', type: '苍蓝' },
         { color: '#346c9c', type: '海军蓝' },
         { color: '#2177b8', type: '虹蓝' },
         { color: '#8abcd1', type: '秋波蓝' },
-        { color: '#134857', type: '苍蓝' },
         { color: '#1491a8', type: '樫鸟蓝' },
         { color: '#51c4d3', type: '瀑布蓝' },
         { color: '#428675', type: '亚丁绿' },
         { color: '#2c9678', type: '青矾绿' },
+        { color: '#bec936', type: '橄榄黄绿' },
         { color: '#61ac85', type: '淡绿' },
         { color: '#579572', type: '蛋白石绿' },
         { color: '#c6dfc8', type: '淡翠绿' },
-        { color: '#5e665b', type: '田螺绿' },
-        { color: '#bec936', type: '橄榄黄绿' },
+        { color: '#f19790', type: '舌红' },
+        { color: '#eea2a4', type: '牡丹粉红' },
+        { color: '#eea6b7', type: '晶红' },
+        { color: '#e4dfd7', type: '珍珠灰' },
         { color: '#fed71a', type: '佛手黄' },
         { color: '#f2ce2b', type: '硫华黄' },
-        { color: '#ddc871', type: '芒果黄' },
         { color: '#f9d367', type: '淡密黄' },
-        { color: '#393733', type: '河豚灰' },
-        { color: '#e4dfd7', type: '珍珠灰' },
-        { color: '#bbb5ac', type: '铅灰' },
-        { color: '#503e2a', type: '橄榄灰' },
+        { color: '#ddc871', type: '芒果黄' },
         { color: '#9a8878', type: '海鸥灰' },
+        { color: '#bbb5ac', type: '铅灰' },
         { color: '#f9e9cd', type: '米色' },
-        { color: '#732e12', type: '筍皮棕' },
-        { color: '#f04b22', type: '大红' },
-        { color: '#f19790', type: '舌红' },
-        { color: '#481e1c', type: '豆沙' }
+        { color: '#e2e1e4', type: '芡食白' }
       ]
     }
   },
