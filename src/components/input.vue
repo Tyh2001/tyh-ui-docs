@@ -80,15 +80,19 @@ export default {
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
 import ConfiguresTable from './components/ConfiguresTable'
+import TurnPage from './components/TurnPage'
 export default {
   name: '',
   components: {
-    ConfiguresTable
+    ConfiguresTable,
+    TurnPage
   },
   props: {},
   data () {
@@ -105,6 +109,10 @@ export default {
         { param: 'inpType', explain: '类型', type: 'string', value: 'text / password / success / danger / warning', default: 'text' },
         { param: 'innerText', explain: '输入框占位文本', type: 'string', value: '——', default: '——' },
         { param: 'size', explain: '文本框尺寸', type: 'string', value: 'big / medium / small / mini', default: 'medium' }
+      ],
+      TurnPageList: [
+        { text: 'Link 链接', url: 'link' },
+        { text: 'Tips 提示', url: 'tips' }
       ]
     }
   },

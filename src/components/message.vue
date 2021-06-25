@@ -117,15 +117,19 @@ export default {
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
 import ConfiguresTable from './components/ConfiguresTable'
+import TurnPage from './components/TurnPage'
 export default {
   name: '',
   components: {
-    ConfiguresTable
+    ConfiguresTable,
+    TurnPage
   },
   props: {},
   data () {
@@ -135,6 +139,10 @@ export default {
         { param: 'times', explain: '持续显示的时间', type: 'number', value: '——', default: '1400' },
         { param: 'type', explain: '提示的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
         { param: 'iconClass', explain: '定义 icon 的类名', type: 'string', value: '——', default: '——' }
+      ],
+      TurnPageList: [
+        { text: 'Menu 导航栏', url: 'menu' },
+        { text: 'Division 分割线', url: 'division' }
       ]
     }
   },

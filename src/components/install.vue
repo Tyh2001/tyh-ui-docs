@@ -33,8 +33,8 @@ export default {
   data () {
     return {
       TurnPageList: [
-        { text: '首页', url: '/', icon: 'tyh-ui-left-01' },
-        { text: 'Color 色彩', url: '/#/component/color', icon: 'tyh-ui-right-01' }
+        { text: '首页', url: '/' },
+        { text: 'Color 色彩', url: 'color' }
       ]
     }
   },

@@ -33,15 +33,19 @@
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
 import ConfiguresTable from './components/ConfiguresTable'
+import TurnPage from './components/TurnPage'
 export default {
   name: '',
   components: {
-    ConfiguresTable
+    ConfiguresTable,
+    TurnPage
   },
   props: {},
   data () {
@@ -49,6 +53,10 @@ export default {
       configures: [
         { param: 'bottom', explain: '距离下面的距离', type: 'string', value: '——', default: '40' },
         { param: 'right', explain: '距离右面的距离', type: 'string', value: '——', default: '40' }
+      ],
+      TurnPageList: [
+        { text: 'Division 分割线', url: 'division' },
+        { text: 'Icon 图标', url: 'icon' }
       ]
     }
   },

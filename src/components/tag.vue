@@ -35,15 +35,19 @@
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
 import ConfiguresTable from './components/ConfiguresTable'
+import TurnPage from './components/TurnPage'
 export default {
   name: '',
   components: {
-    ConfiguresTable
+    ConfiguresTable,
+    TurnPage
   },
   props: {},
   data () {
@@ -51,6 +55,10 @@ export default {
       configures: [
         { param: 'color', explain: '标签的颜色类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
         { param: 'size', explain: '标签的尺寸', type: 'string', value: ' — / small / mini', default: '最大尺寸' }
+      ],
+      TurnPageList: [
+        { text: 'Card 卡片', url: 'card' },
+        { text: 'Link 链接', url: 'link' }
       ]
     }
   },

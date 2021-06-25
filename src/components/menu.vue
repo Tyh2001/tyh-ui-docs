@@ -112,15 +112,19 @@
 
     <p class="explain">Tyh-Menu-Item 子组件：</p>
     <ConfiguresTable :configures="configures2" />
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
 import ConfiguresTable from './components/ConfiguresTable'
+import TurnPage from './components/TurnPage'
 export default {
   name: '',
   components: {
-    ConfiguresTable
+    ConfiguresTable,
+    TurnPage
   },
   props: {},
   data () {
@@ -132,6 +136,10 @@ export default {
         { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
         { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: 'true / fasle', default: '——' },
         { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#fff' }
+      ],
+      TurnPageList: [
+        { text: 'Tips 提示', url: 'tips' },
+        { text: 'Message 消息提示', url: 'message' }
       ]
     }
   },

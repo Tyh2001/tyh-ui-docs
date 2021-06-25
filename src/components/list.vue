@@ -103,15 +103,19 @@ export default {
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
+import TurnPage from './components/TurnPage'
 import ConfiguresTable from './components/ConfiguresTable'
 export default {
   name: '',
   components: {
-    ConfiguresTable
+    ConfiguresTable,
+    TurnPage
   },
   props: {},
   data () {
@@ -133,6 +137,10 @@ export default {
         { param: 'iskey', explain: '循环对象键名', type: 'string', value: '——', default: '——' },
         { param: 'zebra', explain: '是否显示斑马纹', type: 'boolean', value: 'true / false', default: '——' },
         { param: 'num', explain: '是否显示序号', type: 'boolean', value: 'true / false', default: 'false' }
+      ],
+      TurnPageList: [
+        { text: 'Button 按钮', url: 'button' },
+        { text: 'Card 卡片', url: 'card' }
       ]
     }
   },

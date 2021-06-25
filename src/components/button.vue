@@ -55,7 +55,7 @@
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
 
-    <TurnPage />
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
@@ -75,6 +75,10 @@ export default {
         { param: 'type', explain: '按钮的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
         { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: 'true / false', default: 'false' },
         { param: 'prohibit', explain: '按钮是否禁用', type: 'boolean', value: 'true / false', default: 'false' }
+      ],
+      TurnPageList: [
+        { text: 'Color 色彩', url: 'color' },
+        { text: 'List 列表', url: 'list' }
       ]
     }
   },

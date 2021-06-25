@@ -27,21 +27,29 @@
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
 import ConfiguresTable from './components/ConfiguresTable'
+import TurnPage from './components/TurnPage'
 export default {
   name: '',
   components: {
-    ConfiguresTable
+    ConfiguresTable,
+    TurnPage
   },
   props: {},
   data () {
     return {
       configures: [
         { param: 'position', explain: '文字位置', type: 'string', value: 'left / center / right', default: 'left' }
+      ],
+      TurnPageList: [
+        { text: 'Message 消息通知', url: 'message' },
+        { text: 'BackTop 回到顶部', url: 'backTop' }
       ]
     }
   },

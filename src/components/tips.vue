@@ -148,15 +148,19 @@ export default {
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
 import ConfiguresTable from './components/ConfiguresTable'
+import TurnPage from './components/TurnPage'
 export default {
   name: '',
   components: {
-    ConfiguresTable
+    ConfiguresTable,
+    TurnPage
   },
   props: {},
   data () {
@@ -169,6 +173,10 @@ export default {
         { param: 'showClose', explain: '是否显示关闭按钮', type: 'boolean', value: 'true / fasle', default: 'true' },
         { param: 'isHtml', explain: 'message 是否为 html 片段', type: 'boolean', value: 'true / fasle', default: 'false' },
         { param: 'backgroundColor', explain: '自定义背景色', type: 'string', value: '——', default: '#fff' }
+      ],
+      TurnPageList: [
+        { text: 'Input 输入框', url: 'input' },
+        { text: 'Menu 导航栏', url: 'menu' }
       ]
     }
   },

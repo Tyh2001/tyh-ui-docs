@@ -58,14 +58,19 @@
         <p>{{ list3.color }}</p>
       </div>
     </div>
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
 import Clipboard from 'clipboard'
+import TurnPage from './components/TurnPage'
 export default {
   name: '',
-  components: {},
+  components: {
+    TurnPage
+  },
   props: {},
   data () {
     return {
@@ -120,6 +125,10 @@ export default {
         { color: '#bbb5ac', type: '铅灰' },
         { color: '#f9e9cd', type: '米色' },
         { color: '#e2e1e4', type: '芡食白' }
+      ],
+      TurnPageList: [
+        { text: '快速上手', url: 'install' },
+        { text: 'Button 按钮', url: 'button' }
       ]
     }
   },

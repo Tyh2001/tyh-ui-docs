@@ -62,16 +62,20 @@
         </li>
       </ul>
     </div>
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
 import Clipboard from 'clipboard'
 import ConfiguresTable from './components/ConfiguresTable'
+import TurnPage from './components/TurnPage'
 export default {
   name: '',
   components: {
-    ConfiguresTable
+    ConfiguresTable,
+    TurnPage
   },
   props: {},
   data () {
@@ -96,6 +100,8 @@ export default {
         'tyh-ui-sub-01',
         'tyh-ui-top-02',
         'tyh-ui-bottom-02',
+        'tyh-ui-left-02',
+        'tyh-ui-right-02',
         'tyh-ui-setting-01',
         'tyh-ui-phone-01',
         'tyh-ui-PaperPlane-01',
@@ -104,6 +110,10 @@ export default {
         'tyh-ui-success-01',
         'tyh-ui-danger-01',
         'tyh-ui-warning-01'
+      ],
+      TurnPageList: [
+        { text: 'BackTop 回到顶部', url: 'backTop' },
+        { text: '', url: '' }
       ]
     }
   },

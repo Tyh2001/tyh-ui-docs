@@ -56,15 +56,19 @@
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
 import ConfiguresTable from './components/ConfiguresTable'
+import TurnPage from './components/TurnPage'
 export default {
   name: '',
   components: {
-    ConfiguresTable
+    ConfiguresTable,
+    TurnPage
   },
   props: {},
   data () {
@@ -75,6 +79,10 @@ export default {
         { param: 'underline', explain: '下划线', type: 'boolean', value: 'true / false', default: 'fasle' },
         { param: 'hoverline', explain: '鼠标移入下划线', type: 'boolean', value: 'true / false', default: 'fasle' },
         { param: 'target', explain: '以新的窗口打开', type: 'string', value: '同原生 target 属性', default: '——' }
+      ],
+      TurnPageList: [
+        { text: 'Tag 标签', url: 'tag' },
+        { text: 'Input 输入框', url: 'input' }
       ]
     }
   },
