@@ -19,6 +19,34 @@
       </code>
     </pre>
 
+    <p class="explain">朴素的按钮</p>
+    <Tyh-button simple type="primary">主要按钮</Tyh-button>
+    <Tyh-button simple type="success">成功按钮</Tyh-button>
+    <Tyh-button simple type="danger">危险按钮</Tyh-button>
+    <Tyh-button simple type="warning">警告按钮</Tyh-button>
+    <pre v-highlightjs>
+      <code id="myCode" class="html">
+&lt;Tyh-button simple type="primary"&gt;主要按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button simple type="success"&gt;成功按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button simple type="danger"&gt;危险按钮&lt;/Tyh-button&gt;
+&lt;Tyh-button simple type="warning"&gt;警告按钮&lt;/Tyh-button&gt;
+      </code>
+    </pre>
+
+    <p class="explain">图标按钮</p>
+    <Tyh-button icon="tyh-ui-setting-01" type="primary"></Tyh-button>
+    <Tyh-button icon="tyh-ui-phone-01" type="success"></Tyh-button>
+    <Tyh-button icon="tyh-ui-huojian-01" type="danger">火箭</Tyh-button>
+    <Tyh-button icon="tyh-ui-PaperPlane-01" type="warning">飞机</Tyh-button>
+    <pre v-highlightjs>
+      <code id="myCode" class="html">
+&lt;Tyh-button icon="tyh-ui-setting-01" type="primary"&gt;&lt;/Tyh-button&gt;
+&lt;Tyh-button icon="tyh-ui-phone-01" type="success"&gt;&lt;/Tyh-button&gt;
+&lt;Tyh-button icon="tyh-ui-huojian-01" type="danger"&gt;火箭&lt;/Tyh-button&gt;
+&lt;Tyh-button icon="tyh-ui-PaperPlane-01" type="warning"&gt;飞机&lt;/Tyh-button&gt;
+      </code>
+    </pre>
+
     <p class="explain">禁用状态</p>
     <Tyh-button prohibit>默认按钮</Tyh-button>
     <Tyh-button prohibit type="primary">主要按钮</Tyh-button>
@@ -75,7 +103,8 @@ export default {
         { param: 'type', explain: '按钮的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
         { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: '——', default: 'false' },
         { param: 'prohibit', explain: '按钮是否禁用', type: 'boolean', value: '——', default: 'false' },
-        { param: 'icon', explain: '按钮上的 icon', type: 'string', value: '——', default: '——' }
+        { param: 'icon', explain: '按钮上的 icon', type: 'string', value: '——', default: '——' },
+        { param: 'simple', explain: '是否为朴素按钮', type: 'boolean', value: '——', default: 'fasle' }
       ],
       TurnPageList: [
         { text: 'Color 色彩', url: 'color' },

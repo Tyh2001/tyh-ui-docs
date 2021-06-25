@@ -38,4 +38,9 @@ html,
   background: #dddddd;
   border-radius: 6px;
 }
+// 选择文本样式
+::selection {
+  background: rgb(108, 99, 255);
+  color: #ffffff;
+}
 </style>

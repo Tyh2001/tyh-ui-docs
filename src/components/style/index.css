@@ -1,5 +1,6 @@
 #component-item {
   padding-bottom: 250px;
+  user-select: none;
 }
 #component-item .title {
   font-weight: 500;
@@ -23,4 +24,5 @@
   font-family: "微软雅黑";
   font-size: 16px;
   border: 1px solid #eee;
+  user-select: text;
 }

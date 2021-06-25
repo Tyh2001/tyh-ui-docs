@@ -52,6 +52,7 @@ export default {
 
 <style lang='less' scoped>
 #TurnPage {
+  user-select: none;
   margin-top: 70px;
   display: flex;
   justify-content: space-between;

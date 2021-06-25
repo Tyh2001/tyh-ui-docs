@@ -43,6 +43,7 @@ export default {
 <style lang='less' scoped>
 // 表格
 #table {
+  user-select: text;
   width: 100%;
   color: #606266;
 
