@@ -170,8 +170,8 @@ export default {
         { param: 'message', explain: '内容', type: 'string', value: '——', default: '——' },
         { param: 'times', explain: '显示时间 单位毫秒', type: 'number', value: '——', default: '3500' },
         { param: 'position', explain: '显示的位置', type: 'string', value: 'top-right / bottom-right / top-left / bottom-left', default: 'top-right' },
-        { param: 'showClose', explain: '是否显示关闭按钮', type: 'boolean', value: 'true / fasle', default: 'true' },
-        { param: 'isHtml', explain: 'message 是否为 html 片段', type: 'boolean', value: 'true / fasle', default: 'false' },
+        { param: 'showClose', explain: '是否显示关闭按钮', type: 'boolean', value: '——', default: 'true' },
+        { param: 'isHtml', explain: 'message 是否为 html 片段', type: 'boolean', value: '——', default: 'false' },
         { param: 'backgroundColor', explain: '自定义背景色', type: 'string', value: '——', default: '#fff' }
       ],
       TurnPageList: [

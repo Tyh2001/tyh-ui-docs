@@ -130,11 +130,12 @@ export default {
   data () {
     return {
       configures: [
-        { param: 'backgroundColor', explain: '导航栏背景色', type: 'string', value: '——', default: '——' }
+        { param: 'backgroundColor', explain: '导航栏背景色', type: 'string', value: '——', default: '——' },
+        { param: 'buttomShadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' }
       ],
       configures2: [
         { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
-        { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: 'true / fasle', default: '——' },
+        { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: '——' },
         { param: 'color', explain: '文字颜色', type: 'string', value: '——', default: '#fff' }
       ],
       TurnPageList: [
