@@ -73,8 +73,9 @@ export default {
     return {
       configures: [
         { param: 'type', explain: '按钮的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
-        { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: 'true / false', default: 'false' },
-        { param: 'prohibit', explain: '按钮是否禁用', type: 'boolean', value: 'true / false', default: 'false' }
+        { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: '——', default: 'false' },
+        { param: 'prohibit', explain: '按钮是否禁用', type: 'boolean', value: '——', default: 'false' },
+        { param: 'icon', explain: '按钮上的 icon', type: 'string', value: '——', default: '——' }
       ],
       TurnPageList: [
         { text: 'Color 色彩', url: 'color' },
