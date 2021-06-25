@@ -15,7 +15,7 @@
       <router-view />
     </div>
 
-    <Tyh-backTop bottom="160" right="140">
+    <Tyh-backTop bottom="160" right="120">
       <Tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
     </Tyh-backTop>
   </div>

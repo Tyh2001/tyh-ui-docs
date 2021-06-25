@@ -1,22 +1,23 @@
 <template>
   <div id="TurnPage">
     <!-- 上一页下一页组件 -->
-    <span class="pageList">
-      <Tyh-link
-        :url="TurnPageListURL(TurnPageList[0].url)"
-        v-if="TurnPageList[0].text"
-      >
-        <Tyh-icon icon="tyh-ui-left-02" />
-        {{ TurnPageList[0].text }}
-      </Tyh-link>
-    </span>
+    <router-link
+      v-if="TurnPageList[0].text"
+      class="pageList"
+      :to="TurnPageList[0].url"
+    >
+      <Tyh-icon icon="tyh-ui-left-02" />
+      {{ TurnPageList[0].text }}
+    </router-link>
 
-    <span class="pageList" v-if="TurnPageList[1].text">
-      <Tyh-link :url="TurnPageListURL(TurnPageList[1].url)">
-        {{ TurnPageList[1].text }}
-        <Tyh-icon icon="tyh-ui-right-02" />
-      </Tyh-link>
-    </span>
+    <router-link
+      v-if="TurnPageList[1].text"
+      class="pageList"
+      :to="TurnPageList[1].url"
+    >
+      {{ TurnPageList[1].text }}
+      <Tyh-icon icon="tyh-ui-right-02" />
+    </router-link>
   </div>
 </template>
 
@@ -55,11 +56,16 @@ export default {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  .pageList:hover {
-    .tyh-link,
-    .tyh-icon {
+  .pageList {
+    text-decoration: none;
+    color: #515a6e;
+    &:hover {
       transition: color 0.25s;
       color: #409eff !important;
+      .tyh-icon {
+        transition: color 0.25s;
+        color: #409eff !important;
+      }
     }
   }
 }

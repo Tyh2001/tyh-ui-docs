@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Tyh-Menu backgroundColor="#f8faff" bottomType="shadow">
+    <Tyh-Menu backgroundColor="#f8faff">
       <Tyh-link url="/">
         <img class="logo" src="../../images/TyhUILogo.svg" alt="" />
         <span class="name">Tyh UI</span>
