@@ -38,15 +38,7 @@ export default {
   watch: {},
   created () { },
   mounted () { },
-  methods: {
-    // 跳转路径函数
-    TurnPageListURL (url) {
-      if (url !== '/') {
-        return `/#/component/${url}`
-      }
-      return url
-    }
-  }
+  methods: {}
 }
 </script>
 

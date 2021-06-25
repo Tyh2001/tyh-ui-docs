@@ -46,7 +46,6 @@ export default {
   user-select: text;
   width: 100%;
   color: #606266;
-
   tr {
     height: 50px;
     background: rgb(247, 247, 247);
