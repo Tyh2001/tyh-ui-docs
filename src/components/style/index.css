@@ -24,12 +24,3 @@
   font-size: 16px;
   border: 1px solid #eee;
 }
-#component-item .table {
-  width: 100%;
-  color: #606266;
-}
-#component-item .table tr {
-  height: 50px;
-  background: #f7f7f7;
-  text-align: center;
-}

@@ -6,10 +6,17 @@
         <span class="name">Tyh UI</span>
       </Tyh-link>
 
+      <!-- 导航栏选项 -->
       <div class="card">
-        <Tyh-Menu-Item color="#000" url="/">首页</Tyh-Menu-Item>
-        <Tyh-Menu-Item color="#000" url="/component">组件</Tyh-Menu-Item>
-        <Tyh-Menu-Item color="#000" url="/guide">指南</Tyh-Menu-Item>
+        <Tyh-Menu-Item
+          v-for="(list, index) in layoutList"
+          color="#000"
+          :key="index"
+          :url="list.url"
+          :style="highLightStyle(list)"
+        >
+          {{ list.title }}
+        </Tyh-Menu-Item>
       </div>
     </Tyh-Menu>
 
@@ -25,13 +32,29 @@ export default {
   components: {},
   props: {},
   data () {
-    return {}
+    return {
+      // 导航栏选项
+      layoutList: [
+        { title: '首页', url: '/' },
+        { title: '组件', url: '/component' },
+        { title: '指南', url: '/guide' }
+      ]
+    }
   },
   computed: {},
   watch: {},
   created () { },
   mounted () { },
-  methods: {}
+  methods: {
+    // 高亮显示
+    highLightStyle (list) {
+      if (list.url === this.$route.path) {
+        return {
+          color: '#409eff'
+        }
+      }
+    }
+  }
 }
 </script>
 

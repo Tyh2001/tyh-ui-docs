@@ -102,29 +102,17 @@ export default {
 
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
-    <table class="table">
-      <tr>
-        <th>参数</th>
-        <th>说明</th>
-        <th>类型</th>
-        <th>可选值</th>
-        <th>默认值</th>
-      </tr>
-      <tr v-for="(configure, index) in configures" :key="index">
-        <td>{{ configure.param }}</td>
-        <td>{{ configure.explain }}</td>
-        <td>{{ configure.type }}</td>
-        <td>{{ configure.value }}</td>
-        <td>{{ configure.default }}</td>
-      </tr>
-    </table>
+    <ConfiguresTable :configures="configures" />
   </div>
 </template>
 
 <script>
+import ConfiguresTable from './components/ConfiguresTable'
 export default {
   name: '',
-  components: {},
+  components: {
+    ConfiguresTable
+  },
   props: {},
   data () {
     return {

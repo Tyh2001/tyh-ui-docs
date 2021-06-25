@@ -17,16 +17,26 @@ import tyhUI from 'tyh-ui/lib'
 Vue.use(tyhUI)
       </code>
     </pre>
+
+    <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
+import TurnPage from './components/TurnPage'
 export default {
   name: '',
-  components: {},
+  components: {
+    TurnPage
+  },
   props: {},
   data () {
-    return {}
+    return {
+      TurnPageList: [
+        { text: '首页', url: '/', icon: 'tyh-ui-left-01' },
+        { text: 'Color 色彩', url: '/#/component/color', icon: 'tyh-ui-right-01' }
+      ]
+    }
   },
   computed: {},
   watch: {},

@@ -1,9 +1,10 @@
 <template>
   <div id="conponentIndex">
+    <!-- 左侧列表 -->
     <div class="contentList">
       <ul ref="ulList">
         <li v-for="(item, index) in listPush" :key="index">
-          <router-link :to="item.url">
+          <router-link :to="item.url" :style="highLightStyle(item)">
             {{ item.name }}
           </router-link>
         </li>
@@ -13,6 +14,10 @@
     <div class="content">
       <router-view />
     </div>
+
+    <Tyh-backTop bottom="160" right="140">
+      <Tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
+    </Tyh-backTop>
   </div>
 </template>
 
@@ -45,7 +50,16 @@ export default {
   watch: {},
   created () { },
   mounted () { },
-  methods: {}
+  methods: {
+    // 高亮显示
+    highLightStyle (item) {
+      if (item.url === this.$route.path) {
+        return {
+          color: '#409eff'
+        }
+      }
+    }
+  }
 }
 </script>
 

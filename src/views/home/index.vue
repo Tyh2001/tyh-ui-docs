@@ -114,7 +114,6 @@ export default {
       .summary-right {
         width: 50%;
         height: 200px;
-        // border: 1px solid black;
         padding: 25px;
         box-sizing: border-box;
         .summary-title {
