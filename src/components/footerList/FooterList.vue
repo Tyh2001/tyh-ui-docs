@@ -36,7 +36,7 @@
     </div>
     <!-- Logo -->
     <div id="myLogo">
-      <img class="image" src="../../images/TyhUILogo.svg" alt="" />
+      <img class="image" src="../../images/logo.svg" alt="" />
     </div>
   </div>
 </template>

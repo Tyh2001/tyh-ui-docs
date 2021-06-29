@@ -1,18 +1,22 @@
 <template>
   <div id="homeIndex">
+    <div class="Banner">
+      <img src="../../images/logo.svg" alt="" />
+    </div>
+
     <h1 class="MainTitle">网站快速搭建工具</h1>
     <p class="Subtitle">tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库</p>
-
-    <div class="Banner">
-      <img src="../../images/组件开发.svg" alt="" />
-    </div>
 
     <div class="onStart">
       <!-- 快速开始按钮 -->
       <div class="btnBox">
-        <Tyh-button type="success" round @click="$router.push('/component')">
+        <Tyh-button type="primary" round @click="$router.push('/component')">
           快速开始
         </Tyh-button>
+
+        <a target="_back" href="https://github.com/Tyh2001/tyh-ui">
+          <Tyh-button round>Github</Tyh-button>
+        </a>
       </div>
 
       <!-- 概述 -->
@@ -70,7 +74,7 @@ export default {
   .MainTitle {
     text-align: center;
     color: #515a6e;
-    margin-top: 80px;
+    margin-top: 40px;
   }
   // 副标题
   .Subtitle {
@@ -83,37 +87,41 @@ export default {
     width: 800px;
     margin: auto;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    position: relative;
+    user-select: none;
+
     img {
-      width: 100%;
+      width: 320px;
     }
   }
   // 快速开始
   .onStart {
-    height: 400px;
+    height: 430px;
     // 开始按钮
     .btnBox {
-      width: 200px;
-      margin: auto;
-      margin-top: 70px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .tyh-button {
         width: 200px;
         height: 50px;
+        margin: 20px;
       }
     }
     // 概述
     .summary {
       width: 800px;
-      height: 200px;
       border-top: 1px solid rgb(219, 219, 219);
       margin: auto;
-      margin-top: 60px;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      margin-top: 50px;
       .summary-left,
       .summary-right {
         width: 50%;
-        height: 200px;
         padding: 25px;
         box-sizing: border-box;
         .summary-title {
