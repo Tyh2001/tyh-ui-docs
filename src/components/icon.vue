@@ -109,7 +109,8 @@ export default {
         'tyh-ui-primary-01',
         'tyh-ui-success-01',
         'tyh-ui-danger-01',
-        'tyh-ui-warning-01'
+        'tyh-ui-warning-01',
+        'tyh-ui-github'
       ],
       TurnPageList: [
         { text: 'BackTop 回到顶部', url: 'backTop' },

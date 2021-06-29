@@ -15,7 +15,7 @@
         </Tyh-button>
 
         <a target="_back" href="https://github.com/Tyh2001/tyh-ui">
-          <Tyh-button round>Github</Tyh-button>
+          <Tyh-button round icon="tyh-ui-github">Github</Tyh-button>
         </a>
       </div>
 
@@ -110,6 +110,9 @@ export default {
         width: 200px;
         height: 50px;
         margin: 20px;
+        /deep/ .tyh-ui-github {
+          color: #606266 !important;
+        }
       }
     }
     // 概述
