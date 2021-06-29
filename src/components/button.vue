@@ -90,12 +90,13 @@
     <pre v-highlightjs>
       <code id="myCode" class="js">
 import Vue from 'vue'
-import TyhButton from 'tyh-ui/packages/buttom'
+import TyhButton from 'tyh-ui/packages/button'
 Vue.use(TyhButton)
 
 // 如果使用图标按钮 还需要引入 TyhIcon
 import TyhIcon from 'tyh-ui/packages/icon'
-Vue.use(TyhButton, TyhIcon)
+Vue.use(TyhButton)
+Vue.use(TyhIcon)
       </code>
     </pre>
 
