@@ -48,8 +48,11 @@ export default {
   color: #606266;
   tr {
     height: 50px;
-    background: rgb(247, 247, 247);
+    background: rgb(243, 247, 255);
     text-align: center;
+    th {
+      background: rgb(180, 234, 255);
+    }
   }
 }
 </style>
