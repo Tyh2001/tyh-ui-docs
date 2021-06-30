@@ -4,20 +4,18 @@
 
     <h3 class="Subtitle">基本使用：</h3>
     <Tyh-Menu>
-      <Tyh-Menu-Item>首页首页</Tyh-Menu-Item>
-      <Tyh-Menu-Item>内容内容</Tyh-Menu-Item>
-      <Tyh-Menu-Item>链接链接</Tyh-Menu-Item>
-      <Tyh-Menu-Item>链接链接</Tyh-Menu-Item>
-      <Tyh-Menu-Item>链接链接</Tyh-Menu-Item>
+      <Tyh-Menu-Item>首页</Tyh-Menu-Item>
+      <Tyh-Menu-Item>内容</Tyh-Menu-Item>
+      <Tyh-Menu-Item>设置</Tyh-Menu-Item>
+      <Tyh-Menu-Item>回收站</Tyh-Menu-Item>
     </Tyh-Menu>
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;Tyh-Menu&gt;
-  &lt;Tyh-Menu-Item&gt;首页首页&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;内容内容&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;链接链接&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;链接链接&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;链接链接&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item&gt;首页&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item&gt;内容&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item&gt;设置&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item&gt;回收站&lt;/Tyh-Menu-Item&gt;
 &lt;/Tyh-Menu&gt;
       </code>
     </pre>
@@ -25,39 +23,36 @@
     <p class="explain">通过 backgroundColor 属性可以配置导航栏背景色：</p>
     <p class="explain">通过 color 属性可以配置子菜单颜色：</p>
     <Tyh-Menu backgroundColor="#eee">
-      <Tyh-Menu-Item color="#000">首页首页</Tyh-Menu-Item>
-      <Tyh-Menu-Item color="#000">内容内容</Tyh-Menu-Item>
-      <Tyh-Menu-Item color="#000">链接链接</Tyh-Menu-Item>
-      <Tyh-Menu-Item color="#000">链接链接</Tyh-Menu-Item>
-      <Tyh-Menu-Item color="#000">链接链接</Tyh-Menu-Item>
+      <Tyh-Menu-Item color="#000">首页</Tyh-Menu-Item>
+      <Tyh-Menu-Item color="#000">内容</Tyh-Menu-Item>
+      <Tyh-Menu-Item color="#000">设置</Tyh-Menu-Item>
+      <Tyh-Menu-Item color="#000">回收站</Tyh-Menu-Item>
     </Tyh-Menu>
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;Tyh-Menu backgroundColor="#eee"&gt;
-  &lt;Tyh-Menu-Item color="#000"&gt;首页首页&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item color="#000"&gt;内容内容&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item color="#000"&gt;链接链接&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item color="#000"&gt;链接链接&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item color="#000"&gt;链接链接&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item color="#000"&gt;首页&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item color="#000"&gt;内容&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item color="#000"&gt;设置&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item color="#000"&gt;回收站&lt;/Tyh-Menu-Item&gt;
 &lt;/Tyh-Menu&gt;
       </code>
     </pre>
 
     <p class="explain">通过 prohibit 属性可以配置子组件链接是否禁用：</p>
     <Tyh-Menu>
-      <Tyh-Menu-Item prohibit url="/home">首页首页</Tyh-Menu-Item>
-      <Tyh-Menu-Item prohibit url="/abc">内容内容</Tyh-Menu-Item>
-      <Tyh-Menu-Item url="">链接链接</Tyh-Menu-Item>
-      <Tyh-Menu-Item url="">链接链接</Tyh-Menu-Item>
+      <Tyh-Menu-Item prohibit url="/home">首页</Tyh-Menu-Item>
+      <Tyh-Menu-Item prohibit url="/abc">内容</Tyh-Menu-Item>
+      <Tyh-Menu-Item url="">设置</Tyh-Menu-Item>
+      <Tyh-Menu-Item url="">回收站</Tyh-Menu-Item>
     </Tyh-Menu>
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;Tyh-Menu&gt;
-  &lt;Tyh-Menu-Item prohibit url="/home"&gt;首页首页&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item prohibit url="/abc"&gt;内容内容&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;链接链接&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;链接链接&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;链接链接&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item prohibit url="/home"&gt;首页&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item prohibit url="/abc"&gt;内容&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item&gt;设置&lt;/Tyh-Menu-Item&gt;
+  &lt;Tyh-Menu-Item&gt;回收站&lt;/Tyh-Menu-Item&gt;
 &lt;/Tyh-Menu&gt;
       </code>
     </pre>

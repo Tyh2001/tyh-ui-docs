@@ -36,7 +36,7 @@
     <Tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
       <code id="myCode" class="vue">
-&lt;Tyh-icon size="50" icon="tyh-ui-tyhui" /&gt;
+&lt;Tyh-icon size="50&uml; icon="tyh-ui-tyhui" /&gt;
 &lt;Tyh-icon size="40" icon="tyh-ui-huojian-01" /&gt;
 &lt;Tyh-icon size="30" icon="tyh-ui-PaperPlane-01" /&gt;
       </code>
