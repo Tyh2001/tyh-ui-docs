@@ -155,11 +155,6 @@ export default {
 import Vue from 'vue'
 import TyhInput from 'tyh-ui/packages/input'
 Vue.use(TyhInput)
-
-// 如果使用图标按钮 还需要引入 TyhIcon
-import TyhIcon from 'tyh-ui/packages/icon'
-Vue.use(TyhButton)
-Vue.use(TyhIcon)
       </code>
     </pre>
 

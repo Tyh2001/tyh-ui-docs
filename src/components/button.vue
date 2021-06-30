@@ -92,11 +92,6 @@
 import Vue from 'vue'
 import TyhButton from 'tyh-ui/packages/button'
 Vue.use(TyhButton)
-
-// 如果使用图标按钮 还需要引入 TyhIcon
-import TyhIcon from 'tyh-ui/packages/icon'
-Vue.use(TyhButton)
-Vue.use(TyhIcon)
       </code>
     </pre>
 
