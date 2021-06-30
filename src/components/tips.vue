@@ -157,7 +157,7 @@ export default {
       <code id="myCode" class="js">
 import Vue from 'vue'
 import TyhTips from 'tyh-ui/packages/tips'
-Vue.use(TyhTips)
+Vue.prototype.$tips = TyhTips
       </code>
     </pre>
 
