@@ -135,8 +135,8 @@ export default {
         { param: 'footer', explain: '页脚信息', type: 'string / number', value: '——', default: '——' },
         { param: 'content', explain: '主体内容', type: 'array / string', value: '——', default: '——' },
         { param: 'iskey', explain: '循环对象键名', type: 'string', value: '——', default: '——' },
-        { param: 'zebra', explain: '是否显示斑马纹', type: 'boolean', value: 'true / false', default: '——' },
-        { param: 'num', explain: '是否显示序号', type: 'boolean', value: 'true / false', default: 'false' }
+        { param: 'zebra', explain: '是否显示斑马纹', type: 'boolean', value: '——', default: '——' },
+        { param: 'num', explain: '是否显示序号', type: 'boolean', value: '——', default: 'false' }
       ],
       TurnPageList: [
         { text: 'Button 按钮', url: 'button' },

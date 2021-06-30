@@ -76,9 +76,9 @@ export default {
       configures: [
         { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
         { param: 'color', explain: '链接的字体颜色', type: 'string', value: 'primary / success / danger / warning', default: '——' },
-        { param: 'underline', explain: '下划线', type: 'boolean', value: 'true / false', default: 'fasle' },
-        { param: 'hoverline', explain: '鼠标移入下划线', type: 'boolean', value: 'true / false', default: 'fasle' },
-        { param: 'target', explain: '以新的窗口打开', type: 'string', value: '同原生 target 属性', default: '——' }
+        { param: 'underline', explain: '下划线', type: 'boolean', value: '——', default: 'fasle' },
+        { param: 'hoverline', explain: '鼠标移入下划线', type: 'boolean', value: '——', default: 'fasle' },
+        { param: 'target', explain: '以新的窗口打开', type: 'string', value: '同原生 target 属性 _blank', default: '——' }
       ],
       TurnPageList: [
         { text: 'Tag 标签', url: 'tag' },

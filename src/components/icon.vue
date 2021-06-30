@@ -36,7 +36,7 @@
     <Tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
       <code id="myCode" class="vue">
-&lt;Tyh-icon size="50&uml; icon="tyh-ui-tyhui" /&gt;
+&lt;Tyh-icon size="50" icon="tyh-ui-tyhui" /&gt;
 &lt;Tyh-icon size="40" icon="tyh-ui-huojian-01" /&gt;
 &lt;Tyh-icon size="30" icon="tyh-ui-PaperPlane-01" /&gt;
       </code>
@@ -110,7 +110,8 @@ export default {
         'tyh-ui-success-01',
         'tyh-ui-danger-01',
         'tyh-ui-warning-01',
-        'tyh-ui-github'
+        'tyh-ui-github',
+        'tyh-ui-close-03'
       ],
       TurnPageList: [
         { text: 'BackTop 回到顶部', url: 'backTop' },

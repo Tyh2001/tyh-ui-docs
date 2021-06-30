@@ -135,7 +135,7 @@ export default {
   data () {
     return {
       configures: [
-        { param: 'simple', explain: '简约卡片', type: 'boolean', value: 'true / false', default: 'false' },
+        { param: 'simple', explain: '简约卡片', type: 'boolean', value: '——', default: 'false' },
         { param: 'shadow', explain: '阴影显示时机', type: 'string', value: 'always / hover / noShadow', default: '——' },
         { param: 'title（具名插槽）', explain: '自定义卡片的主标题', type: '——', value: '——', default: '——' },
         { param: 'subtitle（具名插槽）', explain: '自定义卡片的副标题', type: '——', value: '——', default: '——' }
