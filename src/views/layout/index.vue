@@ -37,7 +37,7 @@ export default {
       layoutList: [
         { title: '首页', url: '/' },
         { title: '组件', url: '/component' },
-        { title: '指南', url: '/guide' }
+        { title: '关于', url: '/about' }
       ]
     }
   },
