@@ -20,9 +20,9 @@
   user-select: none;
 }
 #component-item #myCode {
-  background: #f7f7f7;
+  background: #282c34;
   font-family: "微软雅黑";
   font-size: 16px;
-  border: 1px solid #eee;
+  border-radius: 15px;
   user-select: text;
 }

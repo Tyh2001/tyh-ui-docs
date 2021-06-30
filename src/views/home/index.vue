@@ -70,32 +70,30 @@ export default {
 
 <style lang='less' scoped>
 #homeIndex {
+  // 主横幅
+  .Banner {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0;
+    user-select: none;
+
+    img {
+      width: 220px;
+    }
+  }
   // 主标题
   .MainTitle {
     text-align: center;
     color: #515a6e;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   // 副标题
   .Subtitle {
     text-align: center;
     color: #515a6e;
     margin-top: 20px;
-  }
-  // 主横幅
-  .Banner {
-    width: 800px;
-    margin: auto;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-    position: relative;
-    user-select: none;
-
-    img {
-      width: 320px;
-    }
   }
   // 快速开始
   .onStart {
