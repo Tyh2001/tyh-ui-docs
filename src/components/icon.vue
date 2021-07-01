@@ -8,7 +8,7 @@
     <Tyh-icon icon="tyh-ui-huojian-01" />
     <Tyh-icon icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
-      <code id="myCode" class="vue">
+      <code id="myCode" class="html">
 &lt;Tyh-icon icon="tyh-ui-tyhui" /&gt;
 &lt;Tyh-icon icon="tyh-ui-huojian-01" /&gt;
 &lt;Tyh-icon icon="tyh-ui-PaperPlane-01" /&gt;
