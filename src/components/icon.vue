@@ -20,7 +20,7 @@
     <Tyh-icon color="orange" icon="tyh-ui-huojian-01" />
     <Tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
-      <code id="myCode" class="vue">
+      <code id="myCode" class="html">
 &lt;Tyh-icon color="skyblue" icon="tyh-ui-tyhui" /&gt;
 &lt;Tyh-icon color="orange" icon="tyh-ui-huojian-01" /&gt;
 &lt;Tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" /&gt;
@@ -35,7 +35,7 @@
     <Tyh-icon size="40" icon="tyh-ui-huojian-01" />
     <Tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
-      <code id="myCode" class="vue">
+      <code id="myCode" class="html">
 &lt;Tyh-icon size="50" icon="tyh-ui-tyhui" /&gt;
 &lt;Tyh-icon size="40" icon="tyh-ui-huojian-01" /&gt;
 &lt;Tyh-icon size="30" icon="tyh-ui-PaperPlane-01" /&gt;
