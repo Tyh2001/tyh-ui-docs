@@ -111,7 +111,11 @@ export default {
         'tyh-ui-danger-01',
         'tyh-ui-warning-01',
         'tyh-ui-github',
-        'tyh-ui-close-03'
+        'tyh-ui-close-03',
+        'tyh-ui-color-01',
+        'tyh-ui-channel-01',
+        'tyh-ui-type-01',
+        'ttyh-ui-series-01'
       ],
       TurnPageList: [
         { text: 'BackTop 回到顶部', url: 'backTop' },
