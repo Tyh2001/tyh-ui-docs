@@ -93,7 +93,7 @@
     &lt;div slot="title"&gt;主标题&lt;/div&gt;
     &lt;div slot="subtitle"&gt;副标题&lt;/div&gt;
   &lt;/template&gt;
-  &lt;p&gt;这是内容部分1&lt;/p&gt;
+  &lt;p&gt;总是显示阴影&lt;/p&gt;
 &lt;/Tyh-card&gt;
 
 &lt;Tyh-card shadow="hover"&gt;
@@ -101,7 +101,7 @@
     &lt;div slot="title"&gt;主标题&lt;/div&gt;
     &lt;div slot="subtitle"&gt;副标题&lt;/div&gt;
   &lt;/template&gt;
-  &lt;p&gt;这是内容部分1&lt;/p&gt;
+  &lt;p&gt;鼠标移入显示&lt;/p&gt;
 &lt;/Tyh-card&gt;
 
 &lt;Tyh-card shadow="noShadow"&gt;
@@ -109,7 +109,7 @@
     &lt;div slot="title"&gt;主标题&lt;/div&gt;
     &lt;div slot="subtitle"&gt;副标题&lt;/div&gt;
   &lt;/template&gt;
-  &lt;p&gt;这是内容部分1&lt;/p&gt;
+  &lt;p&gt;从不显示&lt;/p&gt;
 &lt;/Tyh-card&gt;
       </code>
     </pre>
