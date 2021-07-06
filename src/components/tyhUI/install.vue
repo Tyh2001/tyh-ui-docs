@@ -23,7 +23,7 @@ Vue.use(tyhUI)
 </template>
 
 <script>
-import TurnPage from './components/TurnPage'
+import TurnPage from '../components/TurnPage'
 export default {
   name: '',
   components: {
@@ -46,4 +46,4 @@ export default {
 }
 </script>
 
-<style src="./style/index.css" scoped></style>
+<style src="../style/index.css" scoped></style>

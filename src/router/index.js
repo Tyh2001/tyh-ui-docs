@@ -18,6 +18,7 @@ const routes = [
         name: 'about',
         component: () => import('@/views/about')
       },
+      // 组件
       {
         path: '/component',
         redirect: '/component/install',
@@ -25,59 +26,75 @@ const routes = [
         children: [
           {
             path: '/component/install',
-            component: () => import('@/components/install')
+            component: () => import('@/components/tyhUI/install')
           },
           {
             path: '/component/button',
-            component: () => import('@/components/button')
+            component: () => import('@/components/tyhUI/button')
           },
           {
             path: '/component/list',
-            component: () => import('@/components/list')
+            component: () => import('@/components/tyhUI/list')
           },
           {
             path: '/component/card',
-            component: () => import('@/components/card')
+            component: () => import('@/components/tyhUI/card')
           },
           {
             path: '/component/tag',
-            component: () => import('@/components/tag')
+            component: () => import('@/components/tyhUI/tag')
           },
           {
             path: '/component/link',
-            component: () => import('@/components/link')
+            component: () => import('@/components/tyhUI/link')
           },
           {
             path: '/component/input',
-            component: () => import('@/components/input')
+            component: () => import('@/components/tyhUI/input')
           },
           {
             path: '/component/tips',
-            component: () => import('@/components/tips')
+            component: () => import('@/components/tyhUI/tips')
           },
           {
             path: '/component/menu',
-            component: () => import('@/components/menu')
+            component: () => import('@/components/tyhUI/menu')
           },
           {
             path: '/component/message',
-            component: () => import('@/components/message')
+            component: () => import('@/components/tyhUI/message')
           },
           {
             path: '/component/division',
-            component: () => import('@/components/division')
+            component: () => import('@/components/tyhUI/division')
           },
           {
             path: '/component/backTop',
-            component: () => import('@/components/backTop')
+            component: () => import('@/components/tyhUI/backTop')
           },
           {
             path: '/component/icon',
-            component: () => import('@/components/icon')
+            component: () => import('@/components/tyhUI/icon')
           },
           {
             path: '/component/color',
-            component: () => import('@/components/color')
+            component: () => import('@/components/tyhUI/color')
+          }
+        ]
+      },
+      // 特别的组件
+      {
+        path: '/special',
+        redirect: '/special/button',
+        component: () => import('@/views/special'),
+        children: [
+          {
+            path: '/special/button',
+            component: () => import('@/components/special/button')
+          },
+          {
+            path: '/special/input',
+            component: () => import('@/components/special/input')
           }
         ]
       }

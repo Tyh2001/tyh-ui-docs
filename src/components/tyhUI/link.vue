@@ -74,8 +74,8 @@ Vue.use(TyhLink)
 </template>
 
 <script>
-import ConfiguresTable from './components/ConfiguresTable'
-import TurnPage from './components/TurnPage'
+import ConfiguresTable from '../components/ConfiguresTable'
+import TurnPage from '../components/TurnPage'
 export default {
   name: '',
   components: {
@@ -106,4 +106,4 @@ export default {
 }
 </script>
 
-<style src="./style/index.css" scoped></style>
+<style src="../style/index.css" scoped></style>

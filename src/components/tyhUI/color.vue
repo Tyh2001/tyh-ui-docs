@@ -65,7 +65,7 @@
 
 <script>
 import Clipboard from 'clipboard'
-import TurnPage from './components/TurnPage'
+import TurnPage from '../components/TurnPage'
 export default {
   name: '',
   components: {
