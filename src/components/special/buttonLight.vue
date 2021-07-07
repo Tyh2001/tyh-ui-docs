@@ -4,7 +4,7 @@
 
     <h3 class="Subtitle">基本使用</h3>
     <p class="explain">基本使用</p>
-    <p class="explain">通过 type 属性配置不同的类型</p>
+    <p class="explain">通过 <span>type</span> 属性配置不同的类型</p>
     <Tyh-button-light type="primary">主要按钮</Tyh-button-light>
     <Tyh-button-light type="success">成功按钮</Tyh-button-light>
     <Tyh-button-light type="danger">危险按钮</Tyh-button-light>
@@ -87,7 +87,7 @@ export default {
       ],
       TurnPageList: [
         { text: '组件', url: '/component' },
-        { text: 'Input 输入框', url: '/special/input' }
+        { text: '极光按钮', url: '/special/buttonAurora' }
       ]
     }
   },

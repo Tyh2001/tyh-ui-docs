@@ -93,6 +93,10 @@ const routes = [
             component: () => import('@/components/special/buttonLight')
           },
           {
+            path: '/special/buttonAurora',
+            component: () => import('@/components/special/buttonAurora')
+          },
+          {
             path: '/special/input',
             component: () => import('@/components/special/input')
           }

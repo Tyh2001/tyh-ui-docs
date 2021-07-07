@@ -30,6 +30,7 @@ export default {
     return {
       listPush: [
         { name: 'ButtonLight 流光按钮', url: '/special/buttonLight' },
+        { name: 'ButtonAurora 极光按钮', url: '/special/buttonAurora' },
         { name: 'Input 输入框', url: '/special/input' }
       ]
     }

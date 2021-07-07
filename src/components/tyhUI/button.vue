@@ -20,6 +20,7 @@
     </pre>
 
     <p class="explain">朴素的按钮</p>
+    <p class="explain"><span>simple</span> 属性可以配置朴素的按钮</p>
     <Tyh-button simple type="primary">主要按钮</Tyh-button>
     <Tyh-button simple type="success">成功按钮</Tyh-button>
     <Tyh-button simple type="danger">危险按钮</Tyh-button>
@@ -34,6 +35,7 @@
     </pre>
 
     <p class="explain">图标按钮</p>
+    <p class="explain"><span>icon</span> 属性可以配置图标按钮</p>
     <Tyh-button icon="tyh-ui-setting-01" type="primary"></Tyh-button>
     <Tyh-button icon="tyh-ui-phone-01" type="success"></Tyh-button>
     <Tyh-button icon="tyh-ui-huojian-01" type="danger">火箭</Tyh-button>
@@ -48,6 +50,7 @@
     </pre>
 
     <p class="explain">禁用状态</p>
+    <p class="explain"><span>prohibit</span> 属性可以配置禁用状态</p>
     <Tyh-button prohibit>默认按钮</Tyh-button>
     <Tyh-button prohibit type="primary">主要按钮</Tyh-button>
     <Tyh-button prohibit type="success">成功按钮</Tyh-button>
@@ -64,6 +67,7 @@
     </pre>
 
     <p class="explain">圆角按钮</p>
+    <p class="explain"><span>round</span> 属性可以配置圆角按钮</p>
     <Tyh-button round>默认按钮</Tyh-button>
     <Tyh-button round type="primary">主要按钮</Tyh-button>
     <Tyh-button round type="success">成功按钮</Tyh-button>
