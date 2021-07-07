@@ -4,7 +4,8 @@
 
     <h3 class="Subtitle">基本使用：</h3>
     <p class="explain">
-      tyh-ui 内部注册了一个全局的 $message 方法，接收一个对象，可以使用 message
+      tyh-ui 内部注册了一个全局的
+      <span>$message</span> 方法，接收一个对象，可以使用 <span>message</span>
       定义内容
     </p>
     <Tyh-button type="primary" @click="open1">提示1</Tyh-button>
@@ -31,9 +32,9 @@ export default {
     </pre>
 
     <p class="explain">不同类型的：</p>
-    <p class="explain">type 属性可以配置提示框的类型</p>
+    <p class="explain"><span>type</span> 属性可以配置提示框的类型</p>
     <p class="explain">
-      iconClass 属性可以配置 icon 的 class 属性，来展示 icon
+      <span>iconClass</span> 属性可以配置 icon 的 class 属性，来展示 icon
     </p>
     <Tyh-button type="primary" @click="open2">消息提示</Tyh-button>
     <Tyh-button type="primary" @click="open3">成功提示</Tyh-button>
@@ -89,7 +90,7 @@ export default {
 
     <p class="explain">显示市场：</p>
     <p class="explain">
-      times 属性可以配置提示框的显示时长，并在 xxxx 毫秒后消失
+      <span>times</span> 属性可以配置提示框的显示时长，并在 xxxx 毫秒后消失
     </p>
     <Tyh-button type="primary" @click="open6">提示3000毫秒后消失</Tyh-button>
     <pre v-highlightjs>

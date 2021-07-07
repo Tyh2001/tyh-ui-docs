@@ -15,7 +15,7 @@
       </code>
     </pre>
 
-    <p class="explain">color 属性改变 icon 的颜色</p>
+    <p class="explain"><span>color</span> 属性改变 icon 的颜色</p>
     <Tyh-icon color="skyblue" icon="tyh-ui-tyhui" />
     <Tyh-icon color="orange" icon="tyh-ui-huojian-01" />
     <Tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" />
@@ -27,7 +27,7 @@
       </code>
     </pre>
 
-    <p class="explain">size 属性可以改变 icon 的大小</p>
+    <p class="explain"><span>size</span> 属性可以改变 icon 的大小</p>
     <p class="explain">
       这里采用的是字体大小形式，只需要传递具体数值，并不需要传递单位
     </p>

@@ -3,8 +3,8 @@
     <h1 class="title">Card 卡片</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
-    <p class="explain">title 自定义卡片的主标题</p>
-    <p class="explain">subtitle 自定义卡片的副标题</p>
+    <p class="explain"><span>title</span> 自定义卡片的主标题</p>
+    <p class="explain"><span>subtitle</span> 自定义卡片的副标题</p>
     <Tyh-card>
       <template>
         <div slot="title">主标题</div>
@@ -31,7 +31,7 @@
     </pre>
 
     <p class="explain">简约卡片（没有表头栏）：</p>
-    <p class="explain">simple 属性可以配置简约卡片</p>
+    <p class="explain"><span>simple</span> 属性可以配置简约卡片</p>
     <Tyh-card simple>
       <template>
         <div slot="title">主标题</div>
@@ -58,7 +58,7 @@
     </pre>
 
     <p class="explain">阴影显示时机：</p>
-    <p class="explain">shadow 属性可以配置阴影显示时机</p>
+    <p class="explain"><span>shadow</span> 属性可以配置阴影显示时机</p>
     <Tyh-card shadow="always" style="width: 30%; display: inline-block">
       <template>
         <div slot="title">主标题</div>

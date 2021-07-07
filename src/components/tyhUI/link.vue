@@ -20,7 +20,7 @@
     </pre>
 
     <p class="explain">带有下划线：</p>
-    <p class="explain">underline 属性可以配置带有下划线</p>
+    <p class="explain"><span>underline</span> 属性可以配置带有下划线</p>
     <Tyh-link underline>标签</Tyh-link>
     <Tyh-link underline color="primary">标签</Tyh-link>
     <Tyh-link underline color="success">标签</Tyh-link>
@@ -37,7 +37,7 @@
     </pre>
 
     <p class="explain">鼠标移入带有下划线：</p>
-    <p class="explain">hoverline 属性可以配置鼠标移入带有下划线</p>
+    <p class="explain"><span>hoverline</span> 属性可以配置鼠标移入带有下划线</p>
     <Tyh-link hoverline>标签</Tyh-link>
     <Tyh-link hoverline color="primary">标签</Tyh-link>
     <Tyh-link hoverline color="success">标签</Tyh-link>

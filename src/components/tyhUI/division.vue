@@ -10,7 +10,7 @@
       </code>
     </pre>
 
-    <p class="explain">position 属性可以配置文字的位置</p>
+    <p class="explain"><span>position</span> 属性可以配置文字的位置</p>
     <Tyh-division position="left">这是左边文字</Tyh-division>
     <br />
     <Tyh-division position="center">这是中间文字</Tyh-division>

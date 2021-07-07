@@ -20,8 +20,8 @@
       </code>
     </pre>
 
-    <p class="explain">通过 backgroundColor 属性可以配置导航栏背景色：</p>
-    <p class="explain">通过 color 属性可以配置子菜单颜色：</p>
+    <p class="explain">通过 <span>backgroundColor</span> 属性可以配置导航栏背景色：</p>
+    <p class="explain">通过 <span>color</span> 属性可以配置子菜单颜色：</p>
     <Tyh-Menu backgroundColor="#eee">
       <Tyh-Menu-Item color="#000">首页</Tyh-Menu-Item>
       <Tyh-Menu-Item color="#000">内容</Tyh-Menu-Item>
@@ -39,7 +39,7 @@
       </code>
     </pre>
 
-    <p class="explain">通过 prohibit 属性可以配置子组件链接是否禁用：</p>
+    <p class="explain">通过 <span>prohibit</span> 属性可以配置子组件链接是否禁用：</p>
     <Tyh-Menu>
       <Tyh-Menu-Item prohibit url="/home">首页</Tyh-Menu-Item>
       <Tyh-Menu-Item prohibit url="/abc">内容</Tyh-Menu-Item>

@@ -20,7 +20,7 @@
     </pre>
 
     <p class="explain">不同尺寸：</p>
-    <p class="explain">size 属性可以配置不同的尺寸</p>
+    <p class="explain"><span>size</span> 属性可以配置不同的尺寸</p>
     <Tyh-tag color="primary">标签</Tyh-tag>
     <Tyh-tag size="small" color="primary">标签</Tyh-tag>
     <Tyh-tag size="mini" color="primary">标签</Tyh-tag>

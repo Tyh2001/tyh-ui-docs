@@ -10,7 +10,9 @@
       </code>
     </pre>
 
-    <p class="explain">bottom 和 right 属性可以配置距离右边和下边的距离</p>
+    <p class="explain">
+      <span>bottom</span> 和 <span>right</span> 属性可以配置距离右边和下边的距离
+    </p>
     <Tyh-backTop bottom="100" right="120">Top</Tyh-backTop>
     <pre v-highlightjs>
       <code id="myCode" class="html">

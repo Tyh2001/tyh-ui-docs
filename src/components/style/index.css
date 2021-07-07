@@ -1,23 +1,24 @@
 #component-item {
   padding-bottom: 250px;
-  user-select: none;
 }
 #component-item .title {
   font-weight: 500;
   color: #1f2f3d;
   margin-bottom: 50px;
-  user-select: none;
 }
 #component-item .Subtitle {
   color: #515a6e;
   line-height: 60px;
-  user-select: none;
 }
 #component-item .explain {
   color: #515a6e;
   line-height: 40px;
   font-size: 15px;
-  user-select: none;
+}
+#component-item .explain span {
+  background: #eee;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
 }
 #component-item #myCode {
   background: #282c34;

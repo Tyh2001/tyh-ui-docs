@@ -24,7 +24,7 @@ export default {
     </pre>
 
     <p class="explain">密码框：</p>
-    <p class="explain">inpType 属性可以规定文本框类型</p>
+    <p class="explain"><span>inpType</span> 属性可以规定文本框类型</p>
     <Tyh-input inpType="text" v-model="text2" />
     <Tyh-input inpType="password" v-model="text3" />
     <pre v-highlightjs>
@@ -48,7 +48,7 @@ export default {
     </pre>
 
     <p class="explain">不同尺寸：</p>
-    <p class="explain">size 属性可以配置文本框尺寸</p>
+    <p class="explain"><span>size</span> 属性可以配置文本框尺寸</p>
     <Tyh-input size="big" v-model="text4" /><br />
     <Tyh-input size="medium" v-model="text5" /><br />
     <Tyh-input size="small" v-model="text6" /><br />
@@ -78,7 +78,7 @@ export default {
     </pre>
 
     <p class="explain">带有清空按钮：</p>
-    <p class="explain">clear 属性可以配置带有清空按钮的文本框</p>
+    <p class="explain"><span>clear</span> 属性可以配置带有清空按钮的文本框</p>
     <Tyh-input v-model="text8" clear />
     <pre v-highlightjs>
       <code id="myCode" class="vue">
@@ -100,7 +100,7 @@ export default {
 
     <p class="explain">其他图标：</p>
     <p class="explain">
-      showIcon 属性可以配置文本框带有其他图标，可以直接复制 icon
+      <span>showIcon</span> 属性可以配置文本框带有其他图标，可以直接复制 icon
       的名字传递即可，但带有其他图标后，将不再有清空的功能
     </p>
     <Tyh-input v-model="text9" showIcon="tyh-ui-huojian-01" />
@@ -123,7 +123,7 @@ export default {
     </pre>
 
     <p class="explain">禁用按钮：</p>
-    <p class="explain">prohibit 属性可以配置文本框禁用状态</p>
+    <p class="explain"><span>prohibit</span> 属性可以配置文本框禁用状态</p>
     <Tyh-input v-model="text10" prohibit />
     <pre v-highlightjs>
       <code id="myCode" class="vue">

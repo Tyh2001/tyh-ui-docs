@@ -1,20 +1,17 @@
 #component-item {
   padding-bottom: 250px;
-  user-select: none;
 
   // 主标题
   .title {
     font-weight: 500;
     color: #1f2f3d;
     margin-bottom: 50px;
-    user-select: none;
   }
 
   // 副标题
   .Subtitle {
     color: #515a6e;
     line-height: 60px;
-    user-select: none;
   }
 
   // 说明
@@ -22,7 +19,12 @@
     color: #515a6e;
     line-height: 40px;
     font-size: 15px;
-    user-select: none;
+
+    span {
+      background: #eee;
+      border: 1px solid rgb(221, 221, 221);
+      border-radius: 3px;
+    }
   }
 
   // 代码段
