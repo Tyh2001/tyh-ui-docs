@@ -85,12 +85,12 @@ const routes = [
       // 特别的组件
       {
         path: '/special',
-        redirect: '/special/button',
+        redirect: '/special/buttonLight',
         component: () => import('@/views/special'),
         children: [
           {
-            path: '/special/button',
-            component: () => import('@/components/special/button')
+            path: '/special/buttonLight',
+            component: () => import('@/components/special/buttonLight')
           },
           {
             path: '/special/input',

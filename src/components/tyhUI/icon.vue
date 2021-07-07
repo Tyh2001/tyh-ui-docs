@@ -3,7 +3,10 @@
     <h1 class="title">Icon 图标</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
-    <p class="explain">通过 icon 属性来给 icon 添加类名，来显示不同的图标</p>
+    <p class="explain">基本使用</p>
+    <p class="explain">
+      通过 <span>icon</span> 属性来给 icon 添加类名，来显示不同的图标
+    </p>
     <Tyh-icon icon="tyh-ui-tyhui" />
     <Tyh-icon icon="tyh-ui-huojian-01" />
     <Tyh-icon icon="tyh-ui-PaperPlane-01" />

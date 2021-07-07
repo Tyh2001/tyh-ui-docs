@@ -3,7 +3,7 @@
     <h1 class="title">Input 输入框</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
-    <p class="explain">基础使用</p>
+    <p class="explain">基本使用</p>
     <Tyh-input v-model="text1" />
     <pre v-highlightjs>
       <code id="myCode" class="vue">

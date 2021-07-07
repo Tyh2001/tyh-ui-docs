@@ -3,6 +3,7 @@
     <h1 class="title">List 列表</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
+    <p class="explain">基本使用</p>
     <p class="explain"><span>content</span> 属性可以绑定需要展示的数组元素</p>
     <p class="explain"><span>iskey</span> 属性可以绑定数组中每个元素的键值</p>
     <TyhList :content="arr" iskey="name" />

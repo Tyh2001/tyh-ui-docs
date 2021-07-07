@@ -29,7 +29,7 @@ export default {
   data () {
     return {
       listPush: [
-        { name: 'Button 按钮', url: '/special/button' },
+        { name: 'ButtonLight 流光按钮', url: '/special/buttonLight' },
         { name: 'Input 输入框', url: '/special/input' }
       ]
     }

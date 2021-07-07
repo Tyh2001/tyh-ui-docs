@@ -3,6 +3,7 @@
     <h1 class="title">Tips 提示</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
+    <p class="explain">基本使用</p>
     <p class="explain">
       tyh-ui 内部注册了一个全局的
       <span>$tips</span> 方法，接收一个对象，可以使用

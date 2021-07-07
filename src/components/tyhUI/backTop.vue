@@ -3,6 +3,7 @@
     <h1 class="title">BackTop 回到顶部</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
+    <p class="explain">基本使用</p>
     <Tyh-backTop>Top</Tyh-backTop>
     <pre v-highlightjs>
       <code id="myCode" class="html">

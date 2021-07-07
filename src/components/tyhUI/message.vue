@@ -3,6 +3,7 @@
     <h1 class="title">Message 消息通知</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
+    <p class="explain">基本使用</p>
     <p class="explain">
       tyh-ui 内部注册了一个全局的
       <span>$message</span> 方法，接收一个对象，可以使用 <span>message</span>
@@ -31,7 +32,7 @@ export default {
       </code>
     </pre>
 
-    <p class="explain">不同类型的：</p>
+    <p class="explain">不同类型的</p>
     <p class="explain"><span>type</span> 属性可以配置提示框的类型</p>
     <p class="explain">
       <span>iconClass</span> 属性可以配置 icon 的 class 属性，来展示 icon
@@ -88,7 +89,7 @@ export default {
       </code>
     </pre>
 
-    <p class="explain">显示市场：</p>
+    <p class="explain">显示时长</p>
     <p class="explain">
       <span>times</span> 属性可以配置提示框的显示时长，并在 xxxx 毫秒后消失
     </p>

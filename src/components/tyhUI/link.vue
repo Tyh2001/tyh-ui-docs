@@ -3,7 +3,7 @@
     <h1 class="title">Link 链接</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
-    <p class="explain">基础使用</p>
+    <p class="explain">基本使用</p>
     <Tyh-link url="">链接一</Tyh-link>
     <Tyh-link url="" color="primary">链接二</Tyh-link>
     <Tyh-link url="" color="success">链接三</Tyh-link>

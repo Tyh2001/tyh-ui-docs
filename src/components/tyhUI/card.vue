@@ -3,6 +3,7 @@
     <h1 class="title">Card 卡片</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
+    <p class="explain">基本使用</p>
     <p class="explain"><span>title</span> 自定义卡片的主标题</p>
     <p class="explain"><span>subtitle</span> 自定义卡片的副标题</p>
     <Tyh-card>

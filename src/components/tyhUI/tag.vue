@@ -3,7 +3,7 @@
     <h1 class="title">Tag 标签</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
-    <p class="explain">基础使用</p>
+    <p class="explain">基本使用</p>
     <Tyh-tag>标签一</Tyh-tag>
     <Tyh-tag color="primary">标签二</Tyh-tag>
     <Tyh-tag color="success">标签三</Tyh-tag>

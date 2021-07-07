@@ -3,6 +3,7 @@
     <h1 class="title">Division 分割线</h1>
 
     <h3 class="Subtitle">基本使用：</h3>
+    <p class="explain">基本使用</p>
     <Tyh-division>这是分割线</Tyh-division>
     <pre v-highlightjs>
       <code id="myCode" class="html">
