@@ -10,10 +10,9 @@
       <div class="card">
         <Tyh-Menu-Item
           v-for="(list, index) in layoutList"
-          color="#000"
+          :color="highLightStyle(list.url)"
           :key="index"
           :url="list.url"
-          :style="highLightStyle(list)"
         >
           {{ list.title }}
         </Tyh-Menu-Item>
@@ -47,13 +46,12 @@ export default {
   created () { },
   mounted () { },
   methods: {
-    // 高亮显示
-    highLightStyle (list) {
-      if (list.url === this.$route.path) {
-        return {
-          color: '#409eff'
-        }
-      }
+    // 导航栏高亮显示
+    highLightStyle (url) {
+      const path = this.$route.path
+      if (path === '/') return url === path ? '#409eff' : '#000'
+      const res = path.match(/\/[a-zA-Z]+/gi)[0]
+      return url === res ? '#409eff' : '#000'
     }
   }
 }
