@@ -83,7 +83,7 @@ export default {
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
-  &lt;Tyh-input size="big" v-model="text8" /&gt;
+  &lt;Tyh-input v-model="text8" clear /&gt;
 &lt;/template&gt;
 
 &lt;script&gt;
