@@ -116,7 +116,7 @@ export default {
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-input v-model="text9" showIcon="tyh-ui-huojian-01"" /&gt;
+    &lt;Tyh-input v-model="text9" showIcon="tyh-ui-huojian-01" /&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
