@@ -8,7 +8,9 @@
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
-  &lt;Tyh-input v-model="text1" /&gt;
+  &lt;div&gt;
+    &lt;Tyh-input v-model="text1" /&gt;
+  &lt;/div&gt;
 &lt;/template&gt;
 
 &lt;script&gt;
@@ -30,8 +32,10 @@ export default {
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
-  &lt;Tyh-input inpType="text" v-model="text2" /&gt;
-  &lt;Tyh-input inpType="password" v-model="text3" /&gt;
+  &lt;div&gt;
+    &lt;Tyh-input inpType="text" v-model="text2" /&gt;
+    &lt;Tyh-input inpType="password" v-model="text3" /&gt;
+  &lt;/div&gt;
 &lt;/template&gt;
 
 &lt;script&gt;
@@ -56,10 +60,12 @@ export default {
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
-  &lt;Tyh-input size="big" v-model="text4" /&gt;&lt;br /&gt;
-  &lt;Tyh-input size="medium" v-model="text5" /&gt;&lt;br /&gt;
-  &lt;Tyh-input size="small" v-model="text6" /&gt;&lt;br /&gt;
-  &lt;Tyh-input size="mini" v-model="text7" /&gt;&lt;br /&gt;
+  &lt;div&gt;
+    &lt;Tyh-input size="big" v-model="text4" /&gt;&lt;br /&gt;
+    &lt;Tyh-input size="medium" v-model="text5" /&gt;&lt;br /&gt;
+    &lt;Tyh-input size="small" v-model="text6" /&gt;&lt;br /&gt;
+    &lt;Tyh-input size="mini" v-model="text7" /&gt;&lt;br /&gt;
+  &lt;/div&gt;
 &lt;/template&gt;
 
 &lt;script&gt;
@@ -83,7 +89,9 @@ export default {
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
-  &lt;Tyh-input v-model="text8" clear /&gt;
+  &lt;div&gt;
+    &lt;Tyh-input v-model="text8" clear /&gt;
+  &lt;/div&gt;
 &lt;/template&gt;
 
 &lt;script&gt;
@@ -107,7 +115,9 @@ export default {
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
-  &lt;Tyh-input v-model="text9" showIcon="tyh-ui-huojian-01"" /&gt;
+  &lt;div&gt;
+    &lt;Tyh-input v-model="text9" showIcon="tyh-ui-huojian-01"" /&gt;
+  &lt;/div&gt;
 &lt;/template&gt;
 
 &lt;script&gt;
@@ -128,7 +138,9 @@ export default {
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
-  &lt;Tyh-input v-model="text10" prohibit" /&gt;
+  &lt;div&gt;
+    &lt;Tyh-input v-model="text10" prohibit" /&gt;
+  &lt;/div&gt;
 &lt;/template&gt;
 
 &lt;script&gt;
