@@ -210,3 +210,9 @@ export default {
 </script>
 
 <style src="../style/index.css" scoped></style>
+
+<style lang='less' scoped>
+.tyh-button {
+  margin: 5px;
+}
+</style>
