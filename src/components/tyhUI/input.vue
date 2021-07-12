@@ -227,5 +227,6 @@ export default {
 <style lang='less' scoped>
 .tyh-input {
   margin: 5px;
+  width: 220px;
 }
 </style>
