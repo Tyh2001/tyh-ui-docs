@@ -1,14 +1,10 @@
 <template>
   <div id="homeIndex">
-    <div class="Banner">
-      <img src="../../images/logo.svg" alt="" />
-    </div>
+    <div id="top-list">
+      <img class="logo" src="../../images/logo.svg" alt="" />
+      <h1 class="MainTitle">网站快速搭建工具</h1>
+      <p class="Subtitle">tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库</p>
 
-    <h1 class="MainTitle">网站快速搭建工具</h1>
-    <p class="Subtitle">tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库</p>
-
-    <div class="onStart">
-      <!-- 快速开始按钮 -->
       <div class="btnBox">
         <Tyh-button type="primary" round @click="$router.push('/component')">
           快速开始
@@ -70,34 +66,28 @@ export default {
 
 <style lang='less' scoped>
 #homeIndex {
-  // 主横幅
-  .Banner {
+  #top-list {
     width: 800px;
+    padding-bottom: 40px;
     margin: auto;
     display: flex;
-    justify-content: center;
-    padding: 35px 0;
-    user-select: none;
-
-    img {
+    flex-direction: column;
+    align-items: center;
+    .logo {
       width: 220px;
     }
-  }
-  // 主标题
-  .MainTitle {
-    text-align: center;
-    color: #515a6e;
-    margin-top: 20px;
-  }
-  // 副标题
-  .Subtitle {
-    text-align: center;
-    color: #515a6e;
-    margin-top: 20px;
-  }
-  // 快速开始
-  .onStart {
-    height: 430px;
+    // 主标题
+    .MainTitle {
+      text-align: center;
+      color: #515a6e;
+      margin-top: 20px;
+    }
+    // 副标题
+    .Subtitle {
+      text-align: center;
+      color: #515a6e;
+      margin-top: 20px;
+    }
     // 开始按钮
     .btnBox {
       margin-top: 40px;
@@ -122,7 +112,7 @@ export default {
       margin-top: 50px;
       .summary-left,
       .summary-right {
-        width: 50%;
+        flex: 1;
         padding: 25px;
         box-sizing: border-box;
         .summary-title {
