@@ -118,7 +118,15 @@ export default {
         'tyh-ui-color-01',
         'tyh-ui-channel-01',
         'tyh-ui-type-01',
-        'tyh-ui-series-01'
+        'tyh-ui-series-01',
+        'tyh-ui-shangchuan-01',
+        'tyh-ui-wenjian-01',
+        'tyh-ui-wenjian-02',
+        'tyh-ui-shouji-01',
+        'tyh-ui-dianhua-01',
+        'tyh-ui-xiazai-01',
+        'tyh-ui-shop-01',
+        'tyh-ui-yonghu-01'
       ],
       TurnPageList: [
         { text: 'BackTop 回到顶部', url: 'backTop' },
