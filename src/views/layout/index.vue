@@ -1,10 +1,10 @@
 <template>
   <div>
     <Tyh-Menu backgroundColor="#f8faff" buttomShadow>
-      <Tyh-link url="/">
+      <div class="logolink" url="/" @click="$router.push('/')">
         <img class="logo" src="../../images/logo.svg" alt="" />
         <span class="name">Tyh UI</span>
-      </Tyh-link>
+      </div>
 
       <!-- 导航栏选项 -->
       <div class="card">
@@ -65,14 +65,14 @@ export default {
   right: 0px;
   left: 0px;
   z-index: 800;
-  .tyh-link {
+  .logolink {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 30px;
+    cursor: pointer;
     .logo {
       height: 36px;
-      cursor: pointer;
     }
     .name {
       font-size: 20px;
