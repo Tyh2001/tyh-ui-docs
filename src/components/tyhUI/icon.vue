@@ -127,7 +127,16 @@ export default {
         'tyh-ui-xiazai-01',
         'tyh-ui-shop-01',
         'tyh-ui-yonghu-01',
-        'tyh-ui-xiexian-01'
+        'tyh-ui-xiexian-01',
+        'tyh-ui-nan-01',
+        'tyh-ui-nv-01',
+        'tyh-ui-suotou-01',
+        'tyh-ui-diannao-01',
+        'tyh-ui-wifi-01',
+        'tyh-ui-aixin-01',
+        'tyh-ui-yueliang-01',
+        'tyh-ui-xingxing-01',
+        'tyh-ui-taiyang-01'
       ],
       TurnPageList: [
         { text: 'BackTop 回到顶部', url: 'backTop' },
