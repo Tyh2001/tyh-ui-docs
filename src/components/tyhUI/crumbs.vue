@@ -104,7 +104,7 @@ export default {
   data () {
     return {
       configures: [
-        { param: 'separator', explain: '分隔符，icon 的类名', type: 'string', value: '——', default: 'tyh-ui-xiexian-01' }
+        { param: 'separator', explain: '分隔符，icon 的类名（暂时存在 bug）', type: 'string', value: '——', default: 'tyh-ui-xiexian-01' }
       ],
       configures2: [
         { param: 'to', explain: '跳转的路径', type: 'string', value: '——', default: '——' }
