@@ -126,11 +126,12 @@ export default {
         'tyh-ui-dianhua-01',
         'tyh-ui-xiazai-01',
         'tyh-ui-shop-01',
-        'tyh-ui-yonghu-01'
+        'tyh-ui-yonghu-01',
+        'tyh-ui-xiexian-01'
       ],
       TurnPageList: [
         { text: 'BackTop 回到顶部', url: 'backTop' },
-        { text: '', url: '' }
+        { text: 'Crumbs 面包屑', url: 'crumbs' }
       ]
     }
   },

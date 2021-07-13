@@ -42,7 +42,8 @@ export default {
         { name: 'Message 消息通知', url: '/component/message' },
         { name: 'Division 分割线', url: '/component/division' },
         { name: 'BackTop 回到顶部', url: '/component/backTop' },
-        { name: 'Icon 图标', url: '/component/icon' }
+        { name: 'Icon 图标', url: '/component/icon' },
+        { name: 'Crumbs 面包屑', url: '/component/crumbs' }
       ]
     }
   },

@@ -79,6 +79,10 @@ const routes = [
           {
             path: '/component/color',
             component: () => import('@/components/tyhUI/color')
+          },
+          {
+            path: '/component/crumbs',
+            component: () => import('@/components/tyhUI/crumbs')
           }
         ]
       },
