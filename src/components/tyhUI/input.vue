@@ -61,10 +61,10 @@ export default {
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-input size="big" v-model="text4" /&gt;&lt;br /&gt;
-    &lt;Tyh-input size="medium" v-model="text5" /&gt;&lt;br /&gt;
-    &lt;Tyh-input size="small" v-model="text6" /&gt;&lt;br /&gt;
-    &lt;Tyh-input size="mini" v-model="text7" /&gt;&lt;br /&gt;
+    &lt;Tyh-input size="big" v-model="text4" /&gt;
+    &lt;Tyh-input size="medium" v-model="text5" /&gt;
+    &lt;Tyh-input size="small" v-model="text6" /&gt;
+    &lt;Tyh-input size="mini" v-model="text7" /&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
