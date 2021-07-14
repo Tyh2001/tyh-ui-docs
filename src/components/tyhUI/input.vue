@@ -108,8 +108,8 @@ export default {
 
     <p class="explain">其他图标：</p>
     <p class="explain">
-      <span>showIcon</span> 属性可以配置文本框带有其他图标，可以直接复制 icon
-      的名字传递即可，但带有其他图标后，将不再有清空的功能
+      <span>showIcon</span> 属性可以配置文本框带有其他图标，直接传递 icon
+      的名字传递即可
     </p>
     <Tyh-input v-model="text9" showIcon="tyh-ui-huojian-01" />
     <pre v-highlightjs>
@@ -203,7 +203,7 @@ export default {
         { param: 'size', explain: '文本框尺寸', type: 'string', value: 'big / medium / small / mini', default: 'medium' },
         { param: 'max', explain: '最大输入上限', type: 'string', value: '——', default: '——' },
         { param: 'clear', explain: '是否可以清空文本框', type: 'boolean', value: '——', default: 'fasle' },
-        { param: 'showIcon', explain: '右侧显示的图标', type: 'string', value: '——', default: 'tyh-ui-close-03' },
+        { param: 'showIcon', explain: '左侧显示的图标', type: 'string', value: '——', default: '——' },
         { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: 'fasle' },
         { param: 'autofocus', explain: '是否自动获取焦点', type: 'boolean', value: '——', default: 'fasle' },
         { param: 'name', explain: '原生 name 属性', type: 'string', value: '——', default: '——' }
