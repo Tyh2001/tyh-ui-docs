@@ -2,7 +2,7 @@
   <div id="aboutIndex">
     <div id="content">
       <div id="myLogo">
-        <img class="logo" src="../../images/logo.svg" alt="" />
+        <img class="logo" src="https://www.hualigs.cn/image/60c16782369ab.jpg" alt="" />
       </div>
       <p>tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库</p>
       <h3 class="title">开发靠个人</h3>
@@ -27,8 +27,8 @@
       <h3 class="title">赞助我</h3>
       <p>开发不易，欢迎大家赞助！</p>
       <div id="sponsor">
-        <img draggable="false" src="./images/支付宝赞助.jpg" alt="" />
-        <img draggable="false" src="./images/微信赞助.jpg" alt="" />
+        <img draggable="false" src="https://www.hualigs.cn/image/60f9273af384d.jpg" alt="" />
+        <img draggable="false" src="https://www.hualigs.cn/image/60f9273ac8bce.jpg" alt="" />
       </div>
     </div>
 

@@ -5,7 +5,11 @@
       <h4>合作者</h4>
       <Tyh-link target="_blank" url="https://github.com/Tyh2001">
         <div class="userBox">
-          <img class="myPhoto" src="../../images/我的头像.jpg" alt="" />
+          <img
+            class="myPhoto"
+            src="https://www.hualigs.cn/image/608132a6c15b2.jpg"
+            alt=""
+          />
           <span class="userName">Tyh2001</span>
         </div>
       </Tyh-link>
@@ -36,7 +40,11 @@
     </div>
     <!-- Logo -->
     <div id="myLogo">
-      <img class="image" src="../../images/logo.svg" alt="" />
+      <img
+        class="image"
+        src="https://www.hualigs.cn/image/60c16782369ab.jpg"
+        alt=""
+      />
     </div>
   </div>
 </template>
