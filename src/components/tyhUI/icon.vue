@@ -136,7 +136,9 @@ export default {
         'tyh-ui-aixin-01',
         'tyh-ui-yueliang-01',
         'tyh-ui-xingxing-01',
-        'tyh-ui-taiyang-01'
+        'tyh-ui-taiyang-01',
+        'tyh-ui-dianzan-01',
+        'tyh-ui-pinglun-01'
       ],
       TurnPageList: [
         { text: 'BackTop 回到顶部', url: 'backTop' },
