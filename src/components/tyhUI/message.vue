@@ -107,7 +107,8 @@ export default {
   methods: {
     open6 () {
       this.$message({
-        message: '这个是一个消息'
+        message: '这个是一个消息',
+        times: 3000
       })
     }
   }
