@@ -140,7 +140,8 @@ export default {
         'tyh-ui-dianzan-01',
         'tyh-ui-pinglun-01',
         'tyh-ui-biaoqing-01',
-        'tyh-ui-jihao-01'
+        'tyh-ui-jihao-01',
+        'tyh-ui-zhaopian-01'
       ],
       TurnPageList: [
         { text: 'BackTop 回到顶部', url: 'backTop' },
