@@ -2,11 +2,7 @@
   <div>
     <Tyh-Menu backgroundColor="#f8faff" buttomShadow>
       <div class="logolink" url="/" @click="$router.push('/')">
-        <img
-          class="logo"
-          src="https://www.hualigs.cn/image/60c16782369ab.jpg"
-          alt=""
-        />
+        <img class="logo" src="../home/images/logo.png" alt="logo" />
         <span class="name">Tyh UI</span>
       </div>
 

@@ -1,7 +1,7 @@
 <template>
   <div id="homeIndex">
     <div id="top-list">
-      <img class="logo" src="https://www.hualigs.cn/image/60c16782369ab.jpg" alt="" />
+      <img class="logo" src="./images/logo.png" alt="" />
       <h1 class="MainTitle">网站快速搭建工具</h1>
       <p class="Subtitle">tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库</p>
 

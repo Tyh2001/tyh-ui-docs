@@ -5,11 +5,7 @@
       <h4>合作者</h4>
       <Tyh-link target="_blank" url="https://github.com/Tyh2001">
         <div class="userBox">
-          <img
-            class="myPhoto"
-            src="https://www.hualigs.cn/image/608132a6c15b2.jpg"
-            alt=""
-          />
+          <img class="myPhoto" src="./images/footPhoto.jpg" alt="我的头像" />
           <span class="userName">Tyh2001</span>
         </div>
       </Tyh-link>
@@ -40,12 +36,16 @@
     </div>
     <!-- Logo -->
     <div id="myLogo">
-      <img
-        class="image"
-        src="https://www.hualigs.cn/image/60c16782369ab.jpg"
-        alt=""
-      />
+      <img class="image" src="../../views/home/images/logo.png" alt="Logo" />
     </div>
+
+    <!-- 备案号 -->
+    <p class="code">
+      <!-- <a target="_bank" href="https://beian.miit.gov.cn">浙ICP备2021024540号-1</a> -->
+      <Tyh-link target="_blank" url="https://beian.miit.gov.cn"
+        >浙ICP备2021024540号-1</Tyh-link
+      >
+    </p>
   </div>
 </template>
 
@@ -124,6 +124,12 @@ export default {
     height: 150px;
     .image {
       height: 100%;
+    }
+  }
+  .code {
+    text-align: center;
+    .tyh-link:hover {
+      color: #409eff;
     }
   }
 }
