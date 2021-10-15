@@ -85,22 +85,6 @@ const routes = [
             component: () => import('@/components/tyhUI/crumbs')
           }
         ]
-      },
-      // 特别的组件
-      {
-        path: '/special',
-        redirect: '/special/buttonLight',
-        component: () => import('@/views/special'),
-        children: [
-          {
-            path: '/special/buttonLight',
-            component: () => import('@/components/special/buttonLight')
-          },
-          {
-            path: '/special/buttonAurora',
-            component: () => import('@/components/special/buttonAurora')
-          }
-        ]
       }
     ]
   }
