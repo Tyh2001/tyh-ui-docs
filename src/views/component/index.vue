@@ -15,9 +15,9 @@
       <router-view />
     </div>
 
-    <Tyh-backTop bottom="160" right="120">
-      <Tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
-    </Tyh-backTop>
+    <tyh-backTop bottom="160" right="120">
+      <tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
+    </tyh-backTop>
   </div>
 </template>
 
@@ -69,7 +69,6 @@ export default {
   display: flex;
   width: 1100px;
   margin: auto;
-  background: skyblue;
   position: relative;
   // 列表
   .contentList {

@@ -1,23 +1,28 @@
 <template>
   <div>
-    <Tyh-Menu backgroundColor="#f8faff" buttomShadow>
+    <tyh-menu backgroundColor="#f8faff" buttomShadow>
       <div class="logolink" url="/" @click="$router.push('/')">
-        <img class="logo" src="../home/images/logo.png" alt="logo" />
+        <img
+          draggable="false"
+          class="logo"
+          src="../home/images/logo.png"
+          alt="logo"
+        />
         <span class="name">Tyh UI</span>
       </div>
 
       <!-- 导航栏选项 -->
       <div class="card">
-        <Tyh-Menu-Item
+        <tyh-menu-item
           v-for="(list, index) in layoutList"
           :color="highLightStyle(list.url)"
           :key="index"
           :url="list.url"
         >
           {{ list.title }}
-        </Tyh-Menu-Item>
+        </tyh-menu-item>
       </div>
-    </Tyh-Menu>
+    </tyh-menu>
 
     <div id="content">
       <router-view />

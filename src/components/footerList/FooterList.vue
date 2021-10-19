@@ -3,12 +3,17 @@
     <!-- 合作者 -->
     <div id="Collaborators">
       <h4>合作者</h4>
-      <Tyh-link target="_blank" url="https://github.com/Tyh2001">
+      <tyh-link target="_blank" url="https://github.com/Tyh2001">
         <div class="userBox">
-          <img class="myPhoto" src="./images/footPhoto.jpg" alt="我的头像" />
+          <img
+            draggable="false"
+            class="myPhoto"
+            src="./images/footPhoto.jpg"
+            alt="我的头像"
+          />
           <span class="userName">Tyh2001</span>
         </div>
-      </Tyh-link>
+      </tyh-link>
     </div>
     <!-- 链接 -->
     <div id="footer-link">
@@ -17,34 +22,41 @@
         <h4 class="lint-title">链接</h4>
         <ul class="link-ul">
           <li>
-            <Tyh-link target="_blank" url="https://github.com/Tyh2001"
-              >Github</Tyh-link
-            >
+            <tyh-link target="_blank" url="https://github.com/Tyh2001">
+              Github
+            </tyh-link>
           </li>
           <li>
-            <Tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui"
-              >官方仓库</Tyh-link
-            >
+            <tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui">
+              官方仓库
+            </tyh-link>
           </li>
           <li>
-            <Tyh-link target="_blank" url="https://www.npmjs.com/package/tyh-ui"
-              >NPM</Tyh-link
+            <tyh-link
+              target="_blank"
+              url="https://www.npmjs.com/package/tyh-ui"
             >
+              NPM
+            </tyh-link>
           </li>
         </ul>
       </div>
     </div>
     <!-- Logo -->
     <div id="myLogo">
-      <img class="image" src="../../views/home/images/logo.png" alt="Logo" />
+      <img
+        draggable="false"
+        class="image"
+        src="../../views/home/images/logo.png"
+        alt="Logo"
+      />
     </div>
 
     <!-- 备案号 -->
     <p class="code">
-      <!-- <a target="_bank" href="https://beian.miit.gov.cn">浙ICP备2021024540号-1</a> -->
-      <Tyh-link target="_blank" url="https://beian.miit.gov.cn"
-        >浙ICP备2021024540号-1</Tyh-link
-      >
+      <tyh-link target="_blank" url="https://beian.miit.gov.cn">
+        浙ICP备2021024540号-1
+      </tyh-link>
     </p>
   </div>
 </template>
@@ -71,6 +83,7 @@ export default {
   background: #f7fbfd;
   padding: 60px 200px;
   box-sizing: border-box;
+  user-select: none;
   #footer-link {
     display: flex;
     padding: 30px 0;

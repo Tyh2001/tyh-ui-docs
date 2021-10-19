@@ -1,17 +1,17 @@
 <template>
   <div id="homeIndex">
     <div id="top-list">
-      <img class="logo" src="./images/logo.png" alt="" />
+      <img draggable="false" class="logo" src="./images/logo.png" alt="" />
       <h1 class="MainTitle">网站快速搭建工具</h1>
       <p class="Subtitle">tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库</p>
 
       <div class="btnBox">
-        <Tyh-button type="primary" round @click="$router.push('/component')">
+        <tyh-button type="primary" round @click="$router.push('/component')">
           快速开始
-        </Tyh-button>
+        </tyh-button>
 
         <a target="_back" href="https://github.com/Tyh2001/tyh-ui">
-          <Tyh-button round icon="tyh-ui-github">Github</Tyh-button>
+          <tyh-button round icon="tyh-ui-github">Github</tyh-button>
         </a>
       </div>
 
@@ -75,6 +75,7 @@ export default {
     align-items: center;
     .logo {
       width: 220px;
+      user-select: none;
     }
     // 主标题
     .MainTitle {
