@@ -5,18 +5,18 @@
     <h3 class="Subtitle">基本使用：</h3>
     <p class="explain">基本使用</p>
     <tyh-menu>
-      <tyh-menu-Item>首页</tyh-menu-Item>
-      <tyh-menu-Item>内容</tyh-menu-Item>
-      <tyh-menu-Item>设置</tyh-menu-Item>
-      <tyh-menu-Item>回收站</tyh-menu-Item>
+      <tyh-menu-item>首页</tyh-menu-item>
+      <tyh-menu-item>内容</tyh-menu-item>
+      <tyh-menu-item>设置</tyh-menu-item>
+      <tyh-menu-item>回收站</tyh-menu-item>
     </tyh-menu>
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;tyh-menu&gt;
-  &lt;tyh-menu-Item&gt;首页&lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item&gt;内容&lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item&gt;设置&lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item&gt;回收站&lt;/tyh-menu-Item&gt;
+  &lt;tyh-menu-item&gt;首页&lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item&gt;内容&lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item&gt;设置&lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item&gt;回收站&lt;/tyh-menu-item&gt;
 &lt;/tyh-menu&gt;
       </code>
     </pre>
@@ -26,18 +26,18 @@
     </p>
     <p class="explain">通过 <span>color</span> 属性可以配置子菜单颜色：</p>
     <tyh-menu backgroundColor="#eee">
-      <tyh-menu-Item color="#000">首页</tyh-menu-Item>
-      <tyh-menu-Item color="#000">内容</tyh-menu-Item>
-      <tyh-menu-Item color="#000">设置</tyh-menu-Item>
-      <tyh-menu-Item color="#000">回收站</tyh-menu-Item>
+      <tyh-menu-item color="#000">首页</tyh-menu-item>
+      <tyh-menu-item color="#000">内容</tyh-menu-item>
+      <tyh-menu-item color="#000">设置</tyh-menu-item>
+      <tyh-menu-item color="#000">回收站</tyh-menu-item>
     </tyh-menu>
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;tyh-menu backgroundColor="#eee"&gt;
-  &lt;tyh-menu-Item color="#000"&gt;首页&lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item color="#000"&gt;内容&lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item color="#000"&gt;设置&lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item color="#000"&gt;回收站&lt;/tyh-menu-Item&gt;
+  &lt;tyh-menu-item color="#000"&gt;首页&lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item color="#000"&gt;内容&lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item color="#000"&gt;设置&lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item color="#000"&gt;回收站&lt;/tyh-menu-item&gt;
 &lt;/tyh-menu&gt;
       </code>
     </pre>
@@ -46,61 +46,61 @@
       通过 <span>prohibit</span> 属性可以配置子组件链接是否禁用：
     </p>
     <tyh-menu>
-      <tyh-menu-Item prohibit url="/home">首页</tyh-menu-Item>
-      <tyh-menu-Item prohibit url="/abc">内容</tyh-menu-Item>
-      <tyh-menu-Item url="">设置</tyh-menu-Item>
-      <tyh-menu-Item url="">回收站</tyh-menu-Item>
+      <tyh-menu-item prohibit url="/home">首页</tyh-menu-item>
+      <tyh-menu-item prohibit url="/abc">内容</tyh-menu-item>
+      <tyh-menu-item url="">设置</tyh-menu-item>
+      <tyh-menu-item url="">回收站</tyh-menu-item>
     </tyh-menu>
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;tyh-menu&gt;
-  &lt;tyh-menu-Item prohibit url="/home"&gt;首页&lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item prohibit url="/abc"&gt;内容&lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item&gt;设置&lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item&gt;回收站&lt;/tyh-menu-Item&gt;
+  &lt;tyh-menu-item prohibit url="/home"&gt;首页&lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item prohibit url="/abc"&gt;内容&lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item&gt;设置&lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item&gt;回收站&lt;/tyh-menu-item&gt;
 &lt;/tyh-menu&gt;
       </code>
     </pre>
 
     <p class="explain">带有 Icon 的</p>
     <tyh-menu>
-      <tyh-menu-Item url="/home">
+      <tyh-menu-item url="/home">
         <tyh-icon icon="tyh-ui-home-01" color="#fff" />
         首页
-      </tyh-menu-Item>
-      <tyh-menu-Item url="/abc">
+      </tyh-menu-item>
+      <tyh-menu-item url="/abc">
         <tyh-icon icon="tyh-ui-PaperPlane-01" color="#fff" />
         内容
-      </tyh-menu-Item>
-      <tyh-menu-Item url="">
+      </tyh-menu-item>
+      <tyh-menu-item url="">
         <tyh-icon icon="tyh-ui-setting-01" color="#fff" />
         设置
-      </tyh-menu-Item>
-      <tyh-menu-Item url="">
+      </tyh-menu-item>
+      <tyh-menu-item url="">
         <tyh-icon icon="tyh-ui-trash-01" color="#fff" />
         回收站
-      </tyh-menu-Item>
+      </tyh-menu-item>
     </tyh-menu>
 
     <pre v-highlightjs>
       <code id="myCode" class="html">
  &lt;tyh-menu&gt;
-  &lt;tyh-menu-Item url="/home"&gt;
+  &lt;tyh-menu-item url="/home"&gt;
     &lt;tyh-icon icon="tyh-ui-home-01" color="#fff" /&gt;
     首页
-  &lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item url="/abc"&gt;
+  &lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item url="/abc"&gt;
     &lt;tyh-icon icon="tyh-ui-PaperPlane-01" color="#fff" /&gt;
     内容
-  &lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item url=""&gt;
+  &lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item url=""&gt;
     &lt;tyh-icon icon="tyh-ui-setting-01" color="#fff" /&gt;
     设置
-  &lt;/tyh-menu-Item&gt;
-  &lt;tyh-menu-Item url=""&gt;
+  &lt;/tyh-menu-item&gt;
+  &lt;tyh-menu-item url=""&gt;
     &lt;tyh-icon icon="tyh-ui-trash-01" color="#fff" /&gt;
     回收站
-  &lt;/tyh-menu-Item&gt;
+  &lt;/tyh-menu-item&gt;
 &lt;/tyh-menu&gt;
       </code>
     </pre>
@@ -110,7 +110,7 @@
     <p class="explain">tyh-menu 组件：</p>
     <ConfiguresTable :configures="configures" />
 
-    <p class="explain">tyh-menu-Item 子组件：</p>
+    <p class="explain">tyh-menu-item 子组件：</p>
     <ConfiguresTable :configures="configures2" />
 
     <h3 class="Subtitle">按需引入：</h3>
