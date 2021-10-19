@@ -4,29 +4,29 @@
 
     <h3 class="Subtitle">基本使用：</h3>
     <p class="explain">基本使用</p>
-    <Tyh-backTop>Top</Tyh-backTop>
+    <tyh-backTop>Top</tyh-backTop>
     <pre v-highlightjs>
       <code id="myCode" class="html">
- &lt;Tyh-backTop&gt;Top&lt;/Tyh-backTop&gt;
+ &lt;tyh-backTop&gt;Top&lt;/tyh-backTop&gt;
       </code>
     </pre>
 
     <p class="explain">
       <span>bottom</span> 和 <span>right</span> 属性可以配置距离右边和下边的距离
     </p>
-    <Tyh-backTop bottom="100" right="120">Top</Tyh-backTop>
+    <tyh-backTop bottom="100" right="120">Top</tyh-backTop>
     <pre v-highlightjs>
       <code id="myCode" class="html">
- &lt;Tyh-backTop bottom="100" right="120"&gt;Top&lt;/Tyh-backTop&gt;
+ &lt;tyh-backTop bottom="100" right="120"&gt;Top&lt;/tyh-backTop&gt;
       </code>
     </pre>
 
     <p class="explain">也可以插入 icon 图标</p>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-backTop bottom="160" right="120"&gt;
-  &lt;Tyh-icon icon="tyh-ui-huojian-01" color="#409eff" /&gt;
-&lt;/Tyh-backTop&gt;
+&lt;tyh-backTop bottom="160" right="120"&gt;
+  &lt;tyh-icon icon="tyh-ui-huojian-01" color="#409eff" /&gt;
+&lt;/tyh-backTop&gt;
       </code>
     </pre>
 

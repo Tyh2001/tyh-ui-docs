@@ -4,31 +4,31 @@
 
     <h3 class="Subtitle">基本使用：</h3>
     <p class="explain">基本使用</p>
-    <Tyh-tag>标签一</Tyh-tag>
-    <Tyh-tag color="primary">标签二</Tyh-tag>
-    <Tyh-tag color="success">标签三</Tyh-tag>
-    <Tyh-tag color="danger">标签四</Tyh-tag>
-    <Tyh-tag color="warning">标签五</Tyh-tag>
+    <tyh-tag>标签一</tyh-tag>
+    <tyh-tag color="primary">标签二</tyh-tag>
+    <tyh-tag color="success">标签三</tyh-tag>
+    <tyh-tag color="danger">标签四</tyh-tag>
+    <tyh-tag color="warning">标签五</tyh-tag>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-tag&gt;标签一&lt;/Tyh-tag&gt;
-&lt;Tyh-tag color="primary"&gt;标签二&lt;/Tyh-tag&gt;
-&lt;Tyh-tag color="success"&gt;标签三&lt;/Tyh-tag&gt;
-&lt;Tyh-tag color="danger"&gt;标签四&lt;/Tyh-tag&gt;
-&lt;Tyh-tag color="warning"&gt;标签五&lt;/Tyh-tag&gt;
+&lt;tyh-tag&gt;标签一&lt;/tyh-tag&gt;
+&lt;tyh-tag color="primary"&gt;标签二&lt;/tyh-tag&gt;
+&lt;tyh-tag color="success"&gt;标签三&lt;/tyh-tag&gt;
+&lt;tyh-tag color="danger"&gt;标签四&lt;/tyh-tag&gt;
+&lt;tyh-tag color="warning"&gt;标签五&lt;/tyh-tag&gt;
       </code>
     </pre>
 
     <p class="explain">不同尺寸：</p>
     <p class="explain"><span>size</span> 属性可以配置不同的尺寸</p>
-    <Tyh-tag color="primary">标签</Tyh-tag>
-    <Tyh-tag size="small" color="primary">标签</Tyh-tag>
-    <Tyh-tag size="mini" color="primary">标签</Tyh-tag>
+    <tyh-tag color="primary">标签</tyh-tag>
+    <tyh-tag size="small" color="primary">标签</tyh-tag>
+    <tyh-tag size="mini" color="primary">标签</tyh-tag>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-tag color="primary"&gt;标签&lt;/Tyh-tag&gt;
-&lt;Tyh-tag size="small" color="primary"&gt;标签&lt;/Tyh-tag&gt;
-&lt;Tyh-tag size="mini" color="primary"&gt;标签&lt;/Tyh-tag&gt;
+&lt;tyh-tag color="primary"&gt;标签&lt;/tyh-tag&gt;
+&lt;tyh-tag size="small" color="primary"&gt;标签&lt;/tyh-tag&gt;
+&lt;tyh-tag size="mini" color="primary"&gt;标签&lt;/tyh-tag&gt;
       </code>
     </pre>
 

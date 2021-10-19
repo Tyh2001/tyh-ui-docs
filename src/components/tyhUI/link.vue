@@ -4,52 +4,52 @@
 
     <h3 class="Subtitle">基本使用：</h3>
     <p class="explain">基本使用</p>
-    <Tyh-link url="">链接一</Tyh-link>
-    <Tyh-link url="" color="primary">链接二</Tyh-link>
-    <Tyh-link url="" color="success">链接三</Tyh-link>
-    <Tyh-link url="" color="danger">链接四</Tyh-link>
-    <Tyh-link url="" color="warning">链接五</Tyh-link>
+    <tyh-link url="">链接一</tyh-link>
+    <tyh-link url="" color="primary">链接二</tyh-link>
+    <tyh-link url="" color="success">链接三</tyh-link>
+    <tyh-link url="" color="danger">链接四</tyh-link>
+    <tyh-link url="" color="warning">链接五</tyh-link>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-link url=""&gt;链接一&lt;/Tyh-link&gt;
-&lt;Tyh-link url="" color="primary"&gt;链接二&lt;/Tyh-link&gt;
-&lt;Tyh-link url="" color="success"&gt;链接三&lt;/Tyh-link&gt;
-&lt;Tyh-link url="" color="danger"&gt;链接四&lt;/Tyh-link&gt;
-&lt;Tyh-link url="" color="warning"&gt;链接五&lt;/Tyh-link&gt;
+&lt;tyh-link url=""&gt;链接一&lt;/tyh-link&gt;
+&lt;tyh-link url="" color="primary"&gt;链接二&lt;/tyh-link&gt;
+&lt;tyh-link url="" color="success"&gt;链接三&lt;/tyh-link&gt;
+&lt;tyh-link url="" color="danger"&gt;链接四&lt;/tyh-link&gt;
+&lt;tyh-link url="" color="warning"&gt;链接五&lt;/tyh-link&gt;
       </code>
     </pre>
 
     <p class="explain">带有下划线：</p>
     <p class="explain"><span>underline</span> 属性可以配置带有下划线</p>
-    <Tyh-link underline>标签</Tyh-link>
-    <Tyh-link underline color="primary">标签</Tyh-link>
-    <Tyh-link underline color="success">标签</Tyh-link>
-    <Tyh-link underline color="danger">标签</Tyh-link>
-    <Tyh-link underline color="warning">标签</Tyh-link>
+    <tyh-link underline>标签</tyh-link>
+    <tyh-link underline color="primary">标签</tyh-link>
+    <tyh-link underline color="success">标签</tyh-link>
+    <tyh-link underline color="danger">标签</tyh-link>
+    <tyh-link underline color="warning">标签</tyh-link>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-link underline&gt;标签&lt;/Tyh-link&gt;
-&lt;Tyh-link underline color="primary"&gt;标签&lt;/Tyh-link&gt;
-&lt;Tyh-link underline color="success"&gt;标签&lt;/Tyh-link&gt;
-&lt;Tyh-link underline color="danger"&gt;标签&lt;/Tyh-link&gt;
-&lt;Tyh-link underline color="warning"&gt;标签&lt;/Tyh-link&gt;
+&lt;tyh-link underline&gt;标签&lt;/tyh-link&gt;
+&lt;tyh-link underline color="primary"&gt;标签&lt;/tyh-link&gt;
+&lt;tyh-link underline color="success"&gt;标签&lt;/tyh-link&gt;
+&lt;tyh-link underline color="danger"&gt;标签&lt;/tyh-link&gt;
+&lt;tyh-link underline color="warning"&gt;标签&lt;/tyh-link&gt;
       </code>
     </pre>
 
     <p class="explain">鼠标移入带有下划线：</p>
     <p class="explain"><span>hoverline</span> 属性可以配置鼠标移入带有下划线</p>
-    <Tyh-link hoverline>标签</Tyh-link>
-    <Tyh-link hoverline color="primary">标签</Tyh-link>
-    <Tyh-link hoverline color="success">标签</Tyh-link>
-    <Tyh-link hoverline color="danger">标签</Tyh-link>
-    <Tyh-link hoverline color="warning">标签</Tyh-link>
+    <tyh-link hoverline>标签</tyh-link>
+    <tyh-link hoverline color="primary">标签</tyh-link>
+    <tyh-link hoverline color="success">标签</tyh-link>
+    <tyh-link hoverline color="danger">标签</tyh-link>
+    <tyh-link hoverline color="warning">标签</tyh-link>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-link hoverline&gt;标签&lt;/Tyh-link&gt;
-&lt;Tyh-link hoverline color="primary"&gt;标签&lt;/Tyh-link&gt;
-&lt;Tyh-link hoverline color="success"&gt;标签&lt;/Tyh-link&gt;
-&lt;Tyh-link hoverline color="danger"&gt;标签&lt;/Tyh-link&gt;
-&lt;Tyh-link hoverline color="warning"&gt;标签&lt;/Tyh-link&gt;
+&lt;tyh-link hoverline&gt;标签&lt;/tyh-link&gt;
+&lt;tyh-link hoverline color="primary"&gt;标签&lt;/tyh-link&gt;
+&lt;tyh-link hoverline color="success"&gt;标签&lt;/tyh-link&gt;
+&lt;tyh-link hoverline color="danger"&gt;标签&lt;/tyh-link&gt;
+&lt;tyh-link hoverline color="warning"&gt;标签&lt;/tyh-link&gt;
       </code>
     </pre>
 

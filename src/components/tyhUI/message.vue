@@ -9,12 +9,12 @@
       <span>$message</span> 方法，接收一个对象，可以使用 <span>message</span>
       定义内容
     </p>
-    <Tyh-button type="primary" @click="open1">提示1</Tyh-button>
+    <tyh-button type="primary" @click="open1">提示1</tyh-button>
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-button type="primary" @click="open1"&gt;打开提示&lt;/Tyh-button&gt;
+    &lt;tyh-button type="primary" @click="open1"&gt;打开提示&lt;/tyh-button&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
@@ -37,18 +37,18 @@ export default {
     <p class="explain">
       <span>iconClass</span> 属性可以配置 icon 的 class 属性，来展示 icon
     </p>
-    <Tyh-button type="primary" @click="open2">消息提示</Tyh-button>
-    <Tyh-button type="primary" @click="open3">成功提示</Tyh-button>
-    <Tyh-button type="primary" @click="open4">危险提示</Tyh-button>
-    <Tyh-button type="primary" @click="open5">警告提示</Tyh-button>
+    <tyh-button type="primary" @click="open2">消息提示</tyh-button>
+    <tyh-button type="primary" @click="open3">成功提示</tyh-button>
+    <tyh-button type="primary" @click="open4">危险提示</tyh-button>
+    <tyh-button type="primary" @click="open5">警告提示</tyh-button>
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-button type="primary" @click="open2"&gt;消息提示&lt;/Tyh-button&gt;
-    &lt;Tyh-button type="primary" @click="open3"&gt;成功提示&lt;/Tyh-button&gt;
-    &lt;Tyh-button type="primary" @click="open4"&gt;危险提示&lt;/Tyh-button&gt;
-    &lt;Tyh-button type="primary" @click="open5"&gt;警告提示&lt;/Tyh-button&gt;
+    &lt;tyh-button type="primary" @click="open2"&gt;消息提示&lt;/tyh-button&gt;
+    &lt;tyh-button type="primary" @click="open3"&gt;成功提示&lt;/tyh-button&gt;
+    &lt;tyh-button type="primary" @click="open4"&gt;危险提示&lt;/tyh-button&gt;
+    &lt;tyh-button type="primary" @click="open5"&gt;警告提示&lt;/tyh-button&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
@@ -93,12 +93,12 @@ export default {
     <p class="explain">
       <span>times</span> 属性可以配置提示框的显示时长，并在 xxxx 毫秒后消失
     </p>
-    <Tyh-button type="primary" @click="open6">提示3000毫秒后消失</Tyh-button>
+    <tyh-button type="primary" @click="open6">提示3000毫秒后消失</tyh-button>
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-button type="primary" @click="open6"&gt;提示3000毫秒后消失&lt;/Tyh-button&gt;
+    &lt;tyh-button type="primary" @click="open6"&gt;提示3000毫秒后消失&lt;/tyh-button&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 

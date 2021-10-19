@@ -7,26 +7,26 @@
     <p class="explain">
       通过 <span>icon</span> 属性来给 icon 添加类名，来显示不同的图标
     </p>
-    <Tyh-icon icon="tyh-ui-tyhui" />
-    <Tyh-icon icon="tyh-ui-huojian-01" />
-    <Tyh-icon icon="tyh-ui-PaperPlane-01" />
+    <tyh-icon icon="tyh-ui-tyhui" />
+    <tyh-icon icon="tyh-ui-huojian-01" />
+    <tyh-icon icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-icon icon="tyh-ui-tyhui" /&gt;
-&lt;Tyh-icon icon="tyh-ui-huojian-01" /&gt;
-&lt;Tyh-icon icon="tyh-ui-PaperPlane-01" /&gt;
+&lt;tyh-icon icon="tyh-ui-tyhui" /&gt;
+&lt;tyh-icon icon="tyh-ui-huojian-01" /&gt;
+&lt;tyh-icon icon="tyh-ui-PaperPlane-01" /&gt;
       </code>
     </pre>
 
     <p class="explain"><span>color</span> 属性改变 icon 的颜色</p>
-    <Tyh-icon color="skyblue" icon="tyh-ui-tyhui" />
-    <Tyh-icon color="orange" icon="tyh-ui-huojian-01" />
-    <Tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" />
+    <tyh-icon color="skyblue" icon="tyh-ui-tyhui" />
+    <tyh-icon color="orange" icon="tyh-ui-huojian-01" />
+    <tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-icon color="skyblue" icon="tyh-ui-tyhui" /&gt;
-&lt;Tyh-icon color="orange" icon="tyh-ui-huojian-01" /&gt;
-&lt;Tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" /&gt;
+&lt;tyh-icon color="skyblue" icon="tyh-ui-tyhui" /&gt;
+&lt;tyh-icon color="orange" icon="tyh-ui-huojian-01" /&gt;
+&lt;tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" /&gt;
       </code>
     </pre>
 
@@ -34,14 +34,14 @@
     <p class="explain">
       这里采用的是字体大小形式，只需要传递具体数值，并不需要传递单位
     </p>
-    <Tyh-icon size="50" icon="tyh-ui-tyhui" />
-    <Tyh-icon size="40" icon="tyh-ui-huojian-01" />
-    <Tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
+    <tyh-icon size="50" icon="tyh-ui-tyhui" />
+    <tyh-icon size="40" icon="tyh-ui-huojian-01" />
+    <tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-icon size="50" icon="tyh-ui-tyhui" /&gt;
-&lt;Tyh-icon size="40" icon="tyh-ui-huojian-01" /&gt;
-&lt;Tyh-icon size="30" icon="tyh-ui-PaperPlane-01" /&gt;
+&lt;tyh-icon size="50" icon="tyh-ui-tyhui" /&gt;
+&lt;tyh-icon size="40" icon="tyh-ui-huojian-01" /&gt;
+&lt;tyh-icon size="30" icon="tyh-ui-PaperPlane-01" /&gt;
       </code>
     </pre>
 
@@ -60,7 +60,7 @@
           :data-clipboard-text="icon"
           @click="copy"
         >
-          <Tyh-icon size="34" :icon="icon" />
+          <tyh-icon size="34" :icon="icon" />
           <p class="iconTitle">{{ icon }}</p>
         </li>
       </ul>

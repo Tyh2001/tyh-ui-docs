@@ -9,12 +9,12 @@
       <span>$tips</span> 方法，接收一个对象，可以使用
       <span>title</span> 定义标题，<span>message</span> 定义内容
     </p>
-    <Tyh-button type="primary" @click="change1">展示弹框</Tyh-button>
+    <tyh-button type="primary" @click="change1">展示弹框</tyh-button>
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-button type="primary" @click="change1"&gt;展示弹框&lt;/Tyh-button&gt;
+    &lt;tyh-button type="primary" @click="change1"&gt;展示弹框&lt;/tyh-button&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
@@ -38,14 +38,14 @@ export default {
       可以在对象中配置 <span>times</span> 值来指定 xxxx 毫秒后关闭通知 默认 3500
       毫秒
     </p>
-    <Tyh-button type="primary" @click="change2"
-      >展示弹框 6000 毫秒后关闭</Tyh-button
+    <tyh-button type="primary" @click="change2"
+      >展示弹框 6000 毫秒后关闭</tyh-button
     >
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-button type="primary" @click="change2"&gt;展示弹框&lt;/Tyh-button&gt;
+    &lt;tyh-button type="primary" @click="change2"&gt;展示弹框&lt;/tyh-button&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
@@ -67,18 +67,18 @@ export default {
 
     <p class="explain">不同弹出位置：</p>
     <p class="explain"><span>position</span> 属性可以配置不同弹出位置</p>
-    <Tyh-button type="primary" @click="change3">右上</Tyh-button>
-    <Tyh-button type="primary" @click="change4">右下</Tyh-button>
-    <Tyh-button type="primary" @click="change5">左上</Tyh-button>
-    <Tyh-button type="primary" @click="change6">左下</Tyh-button>
+    <tyh-button type="primary" @click="change3">右上</tyh-button>
+    <tyh-button type="primary" @click="change4">右下</tyh-button>
+    <tyh-button type="primary" @click="change5">左上</tyh-button>
+    <tyh-button type="primary" @click="change6">左下</tyh-button>
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-button type="primary" @click="change3"&gt;右上&lt;/Tyh-button&gt;
-    &lt;Tyh-button type="primary" @click="change4"&gt;右下&lt;/Tyh-button&gt;
-    &lt;Tyh-button type="primary" @click="change5"&gt;左上&lt;/Tyh-button&gt;
-    &lt;Tyh-button type="primary" @click="change6"&gt;左下&lt;/Tyh-button&gt;
+    &lt;tyh-button type="primary" @click="change3"&gt;右上&lt;/tyh-button&gt;
+    &lt;tyh-button type="primary" @click="change4"&gt;右下&lt;/tyh-button&gt;
+    &lt;tyh-button type="primary" @click="change5"&gt;左上&lt;/tyh-button&gt;
+    &lt;tyh-button type="primary" @click="change6"&gt;左下&lt;/tyh-button&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
@@ -123,12 +123,12 @@ export default {
     <p class="explain">
       可以在对象中配置 <span>isHtml</span> 属性来改变 message 是否为 HTML 片段
     </p>
-    <Tyh-button type="primary" @click="change7">HTML 片段</Tyh-button>
+    <tyh-button type="primary" @click="change7">HTML 片段</tyh-button>
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-button type="primary" @click="change2"&gt;展示弹框&lt;/Tyh-button&gt;
+    &lt;tyh-button type="primary" @click="change2"&gt;展示弹框&lt;/tyh-button&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 

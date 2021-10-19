@@ -4,20 +4,20 @@
 
     <h3 class="Subtitle">基本使用：</h3>
     <p class="explain">基本使用</p>
-    <Tyh-Menu>
-      <Tyh-Menu-Item>首页</Tyh-Menu-Item>
-      <Tyh-Menu-Item>内容</Tyh-Menu-Item>
-      <Tyh-Menu-Item>设置</Tyh-Menu-Item>
-      <Tyh-Menu-Item>回收站</Tyh-Menu-Item>
-    </Tyh-Menu>
+    <tyh-Menu>
+      <tyh-Menu-Item>首页</tyh-Menu-Item>
+      <tyh-Menu-Item>内容</tyh-Menu-Item>
+      <tyh-Menu-Item>设置</tyh-Menu-Item>
+      <tyh-Menu-Item>回收站</tyh-Menu-Item>
+    </tyh-Menu>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-Menu&gt;
-  &lt;Tyh-Menu-Item&gt;首页&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;内容&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;设置&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;回收站&lt;/Tyh-Menu-Item&gt;
-&lt;/Tyh-Menu&gt;
+&lt;tyh-Menu&gt;
+  &lt;tyh-Menu-Item&gt;首页&lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item&gt;内容&lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item&gt;设置&lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item&gt;回收站&lt;/tyh-Menu-Item&gt;
+&lt;/tyh-Menu&gt;
       </code>
     </pre>
 
@@ -25,92 +25,92 @@
       通过 <span>backgroundColor</span> 属性可以配置导航栏背景色：
     </p>
     <p class="explain">通过 <span>color</span> 属性可以配置子菜单颜色：</p>
-    <Tyh-Menu backgroundColor="#eee">
-      <Tyh-Menu-Item color="#000">首页</Tyh-Menu-Item>
-      <Tyh-Menu-Item color="#000">内容</Tyh-Menu-Item>
-      <Tyh-Menu-Item color="#000">设置</Tyh-Menu-Item>
-      <Tyh-Menu-Item color="#000">回收站</Tyh-Menu-Item>
-    </Tyh-Menu>
+    <tyh-Menu backgroundColor="#eee">
+      <tyh-Menu-Item color="#000">首页</tyh-Menu-Item>
+      <tyh-Menu-Item color="#000">内容</tyh-Menu-Item>
+      <tyh-Menu-Item color="#000">设置</tyh-Menu-Item>
+      <tyh-Menu-Item color="#000">回收站</tyh-Menu-Item>
+    </tyh-Menu>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-Menu backgroundColor="#eee"&gt;
-  &lt;Tyh-Menu-Item color="#000"&gt;首页&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item color="#000"&gt;内容&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item color="#000"&gt;设置&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item color="#000"&gt;回收站&lt;/Tyh-Menu-Item&gt;
-&lt;/Tyh-Menu&gt;
+&lt;tyh-Menu backgroundColor="#eee"&gt;
+  &lt;tyh-Menu-Item color="#000"&gt;首页&lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item color="#000"&gt;内容&lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item color="#000"&gt;设置&lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item color="#000"&gt;回收站&lt;/tyh-Menu-Item&gt;
+&lt;/tyh-Menu&gt;
       </code>
     </pre>
 
     <p class="explain">
       通过 <span>prohibit</span> 属性可以配置子组件链接是否禁用：
     </p>
-    <Tyh-Menu>
-      <Tyh-Menu-Item prohibit url="/home">首页</Tyh-Menu-Item>
-      <Tyh-Menu-Item prohibit url="/abc">内容</Tyh-Menu-Item>
-      <Tyh-Menu-Item url="">设置</Tyh-Menu-Item>
-      <Tyh-Menu-Item url="">回收站</Tyh-Menu-Item>
-    </Tyh-Menu>
+    <tyh-Menu>
+      <tyh-Menu-Item prohibit url="/home">首页</tyh-Menu-Item>
+      <tyh-Menu-Item prohibit url="/abc">内容</tyh-Menu-Item>
+      <tyh-Menu-Item url="">设置</tyh-Menu-Item>
+      <tyh-Menu-Item url="">回收站</tyh-Menu-Item>
+    </tyh-Menu>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-Menu&gt;
-  &lt;Tyh-Menu-Item prohibit url="/home"&gt;首页&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item prohibit url="/abc"&gt;内容&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;设置&lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item&gt;回收站&lt;/Tyh-Menu-Item&gt;
-&lt;/Tyh-Menu&gt;
+&lt;tyh-Menu&gt;
+  &lt;tyh-Menu-Item prohibit url="/home"&gt;首页&lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item prohibit url="/abc"&gt;内容&lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item&gt;设置&lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item&gt;回收站&lt;/tyh-Menu-Item&gt;
+&lt;/tyh-Menu&gt;
       </code>
     </pre>
 
     <p class="explain">带有 Icon 的</p>
-    <Tyh-Menu>
-      <Tyh-Menu-Item url="/home">
-        <Tyh-icon icon="tyh-ui-home-01" color="#fff" />
+    <tyh-Menu>
+      <tyh-Menu-Item url="/home">
+        <tyh-icon icon="tyh-ui-home-01" color="#fff" />
         首页
-      </Tyh-Menu-Item>
-      <Tyh-Menu-Item url="/abc">
-        <Tyh-icon icon="tyh-ui-PaperPlane-01" color="#fff" />
+      </tyh-Menu-Item>
+      <tyh-Menu-Item url="/abc">
+        <tyh-icon icon="tyh-ui-PaperPlane-01" color="#fff" />
         内容
-      </Tyh-Menu-Item>
-      <Tyh-Menu-Item url="">
-        <Tyh-icon icon="tyh-ui-setting-01" color="#fff" />
+      </tyh-Menu-Item>
+      <tyh-Menu-Item url="">
+        <tyh-icon icon="tyh-ui-setting-01" color="#fff" />
         设置
-      </Tyh-Menu-Item>
-      <Tyh-Menu-Item url="">
-        <Tyh-icon icon="tyh-ui-trash-01" color="#fff" />
+      </tyh-Menu-Item>
+      <tyh-Menu-Item url="">
+        <tyh-icon icon="tyh-ui-trash-01" color="#fff" />
         回收站
-      </Tyh-Menu-Item>
-    </Tyh-Menu>
+      </tyh-Menu-Item>
+    </tyh-Menu>
 
     <pre v-highlightjs>
       <code id="myCode" class="html">
- &lt;Tyh-Menu&gt;
-  &lt;Tyh-Menu-Item url="/home"&gt;
-    &lt;Tyh-icon icon="tyh-ui-home-01" color="#fff" /&gt;
+ &lt;tyh-Menu&gt;
+  &lt;tyh-Menu-Item url="/home"&gt;
+    &lt;tyh-icon icon="tyh-ui-home-01" color="#fff" /&gt;
     首页
-  &lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item url="/abc"&gt;
-    &lt;Tyh-icon icon="tyh-ui-PaperPlane-01" color="#fff" /&gt;
+  &lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item url="/abc"&gt;
+    &lt;tyh-icon icon="tyh-ui-PaperPlane-01" color="#fff" /&gt;
     内容
-  &lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item url=""&gt;
-    &lt;Tyh-icon icon="tyh-ui-setting-01" color="#fff" /&gt;
+  &lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item url=""&gt;
+    &lt;tyh-icon icon="tyh-ui-setting-01" color="#fff" /&gt;
     设置
-  &lt;/Tyh-Menu-Item&gt;
-  &lt;Tyh-Menu-Item url=""&gt;
-    &lt;Tyh-icon icon="tyh-ui-trash-01" color="#fff" /&gt;
+  &lt;/tyh-Menu-Item&gt;
+  &lt;tyh-Menu-Item url=""&gt;
+    &lt;tyh-icon icon="tyh-ui-trash-01" color="#fff" /&gt;
     回收站
-  &lt;/Tyh-Menu-Item&gt;
-&lt;/Tyh-Menu&gt;
+  &lt;/tyh-Menu-Item&gt;
+&lt;/tyh-Menu&gt;
       </code>
     </pre>
 
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
-    <p class="explain">Tyh-Menu 组件：</p>
+    <p class="explain">tyh-Menu 组件：</p>
     <ConfiguresTable :configures="configures" />
 
-    <p class="explain">Tyh-Menu-Item 子组件：</p>
+    <p class="explain">tyh-Menu-Item 子组件：</p>
     <ConfiguresTable :configures="configures2" />
 
     <h3 class="Subtitle">按需引入：</h3>

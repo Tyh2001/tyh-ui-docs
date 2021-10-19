@@ -4,12 +4,12 @@
 
     <h3 class="Subtitle">基本使用：</h3>
     <p class="explain">基本使用</p>
-    <Tyh-input v-model="text1" />
+    <tyh-input v-model="text1" />
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-input v-model="text1" /&gt;
+    &lt;tyh-input v-model="text1" /&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
@@ -27,14 +27,14 @@ export default {
 
     <p class="explain">密码框：</p>
     <p class="explain"><span>inpType</span> 属性可以规定文本框类型</p>
-    <Tyh-input inpType="text" v-model="text2" />
-    <Tyh-input inpType="password" v-model="text3" />
+    <tyh-input inpType="text" v-model="text2" />
+    <tyh-input inpType="password" v-model="text3" />
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-input inpType="text" v-model="text2" /&gt;
-    &lt;Tyh-input inpType="password" v-model="text3" /&gt;
+    &lt;tyh-input inpType="text" v-model="text2" /&gt;
+    &lt;tyh-input inpType="password" v-model="text3" /&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
@@ -53,18 +53,18 @@ export default {
 
     <p class="explain">不同尺寸：</p>
     <p class="explain"><span>size</span> 属性可以配置文本框尺寸</p>
-    <Tyh-input size="big" v-model="text4" /><br />
-    <Tyh-input size="medium" v-model="text5" /><br />
-    <Tyh-input size="small" v-model="text6" /><br />
-    <Tyh-input size="mini" v-model="text7" /><br />
+    <tyh-input size="big" v-model="text4" /><br />
+    <tyh-input size="medium" v-model="text5" /><br />
+    <tyh-input size="small" v-model="text6" /><br />
+    <tyh-input size="mini" v-model="text7" /><br />
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-input size="big" v-model="text4" /&gt;
-    &lt;Tyh-input size="medium" v-model="text5" /&gt;
-    &lt;Tyh-input size="small" v-model="text6" /&gt;
-    &lt;Tyh-input size="mini" v-model="text7" /&gt;
+    &lt;tyh-input size="big" v-model="text4" /&gt;
+    &lt;tyh-input size="medium" v-model="text5" /&gt;
+    &lt;tyh-input size="small" v-model="text6" /&gt;
+    &lt;tyh-input size="mini" v-model="text7" /&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
@@ -85,12 +85,12 @@ export default {
 
     <p class="explain">带有清空按钮：</p>
     <p class="explain"><span>clear</span> 属性可以配置带有清空按钮的文本框</p>
-    <Tyh-input v-model="text8" clear />
+    <tyh-input v-model="text8" clear />
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-input v-model="text8" clear /&gt;
+    &lt;tyh-input v-model="text8" clear /&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
@@ -111,12 +111,12 @@ export default {
       <span>showIcon</span> 属性可以配置文本框带有其他图标，直接传递 icon
       的名字传递即可
     </p>
-    <Tyh-input v-model="text9" showIcon="tyh-ui-huojian-01" />
+    <tyh-input v-model="text9" showIcon="tyh-ui-huojian-01" />
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-input v-model="text9" showIcon="tyh-ui-huojian-01" /&gt;
+    &lt;tyh-input v-model="text9" showIcon="tyh-ui-huojian-01" /&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
@@ -134,12 +134,12 @@ export default {
 
     <p class="explain">禁用按钮：</p>
     <p class="explain"><span>prohibit</span> 属性可以配置文本框禁用状态</p>
-    <Tyh-input v-model="text10" prohibit />
+    <tyh-input v-model="text10" prohibit />
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;Tyh-input v-model="text10" prohibit" /&gt;
+    &lt;tyh-input v-model="text10" prohibit" /&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 

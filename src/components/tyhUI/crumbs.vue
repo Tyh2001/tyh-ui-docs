@@ -4,20 +4,20 @@
 
     <h3 class="Subtitle">基本使用：</h3>
     <p class="explain">基本使用</p>
-    <Tyh-crumbs>
-      <Tyh-crumbs-item to="/">首页</Tyh-crumbs-item>
-      <Tyh-crumbs-item>学员管理</Tyh-crumbs-item>
-      <Tyh-crumbs-item>文章管理</Tyh-crumbs-item>
-      <Tyh-crumbs-item>设置</Tyh-crumbs-item>
-    </Tyh-crumbs>
+    <tyh-crumbs>
+      <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
+      <tyh-crumbs-item>学员管理</tyh-crumbs-item>
+      <tyh-crumbs-item>文章管理</tyh-crumbs-item>
+      <tyh-crumbs-item>设置</tyh-crumbs-item>
+    </tyh-crumbs>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-crumbs&gt;
-  &lt;Tyh-crumbs-item to="/"&gt;首页&lt;/Tyh-crumbs-item&gt;
-  &lt;Tyh-crumbs-item&gt;学员管理&lt;/Tyh-crumbs-item&gt;
-  &lt;Tyh-crumbs-item&gt;文章管理&lt;/Tyh-crumbs-item&gt;
-  &lt;Tyh-crumbs-item&gt;设置&lt;/Tyh-crumbs-item&gt;
-&lt;/Tyh-crumbs&gt;
+&lt;tyh-crumbs&gt;
+  &lt;tyh-crumbs-item to="/"&gt;首页&lt;/tyh-crumbs-item&gt;
+  &lt;tyh-crumbs-item&gt;学员管理&lt;/tyh-crumbs-item&gt;
+  &lt;tyh-crumbs-item&gt;文章管理&lt;/tyh-crumbs-item&gt;
+  &lt;tyh-crumbs-item&gt;设置&lt;/tyh-crumbs-item&gt;
+&lt;/tyh-crumbs&gt;
       </code>
     </pre>
 
@@ -26,20 +26,20 @@
       通过给父组件<span>separator</span> 属性可以配置不同的分隔符，使用 icon
       类名
     </p>
-    <Tyh-crumbs separator="tyh-ui-right-02">
-      <Tyh-crumbs-item to="/">首页</Tyh-crumbs-item>
-      <Tyh-crumbs-item>学员管理</Tyh-crumbs-item>
-      <Tyh-crumbs-item>文章管理</Tyh-crumbs-item>
-      <Tyh-crumbs-item>设置</Tyh-crumbs-item>
-    </Tyh-crumbs>
+    <tyh-crumbs separator="tyh-ui-right-02">
+      <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
+      <tyh-crumbs-item>学员管理</tyh-crumbs-item>
+      <tyh-crumbs-item>文章管理</tyh-crumbs-item>
+      <tyh-crumbs-item>设置</tyh-crumbs-item>
+    </tyh-crumbs>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-crumbs separator="tyh-ui-right-02"&gt;
-  &lt;Tyh-crumbs-item to="/"&gt;首页&lt;/Tyh-crumbs-item&gt;
-  &lt;Tyh-crumbs-item&gt;学员管理&lt;/Tyh-crumbs-item&gt;
-  &lt;Tyh-crumbs-item&gt;文章管理&lt;/Tyh-crumbs-item&gt;
-  &lt;Tyh-crumbs-item&gt;设置&lt;/Tyh-crumbs-item&gt;
-&lt;/Tyh-crumbs&gt;
+&lt;tyh-crumbs separator="tyh-ui-right-02"&gt;
+  &lt;tyh-crumbs-item to="/"&gt;首页&lt;/tyh-crumbs-item&gt;
+  &lt;tyh-crumbs-item&gt;学员管理&lt;/tyh-crumbs-item&gt;
+  &lt;tyh-crumbs-item&gt;文章管理&lt;/tyh-crumbs-item&gt;
+  &lt;tyh-crumbs-item&gt;设置&lt;/tyh-crumbs-item&gt;
+&lt;/tyh-crumbs&gt;
       </code>
     </pre>
 
@@ -48,29 +48,29 @@
       通过给子组件<span>to</span>
       属性可以配置跳转路径，添加该属性后文章点击会跳转，并且加粗显示
     </p>
-    <Tyh-crumbs>
-      <Tyh-crumbs-item to="/">首页</Tyh-crumbs-item>
-      <Tyh-crumbs-item to="/student">学员管理</Tyh-crumbs-item>
-      <Tyh-crumbs-item>文章管理</Tyh-crumbs-item>
-      <Tyh-crumbs-item>设置</Tyh-crumbs-item>
-    </Tyh-crumbs>
+    <tyh-crumbs>
+      <tyh-crumbs-item to="/">首页</tyh-crumbs-item>
+      <tyh-crumbs-item to="/student">学员管理</tyh-crumbs-item>
+      <tyh-crumbs-item>文章管理</tyh-crumbs-item>
+      <tyh-crumbs-item>设置</tyh-crumbs-item>
+    </tyh-crumbs>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-crumbs&gt;
-  &lt;Tyh-crumbs-item to="/"&gt;首页&lt;/Tyh-crumbs-item&gt;
-  &lt;Tyh-crumbs-item to="/student"&gt;学员管理&lt;/Tyh-crumbs-item&gt;
-  &lt;Tyh-crumbs-item&gt;文章管理&lt;/Tyh-crumbs-item&gt;
-  &lt;Tyh-crumbs-item&gt;设置&lt;/Tyh-crumbs-item&gt;
-&lt;/Tyh-crumbs&gt;
+&lt;tyh-crumbs&gt;
+  &lt;tyh-crumbs-item to="/"&gt;首页&lt;/tyh-crumbs-item&gt;
+  &lt;tyh-crumbs-item to="/student"&gt;学员管理&lt;/tyh-crumbs-item&gt;
+  &lt;tyh-crumbs-item&gt;文章管理&lt;/tyh-crumbs-item&gt;
+  &lt;tyh-crumbs-item&gt;设置&lt;/tyh-crumbs-item&gt;
+&lt;/tyh-crumbs&gt;
       </code>
     </pre>
 
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
-    <p class="explain">Tyh-Crumbs 组件：</p>
+    <p class="explain">tyh-Crumbs 组件：</p>
     <ConfiguresTable :configures="configures" />
 
-    <p class="explain">Tyh-Crumbs-Item 子组件：</p>
+    <p class="explain">tyh-Crumbs-Item 子组件：</p>
     <ConfiguresTable :configures="configures2" />
 
     <h3 class="Subtitle">按需引入：</h3>

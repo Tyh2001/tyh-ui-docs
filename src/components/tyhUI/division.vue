@@ -4,24 +4,24 @@
 
     <h3 class="Subtitle">基本使用：</h3>
     <p class="explain">基本使用</p>
-    <Tyh-division>这是分割线</Tyh-division>
+    <tyh-division>这是分割线</tyh-division>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-division&gt;这是分割线&lt;/Tyh-division&gt;
+&lt;tyh-division&gt;这是分割线&lt;/tyh-division&gt;
       </code>
     </pre>
 
     <p class="explain"><span>position</span> 属性可以配置文字的位置</p>
-    <Tyh-division position="left">这是左边文字</Tyh-division>
+    <tyh-division position="left">这是左边文字</tyh-division>
     <br />
-    <Tyh-division position="center">这是中间文字</Tyh-division>
+    <tyh-division position="center">这是中间文字</tyh-division>
     <br />
-    <Tyh-division position="right">这是右边文字</Tyh-division>
+    <tyh-division position="right">这是右边文字</tyh-division>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;Tyh-division position="left"&gt;这是左边文字&lt;/Tyh-division&gt;
-&lt;Tyh-division position="center"&gt;这是中间文字&lt;/Tyh-division&gt;
-&lt;Tyh-division position="right"&gt;这是右边文字&lt;/Tyh-division&gt;
+&lt;tyh-division position="left"&gt;这是左边文字&lt;/tyh-division&gt;
+&lt;tyh-division position="center"&gt;这是中间文字&lt;/tyh-division&gt;
+&lt;tyh-division position="right"&gt;这是右边文字&lt;/tyh-division&gt;
       </code>
     </pre>
 
