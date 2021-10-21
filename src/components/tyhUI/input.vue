@@ -132,14 +132,14 @@ export default {
       </code>
     </pre>
 
-    <p class="explain">禁用按钮：</p>
+    <p class="explain">禁用状态：</p>
     <p class="explain"><span>prohibit</span> 属性可以配置文本框禁用状态</p>
     <tyh-input v-model="text10" prohibit />
     <pre v-highlightjs>
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;tyh-input v-model="text10" prohibit" /&gt;
+    &lt;tyh-input v-model="text10" prohibit /&gt;
   &lt;/div&gt;
 &lt;/template&gt;
 
