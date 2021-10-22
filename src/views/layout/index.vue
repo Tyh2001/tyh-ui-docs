@@ -21,6 +21,11 @@
         >
           {{ list.title }}
         </tyh-menu-item>
+        <tyh-menu-item color="#000">
+        <tyh-link target="_blank" url="https://tianyuhao.icu/tyhui/v3/">
+          v3
+        </tyh-link>
+      </tyh-menu-item>
       </div>
     </tyh-menu>
 
