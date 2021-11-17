@@ -51,16 +51,7 @@ export default {
   name: 'homeIndex',
   components: {
     FooterList
-  },
-  props: {},
-  data () {
-    return {}
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

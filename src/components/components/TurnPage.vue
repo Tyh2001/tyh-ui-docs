@@ -6,7 +6,7 @@
       class="pageList"
       :to="TurnPageList[0].url"
     >
-      <Tyh-icon icon="tyh-ui-left-02" />
+      <tyh-icon icon="tyh-ui-left-02" />
       {{ TurnPageList[0].text }}
     </router-link>
 
@@ -16,7 +16,7 @@
       :to="TurnPageList[1].url"
     >
       {{ TurnPageList[1].text }}
-      <Tyh-icon icon="tyh-ui-right-02" />
+      <tyh-icon icon="tyh-ui-right-02" />
     </router-link>
   </div>
 </template>
@@ -24,21 +24,12 @@
 <script>
 export default {
   name: 'TurnPage',
-  components: {},
   props: {
     TurnPageList: {
       type: Array,
       require: true
     }
-  },
-  data () {
-    return {}
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

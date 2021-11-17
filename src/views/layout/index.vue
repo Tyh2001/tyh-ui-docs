@@ -38,8 +38,6 @@
 <script>
 export default {
   name: 'layoutIndex',
-  components: {},
-  props: {},
   data () {
     return {
       // 导航栏选项
@@ -50,10 +48,6 @@ export default {
       ]
     }
   },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     // 导航栏高亮显示
     highLightStyle (url) {

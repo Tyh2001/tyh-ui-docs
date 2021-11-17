@@ -28,15 +28,7 @@ export default {
       type: Array,
       required: true
     }
-  },
-  data () {
-    return {}
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

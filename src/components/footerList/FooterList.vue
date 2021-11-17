@@ -5,12 +5,7 @@
       <h4>合作者</h4>
       <tyh-link target="_blank" url="https://github.com/Tyh2001">
         <div class="userBox">
-          <img
-            draggable="false"
-            class="myPhoto"
-            src="./images/footPhoto.jpg"
-            alt="我的头像"
-          />
+          <img draggable="false" class="myPhoto" src="./images/footPhoto.jpg" />
           <span class="userName">Tyh2001</span>
         </div>
       </tyh-link>
@@ -63,17 +58,7 @@
 
 <script>
 export default {
-  name: 'FooterList',
-  components: {},
-  props: {},
-  data () {
-    return {}
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  name: 'FooterList'
 }
 </script>
 

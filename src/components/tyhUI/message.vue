@@ -121,18 +121,6 @@ export default {
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
 
-    <h3 class="Subtitle">按需引入：</h3>
-    <p class="explain">
-      通过下面按需引入的方式，我们可以只引入需要的组件，以达到减小项目体积的目的
-    </p>
-    <pre v-highlightjs>
-      <code id="myCode" class="js">
-import Vue from 'vue'
-import TyhMessage from 'tyh-ui/packages/message'
-Vue.prototype.$message = TyhMessage
-      </code>
-    </pre>
-
     <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>

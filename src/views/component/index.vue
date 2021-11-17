@@ -24,8 +24,6 @@
 <script>
 export default {
   name: 'componentIndex',
-  components: {},
-  props: {},
   data () {
     return {
       listPush: [
@@ -47,10 +45,6 @@ export default {
       ]
     }
   },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     // 高亮显示
     highLightStyle (item) {

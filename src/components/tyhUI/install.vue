@@ -13,7 +13,7 @@ npm i tyh-ui
     <p class="explain">在 <span>main.js</span> 中引入下面内容</p>
     <pre v-highlightjs>
       <code id="myCode" class="js">
-import tyhUI from 'tyh-ui/lib'
+import tyhUI from 'tyh-ui'
 Vue.use(tyhUI)
       </code>
     </pre>
