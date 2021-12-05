@@ -1,98 +1,70 @@
 <template>
-  <div id="FooterList">
-    <!-- 合作者 -->
-    <div id="Collaborators">
-      <h4>合作者</h4>
-      <tyh-link target="_blank" url="https://github.com/Tyh2001">
+  <div id="Footer">
+    <div class="foot-box">
+      <h3 class="title-footer">合作者</h3>
+      <tyh-link
+        target="_blank"
+        url="https://github.com/Tyh2001"
+        style="margin-top: 12px"
+      >
         <div class="userBox">
-          <img draggable="false" class="myPhoto" src="./images/footPhoto.jpg" />
+          <img
+            draggable="false"
+            class="myPhoto"
+            src="./images/footPhoto.jpg"
+          />
           <span class="userName">Tyh2001</span>
         </div>
       </tyh-link>
-    </div>
-    <!-- 链接 -->
-    <div id="footer-link">
-      <!-- 链接 -->
-      <div class="link">
-        <h4 class="lint-title">链接</h4>
-        <ul class="link-ul">
-          <li>
-            <tyh-link target="_blank" url="https://github.com/Tyh2001">
-              Github
-            </tyh-link>
-          </li>
-          <li>
-            <tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui">
-              官方仓库
-            </tyh-link>
-          </li>
-          <li>
-            <tyh-link
-              target="_blank"
-              url="https://www.npmjs.com/package/tyh-ui"
-            >
-              NPM
-            </tyh-link>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- Logo -->
-    <div id="myLogo">
-      <img
-        draggable="false"
-        class="image"
-        src="../../views/home/images/logo.png"
-        alt="Logo"
-      />
-    </div>
 
-    <!-- 备案号 -->
-    <p class="code">
-      <tyh-link target="_blank" url="https://beian.miit.gov.cn">
-        浙ICP备2021024540号-1
-      </tyh-link>
-    </p>
+      <h3 class="title-footer">链接</h3>
+      <ul class="link-ul">
+        <li>
+          <tyh-link target="_blank" url="https://github.com/Tyh2001">
+            Github
+          </tyh-link>
+        </li>
+        <li>
+          <tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui2">
+            官方仓库
+          </tyh-link>
+        </li>
+        <li>
+          <tyh-link target="_blank" url="https://www.npmjs.com/package/tyh-ui2">
+            NPM
+          </tyh-link>
+        </li>
+        <li>
+          <tyh-link
+            target="_blank"
+            url="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md"
+          >
+            更新日志
+          </tyh-link>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'FooterList'
-}
-</script>
-
 <style lang='less' scoped>
 // 页脚
-#FooterList {
+#Footer {
   background: #f7fbfd;
-  padding: 60px 200px;
+  padding: 60px 0;
   box-sizing: border-box;
   user-select: none;
-  #footer-link {
-    display: flex;
-    padding: 30px 0;
-    border-bottom: 1px solid rgb(219, 219, 219);
-    .link {
-      width: 180px;
-      .link-ul {
-        margin-top: 27px;
-        li {
-          list-style: none;
-          line-height: 30px;
-        }
-      }
+  .foot-box {
+    width: 800px;
+    margin: auto;
+    .title-footer {
+      margin-top: 50px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #515a6e;
     }
-  }
-  // 合作者
-  #Collaborators {
-    padding: 30px 0;
-    border-bottom: 1px solid rgb(219, 219, 219);
     .tyh-link {
-      width: 150px;
-      height: 50px;
       display: inline-block;
-      margin-top: 20px;
       .userBox {
         width: 150px;
         height: 50px;
@@ -100,34 +72,23 @@ export default {
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        // 头像
         .myPhoto {
-          width: 50px;
-          height: 50px;
+          width: 45px;
+          height: 45px;
           border-radius: 50%;
         }
-        // 用户昵称
         .userName {
           font-size: 20px;
-          font-weight: 600;
           color: #515a6e;
           margin-left: 10px;
         }
       }
     }
-  }
-  // logo
-  #myLogo {
-    padding: 30px 0;
-    height: 150px;
-    .image {
-      height: 100%;
-    }
-  }
-  .code {
-    text-align: center;
-    .tyh-link:hover {
-      color: #409eff;
+    .link-ul {
+      li {
+        list-style: none;
+        line-height: 40px;
+      }
     }
   }
 }

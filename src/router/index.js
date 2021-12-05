@@ -83,6 +83,26 @@ const routes = [
           {
             path: '/component/crumbs',
             component: () => import('@/components/tyhUI/crumbs')
+          },
+          {
+            path: '/component/alert',
+            component: () => import('@/components/tyhUI/alert')
+          },
+          {
+            path: '/component/image',
+            component: () => import('@/components/tyhUI/image')
+          },
+          {
+            path: '/component/skeleton',
+            component: () => import('@/components/tyhUI/skeleton')
+          },
+          {
+            path: '/component/avatar',
+            component: () => import('@/components/tyhUI/avatar')
+          },
+          {
+            path: '/component/container',
+            component: () => import('@/components/tyhUI/container')
           }
         ]
       }

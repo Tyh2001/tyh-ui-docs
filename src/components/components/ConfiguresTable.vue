@@ -33,17 +33,18 @@ export default {
 </script>
 
 <style lang='less' scoped>
-// 表格
 #table {
   user-select: text;
   width: 100%;
   color: #606266;
+  border-collapse: collapse;
   tr {
     height: 50px;
-    background: rgb(243, 247, 255);
+    border-bottom: 1px solid #dcdfe6;
     text-align: center;
+    td,
     th {
-      background: rgb(180, 234, 255);
+      border-bottom: 1px solid #dcdfe6;
     }
   }
 }

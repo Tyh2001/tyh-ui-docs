@@ -95,32 +95,27 @@
 import ConfiguresTable from '../components/ConfiguresTable'
 import TurnPage from '../components/TurnPage'
 export default {
-  name: '',
   components: {
     ConfiguresTable,
     TurnPage
   },
-  props: {},
   data () {
     return {
       configures: [
-        { param: 'type', explain: '按钮的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+        { param: 'type', explain: '按钮的类型', type: 'string', value: 'primary / success / danger / warning', default: 'default' },
         { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: '——', default: 'false' },
         { param: 'prohibit', explain: '按钮是否禁用', type: 'boolean', value: '——', default: 'false' },
         { param: 'icon', explain: '按钮上的 icon', type: 'string', value: '——', default: '——' },
-        { param: 'simple', explain: '是否为朴素按钮', type: 'boolean', value: '——', default: 'fasle' }
+        { param: 'simple', explain: '是否为朴素按钮', type: 'boolean', value: '——', default: 'fasle' },
+        { param: 'size', explain: '按钮尺寸', type: 'string', value: '—— / small / mini', default: '——' },
+        { param: 'big', explain: '宽度百分百的按钮', type: 'boolean', value: '', default: 'false' }
       ],
       TurnPageList: [
-        { text: 'Color 色彩', url: 'color' },
+        { text: 'Container 布局容器', url: 'container' },
         { text: 'List 列表', url: 'list' }
       ]
     }
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

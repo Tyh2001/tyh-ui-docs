@@ -97,7 +97,7 @@ export default {
       ],
       TurnPageList: [
         { text: 'Icon 图标', url: 'icon' },
-        { text: '', url: '' }
+        { text: 'Alert 提示', url: 'alert' }
       ]
     }
   },
