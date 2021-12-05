@@ -25,7 +25,7 @@
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;tyh-backTop bottom="160" right="120"&gt;
-  &lt;tyh-icon icon="tyh-ui-huojian-01" color="#409eff" /&gt;
+  &lt;tyh-icon icon="tyh-ui-top" color="#409eff" /&gt;
 &lt;/tyh-backTop&gt;
       </code>
     </pre>

@@ -11,7 +11,9 @@
         </tyh-button>
 
         <a target="_back" href="https://github.com/Tyh2001/tyh-ui">
-          <tyh-button round icon="tyh-ui-github">Github</tyh-button>
+          <tyh-button type="default" round icon="tyh-ui-github">
+            Github
+          </tyh-button>
         </a>
       </div>
 

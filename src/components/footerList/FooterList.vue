@@ -8,11 +8,7 @@
         style="margin-top: 12px"
       >
         <div class="userBox">
-          <img
-            draggable="false"
-            class="myPhoto"
-            src="./images/footPhoto.jpg"
-          />
+          <img draggable="false" class="myPhoto" src="./images/footPhoto.jpg" />
           <span class="userName">Tyh2001</span>
         </div>
       </tyh-link>
@@ -25,19 +21,19 @@
           </tyh-link>
         </li>
         <li>
-          <tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui2">
+          <tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui">
             官方仓库
           </tyh-link>
         </li>
         <li>
-          <tyh-link target="_blank" url="https://www.npmjs.com/package/tyh-ui2">
+          <tyh-link target="_blank" url="https://www.npmjs.com/package/tyh-ui">
             NPM
           </tyh-link>
         </li>
         <li>
           <tyh-link
             target="_blank"
-            url="https://github.com/Tyh2001/tyh-ui2/blob/master/CHANGELOG.md"
+            url="https://github.com/Tyh2001/tyh-ui/blob/master/CHANGELOG.md"
           >
             更新日志
           </tyh-link>

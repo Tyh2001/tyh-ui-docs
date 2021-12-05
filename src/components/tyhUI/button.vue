@@ -36,16 +36,16 @@
 
     <p class="explain">图标按钮</p>
     <p class="explain"><span>icon</span> 属性可以配置图标按钮</p>
-    <tyh-button icon="tyh-ui-setting-01" type="primary"></tyh-button>
-    <tyh-button icon="tyh-ui-phone-01" type="success"></tyh-button>
-    <tyh-button icon="tyh-ui-huojian-01" type="danger">火箭</tyh-button>
-    <tyh-button icon="tyh-ui-PaperPlane-01" type="warning">飞机</tyh-button>
+    <tyh-button icon="tyh-ui-githublogo" type="primary"></tyh-button>
+    <tyh-button icon="tyh-ui-home-filling" type="success"></tyh-button>
+    <tyh-button icon="tyh-ui-chart-bar" type="danger">火箭</tyh-button>
+    <tyh-button icon="tyh-ui-comment" type="warning">飞机</tyh-button>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;tyh-button icon="tyh-ui-setting-01" type="primary"&gt;&lt;/tyh-button&gt;
-&lt;tyh-button icon="tyh-ui-phone-01" type="success"&gt;&lt;/tyh-button&gt;
-&lt;tyh-button icon="tyh-ui-huojian-01" type="danger"&gt;火箭&lt;/tyh-button&gt;
-&lt;tyh-button icon="tyh-ui-PaperPlane-01" type="warning"&gt;飞机&lt;/tyh-button&gt;
+&lt;tyh-button icon="tyh-ui-githublogo" type="primary"&gt;&lt;/tyh-button&gt;
+&lt;tyh-button icon="tyh-ui-home-filling" type="success"&gt;&lt;/tyh-button&gt;
+&lt;tyh-button icon="tyh-ui-chart-bar" type="danger"&gt;火箭&lt;/tyh-button&gt;
+&lt;tyh-button icon="tyh-ui-comment" type="warning"&gt;飞机&lt;/tyh-button&gt;
       </code>
     </pre>
 
@@ -83,7 +83,6 @@
       </code>
     </pre>
 
-    <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
 

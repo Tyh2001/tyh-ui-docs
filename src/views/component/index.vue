@@ -16,7 +16,7 @@
     </div>
 
     <tyh-backTop bottom="160" right="120">
-      <tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
+      <tyh-icon icon="tyh-ui-top" color="#409eff" />
     </tyh-backTop>
   </div>
 </template>
