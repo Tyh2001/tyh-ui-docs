@@ -108,27 +108,27 @@
     <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <p class="explain">tyh-menu 组件：</p>
-    <ConfiguresTable :configures="configures" />
+    <h3 class="Subtitle">配置项</h3>
+    <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
     <p class="explain">tyh-menu-item 子组件：</p>
-    <ConfiguresTable :configures="configures2" />
+    <h3 class="Subtitle">配置项</h3>
+    <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
     <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
-import ConfiguresTable from '@/components/ConfiguresTable'
 import TurnPage from '@/components/TurnPage'
+import table from './table'
 export default {
-  name: '',
   components: {
-    ConfiguresTable,
     TurnPage
   },
-  props: {},
   data () {
     return {
+      columns: table.columns,
       configures: [
         { param: 'backgroundColor', explain: '导航栏背景色', type: 'string', value: '——', default: '——' },
         { param: 'buttomShadow', explain: '底部是否显示阴影', type: 'boolean', value: '——', default: 'false' }
@@ -143,12 +143,7 @@ export default {
         { text: 'Message 消息提示', url: 'message' }
       ]
     }
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

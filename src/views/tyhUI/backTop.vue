@@ -2,7 +2,7 @@
   <div id="component-item">
     <h1 class="title">BackTop 回到顶部</h1>
 
-    <h3 class="Subtitle">基本使用：</h3>
+    <h3 class="Subtitle">基本使用</h3>
     <p class="explain">基本使用</p>
     <tyh-backTop>Top</tyh-backTop>
     <pre v-highlightjs>
@@ -25,31 +25,28 @@
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;tyh-backTop bottom="160" right="120"&gt;
-  &lt;tyh-icon icon="tyh-ui-huojian-01" color="#409eff" /&gt;
+  &lt;tyh-icon icon="tyh-ui-arrow-up-filling1" color="#409eff" /&gt;
 &lt;/tyh-backTop&gt;
       </code>
     </pre>
 
-    <!-- 配置项 -->
-    <h3 class="Subtitle">配置项：</h3>
-    <ConfiguresTable :configures="configures" />
+    <h3 class="Subtitle">配置项</h3>
+    <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
     <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
-import ConfiguresTable from '@/components/ConfiguresTable'
 import TurnPage from '@/components/TurnPage'
+import table from './table'
 export default {
-  name: '',
   components: {
-    ConfiguresTable,
     TurnPage
   },
-  props: {},
   data () {
     return {
+      columns: table.columns,
       configures: [
         { param: 'bottom', explain: '距离下面的距离', type: 'string', value: '——', default: '40' },
         { param: 'right', explain: '距离右面的距离', type: 'string', value: '——', default: '40' }
@@ -59,12 +56,7 @@ export default {
         { text: 'Icon 图标', url: 'icon' }
       ]
     }
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

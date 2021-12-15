@@ -65,30 +65,26 @@
       </code>
     </pre>
 
-    <!-- 配置项 -->
-    <h3 class="Subtitle">配置项：</h3>
-    <p class="explain">tyh-Crumbs 组件：</p>
-    <ConfiguresTable :configures="configures" />
+    <h3 class="Subtitle">tyh-Crumbs 配置项</h3>
+    <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
-    <p class="explain">tyh-Crumbs-Item 子组件：</p>
-    <ConfiguresTable :configures="configures2" />
+    <p class="Subtitle">tyh-Crumbs-Item 配置项</p>
+    <tyh-table zebra align="center" :data="configures2" :columns="columns" />
 
     <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
-import ConfiguresTable from '@/components/ConfiguresTable'
 import TurnPage from '@/components/TurnPage'
+import table from './table'
 export default {
-  name: '',
   components: {
-    ConfiguresTable,
     TurnPage
   },
-  props: {},
   data () {
     return {
+      columns: table.columns,
       configures: [
         { param: 'separator', explain: '分隔符，icon 的类名', type: 'string', value: '——', default: 'tyh-ui-xiexian-01' }
       ],
@@ -97,15 +93,10 @@ export default {
       ],
       TurnPageList: [
         { text: 'Icon 图标', url: 'icon' },
-        { text: '', url: '' }
+        { text: 'Table 表格', url: 'table' }
       ]
     }
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

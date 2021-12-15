@@ -115,26 +115,25 @@
       </code>
     </pre>
 
-    <!-- 配置项 -->
-    <h3 class="Subtitle">配置项：</h3>
-    <ConfiguresTable :configures="configures" />
+    <h3 class="Subtitle">配置项</h3>
+    <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
     <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
-import ConfiguresTable from '@/components/ConfiguresTable'
 import TurnPage from '@/components/TurnPage'
+import table from './table'
 export default {
   name: '',
   components: {
-    ConfiguresTable,
     TurnPage
   },
   props: {},
   data () {
     return {
+      columns: table.columns,
       configures: [
         { param: 'simple', explain: '简约卡片', type: 'boolean', value: '——', default: 'false' },
         { param: 'shadow', explain: '阴影显示时机', type: 'string', value: 'always / hover / noShadow', default: '——' },

@@ -148,26 +148,23 @@ export default {
       </code>
     </pre>
 
-    <!-- 配置项 -->
-    <h3 class="Subtitle">配置项：</h3>
-    <ConfiguresTable :configures="configures" />
+    <h3 class="Subtitle">配置项</h3>
+    <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
     <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
-import ConfiguresTable from '@/components/ConfiguresTable'
 import TurnPage from '@/components/TurnPage'
+import table from './table'
 export default {
-  name: '',
   components: {
-    ConfiguresTable,
     TurnPage
   },
-  props: {},
   data () {
     return {
+      columns: table.columns,
       configures: [
         { param: 'title', explain: '标题', type: 'string', value: '——', default: '——' },
         { param: 'message', explain: '内容', type: 'string', value: '——', default: '——' },
@@ -183,10 +180,6 @@ export default {
       ]
     }
   },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     change1 () {
       this.$tips({

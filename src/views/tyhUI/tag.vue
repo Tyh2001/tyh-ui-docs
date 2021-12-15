@@ -5,53 +5,50 @@
     <h3 class="Subtitle">基本使用：</h3>
     <p class="explain">基本使用</p>
     <tyh-tag>标签一</tyh-tag>
-    <tyh-tag color="primary">标签二</tyh-tag>
-    <tyh-tag color="success">标签三</tyh-tag>
-    <tyh-tag color="danger">标签四</tyh-tag>
-    <tyh-tag color="warning">标签五</tyh-tag>
+    <tyh-tag type="primary">标签二</tyh-tag>
+    <tyh-tag type="success">标签三</tyh-tag>
+    <tyh-tag type="danger">标签四</tyh-tag>
+    <tyh-tag type="warning">标签五</tyh-tag>
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;tyh-tag&gt;标签一&lt;/tyh-tag&gt;
-&lt;tyh-tag color="primary"&gt;标签二&lt;/tyh-tag&gt;
-&lt;tyh-tag color="success"&gt;标签三&lt;/tyh-tag&gt;
-&lt;tyh-tag color="danger"&gt;标签四&lt;/tyh-tag&gt;
-&lt;tyh-tag color="warning"&gt;标签五&lt;/tyh-tag&gt;
+&lt;tyh-tag type="primary"&gt;标签二&lt;/tyh-tag&gt;
+&lt;tyh-tag type="success"&gt;标签三&lt;/tyh-tag&gt;
+&lt;tyh-tag type="danger"&gt;标签四&lt;/tyh-tag&gt;
+&lt;tyh-tag type="warning"&gt;标签五&lt;/tyh-tag&gt;
       </code>
     </pre>
 
     <p class="explain">不同尺寸：</p>
     <p class="explain"><span>size</span> 属性可以配置不同的尺寸</p>
-    <tyh-tag color="primary">标签</tyh-tag>
-    <tyh-tag size="small" color="primary">标签</tyh-tag>
-    <tyh-tag size="mini" color="primary">标签</tyh-tag>
+    <tyh-tag type="primary">标签</tyh-tag>
+    <tyh-tag size="small" type="primary">标签</tyh-tag>
+    <tyh-tag size="mini" type="primary">标签</tyh-tag>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;tyh-tag color="primary"&gt;标签&lt;/tyh-tag&gt;
-&lt;tyh-tag size="small" color="primary"&gt;标签&lt;/tyh-tag&gt;
-&lt;tyh-tag size="mini" color="primary"&gt;标签&lt;/tyh-tag&gt;
+&lt;tyh-tag type="primary"&gt;标签&lt;/tyh-tag&gt;
+&lt;tyh-tag size="small" type="primary"&gt;标签&lt;/tyh-tag&gt;
+&lt;tyh-tag size="mini" type="primary"&gt;标签&lt;/tyh-tag&gt;
       </code>
     </pre>
 
-    <!-- 配置项 -->
-    <h3 class="Subtitle">配置项：</h3>
-    <ConfiguresTable :configures="configures" />
+    <h3 class="Subtitle">配置项</h3>
+    <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
     <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
-import ConfiguresTable from '@/components/ConfiguresTable'
 import TurnPage from '@/components/TurnPage'
+import table from './table'
 export default {
-  name: '',
   components: {
-    ConfiguresTable,
     TurnPage
   },
-  props: {},
   data () {
     return {
+      columns: table.columns,
       configures: [
         { param: 'type', explain: '标签的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
         { param: 'size', explain: '标签的尺寸', type: 'string', value: ' — / small / mini', default: '——' },
@@ -63,12 +60,7 @@ export default {
         { text: 'Link 链接', url: 'link' }
       ]
     }
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

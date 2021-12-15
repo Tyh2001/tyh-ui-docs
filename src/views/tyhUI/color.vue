@@ -67,11 +67,9 @@
 import Clipboard from 'clipboard'
 import TurnPage from '@/components/TurnPage'
 export default {
-  name: '',
   components: {
     TurnPage
   },
-  props: {},
   data () {
     return {
       // 颜色列表1
@@ -132,10 +130,6 @@ export default {
       ]
     }
   },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     // 每个盒子的颜色
     ListBackgroundColor (item) {

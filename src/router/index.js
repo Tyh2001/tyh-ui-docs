@@ -86,7 +86,7 @@ const routes = [
           },
           {
             path: '/component/table',
-            component: () => import('@/views/tyhUI/table')
+            component: () => import('@/views/tyhUI/table.vue')
           }
         ]
       }

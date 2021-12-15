@@ -53,7 +53,7 @@ export default {
 
     <p class="explain">不同尺寸：</p>
     <p class="explain"><span>size</span> 属性可以配置文本框尺寸</p>
-    <tyh-input size="big" v-model="text4" /><br />
+    <tyh-input size="large" v-model="text4" /><br />
     <tyh-input size="medium" v-model="text5" /><br />
     <tyh-input size="small" v-model="text6" /><br />
     <tyh-input size="mini" v-model="text7" /><br />
@@ -61,7 +61,7 @@ export default {
       <code id="myCode" class="vue">
 &lt;template&gt;
   &lt;div&gt;
-    &lt;tyh-input size="big" v-model="text4" /&gt;
+    &lt;tyh-input size="large" v-model="text4" /&gt;
     &lt;tyh-input size="medium" v-model="text5" /&gt;
     &lt;tyh-input size="small" v-model="text6" /&gt;
     &lt;tyh-input size="mini" v-model="text7" /&gt;
@@ -154,26 +154,23 @@ export default {
 &lt;/script&gt;
       </code>
     </pre>
-    <!-- 配置项 -->
-    <h3 class="Subtitle">配置项：</h3>
-    <ConfiguresTable :configures="configures" />
+    <h3 class="Subtitle">配置项</h3>
+    <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
     <TurnPage :TurnPageList="TurnPageList" />
   </div>
 </template>
 
 <script>
-import ConfiguresTable from '@/components/ConfiguresTable'
 import TurnPage from '@/components/TurnPage'
+import table from './table'
 export default {
-  name: '',
   components: {
-    ConfiguresTable,
     TurnPage
   },
-  props: {},
   data () {
     return {
+      columns: table.columns,
       text1: '',
       text2: '',
       text3: '',
@@ -201,12 +198,7 @@ export default {
         { text: 'Tips 提示', url: 'tips' }
       ]
     }
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

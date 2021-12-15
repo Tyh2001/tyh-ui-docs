@@ -40,7 +40,6 @@ export default {
   name: 'layoutIndex',
   data () {
     return {
-      // 导航栏选项
       layoutList: [
         { title: '首页', url: '/' },
         { title: '组件', url: '/component' },

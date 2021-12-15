@@ -34,11 +34,9 @@ new Vue({
 <script>
 import TurnPage from '@/components/TurnPage'
 export default {
-  name: '',
   components: {
     TurnPage
   },
-  props: {},
   data () {
     return {
       TurnPageList: [
@@ -46,12 +44,7 @@ export default {
         { text: 'Color 色彩', url: 'color' }
       ]
     }
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

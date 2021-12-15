@@ -52,7 +52,6 @@ const tableData = [
       </code>
     </pre>
 
-    <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <tyh-table zebra align="center" :data="configures" :columns="columns2" />
 
@@ -62,36 +61,14 @@ const tableData = [
 
 <script>
 import TurnPage from '@/components/TurnPage'
+import table from './table'
 export default {
-  name: '',
   components: {
     TurnPage
   },
-  props: {},
   data () {
     return {
-      columns2: [
-        {
-          title: '参数',
-          key: 'param'
-        },
-        {
-          title: '说明',
-          key: 'explain'
-        },
-        {
-          title: '类型',
-          key: 'type'
-        },
-        {
-          title: '可选值',
-          key: 'value'
-        },
-        {
-          title: '默认值',
-          key: 'default'
-        }
-      ],
+      columns2: table.columns,
       columns: [
         {
           title: '日期',
@@ -120,8 +97,8 @@ export default {
         { param: 'importantColor', explain: '重点行标注背景色', type: 'string', value: '——', default: '#fdf5e6' }
       ],
       TurnPageList: [
-        { text: 'Button 按钮', url: 'button' },
-        { text: 'Card 卡片', url: 'card' }
+        { text: 'Crumbs 面包屑', url: 'crumbs' },
+        { text: '', url: '' }
       ],
       tableData: [
         {
@@ -146,12 +123,7 @@ export default {
         }
       ]
     }
-  },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
-  methods: {}
+  }
 }
 </script>
 

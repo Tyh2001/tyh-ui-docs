@@ -45,9 +45,8 @@
       </code>
     </pre>
 
-    <!-- 配置项 -->
-    <h3 class="Subtitle">配置项：</h3>
-    <ConfiguresTable :configures="configures" />
+    <h3 class="Subtitle">配置项</h3>
+    <tyh-table zebra align="center" :data="configures" :columns="columns" />
 
     <h3 class="Subtitle">Icon 集合：</h3>
     <p class="explain">点击即可复制代码</p>
@@ -72,18 +71,15 @@
 
 <script>
 import Clipboard from 'clipboard'
-import ConfiguresTable from '@/components/ConfiguresTable'
 import TurnPage from '@/components/TurnPage'
+import table from './table'
 export default {
-  name: '',
   components: {
-    ConfiguresTable,
     TurnPage
   },
-  props: {},
   data () {
     return {
-      // 配置项
+      columns: table.columns,
       configures: [
         { param: 'icon', explain: 'icon 的类名', type: 'string', value: '——', default: '——' },
         { param: 'color', explain: 'icon 的颜色', type: 'string', value: '——', default: '#606266' },
@@ -285,10 +281,6 @@ export default {
       ]
     }
   },
-  computed: {},
-  watch: {},
-  created () { },
-  mounted () { },
   methods: {
     copy () {
       const clipboard = new Clipboard('.allIcon-li')

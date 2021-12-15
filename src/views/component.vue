@@ -1,6 +1,5 @@
 <template>
   <div id="conponentIndex">
-    <!-- 左侧列表 -->
     <div class="contentList">
       <ul ref="ulList">
         <li v-for="(item, index) in listPush" :key="index">
@@ -16,7 +15,7 @@
     </div>
 
     <tyh-backTop bottom="160" right="120">
-      <tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
+      <tyh-icon icon="tyh-ui-arrow-up-filling" color="#409eff" />
     </tyh-backTop>
   </div>
 </template>
