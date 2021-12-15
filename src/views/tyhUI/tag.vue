@@ -41,8 +41,8 @@
 </template>
 
 <script>
-import ConfiguresTable from '../components/ConfiguresTable'
-import TurnPage from '../components/TurnPage'
+import ConfiguresTable from '@/components/ConfiguresTable'
+import TurnPage from '@/components/TurnPage'
 export default {
   name: '',
   components: {
@@ -53,8 +53,10 @@ export default {
   data () {
     return {
       configures: [
-        { param: 'color', explain: '标签的颜色类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
-        { param: 'size', explain: '标签的尺寸', type: 'string', value: ' — / small / mini', default: '最大尺寸' }
+        { param: 'type', explain: '标签的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
+        { param: 'size', explain: '标签的尺寸', type: 'string', value: ' — / small / mini', default: '——' },
+        { param: 'round', explain: '配置圆角显示', type: 'boolean', value: '——', default: 'false' },
+        { param: 'isClose', explain: '是否显示关闭按钮', type: 'boolean', value: '——', default: 'false' }
       ],
       TurnPageList: [
         { text: 'Card 卡片', url: 'card' },

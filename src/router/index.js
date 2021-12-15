@@ -6,103 +6,87 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    component: () => import('@/views/layout'),
+    component: () => import('@/views/layout.vue'),
     children: [
       {
         path: '/',
         name: 'home',
-        component: () => import('@/views/home')
+        component: () => import('@/views/home.vue')
       },
       {
         path: '/about',
         name: 'about',
-        component: () => import('@/views/about')
+        component: () => import('@/views/about.vue')
       },
       // 组件
       {
         path: '/component',
         redirect: '/component/install',
-        component: () => import('@/views/component'),
+        component: () => import('@/views/component.vue'),
         children: [
           {
             path: '/component/install',
-            component: () => import('@/components/tyhUI/install')
+            component: () => import('@/views/tyhUI/install')
           },
           {
             path: '/component/button',
-            component: () => import('@/components/tyhUI/button')
+            component: () => import('@/views/tyhUI/button')
           },
           {
             path: '/component/list',
-            component: () => import('@/components/tyhUI/list')
+            component: () => import('@/views/tyhUI/list')
           },
           {
             path: '/component/card',
-            component: () => import('@/components/tyhUI/card')
+            component: () => import('@/views/tyhUI/card')
           },
           {
             path: '/component/tag',
-            component: () => import('@/components/tyhUI/tag')
+            component: () => import('@/views/tyhUI/tag')
           },
           {
             path: '/component/link',
-            component: () => import('@/components/tyhUI/link')
+            component: () => import('@/views/tyhUI/link')
           },
           {
             path: '/component/input',
-            component: () => import('@/components/tyhUI/input')
+            component: () => import('@/views/tyhUI/input')
           },
           {
             path: '/component/tips',
-            component: () => import('@/components/tyhUI/tips')
+            component: () => import('@/views/tyhUI/tips')
           },
           {
             path: '/component/menu',
-            component: () => import('@/components/tyhUI/menu')
+            component: () => import('@/views/tyhUI/menu')
           },
           {
             path: '/component/message',
-            component: () => import('@/components/tyhUI/message')
+            component: () => import('@/views/tyhUI/message')
           },
           {
             path: '/component/division',
-            component: () => import('@/components/tyhUI/division')
+            component: () => import('@/views/tyhUI/division')
           },
           {
             path: '/component/backTop',
-            component: () => import('@/components/tyhUI/backTop')
+            component: () => import('@/views/tyhUI/backTop')
           },
           {
             path: '/component/icon',
-            component: () => import('@/components/tyhUI/icon')
+            component: () => import('@/views/tyhUI/icon')
           },
           {
             path: '/component/color',
-            component: () => import('@/components/tyhUI/color')
+            component: () => import('@/views/tyhUI/color')
           },
           {
             path: '/component/crumbs',
-            component: () => import('@/components/tyhUI/crumbs')
+            component: () => import('@/views/tyhUI/crumbs')
           },
           {
-            path: '/component/alert',
-            component: () => import('@/components/tyhUI/alert')
-          },
-          {
-            path: '/component/image',
-            component: () => import('@/components/tyhUI/image')
-          },
-          {
-            path: '/component/skeleton',
-            component: () => import('@/components/tyhUI/skeleton')
-          },
-          {
-            path: '/component/avatar',
-            component: () => import('@/components/tyhUI/avatar')
-          },
-          {
-            path: '/component/container',
-            component: () => import('@/components/tyhUI/container')
+            path: '/component/table',
+            component: () => import('@/views/tyhUI/table')
           }
         ]
       }

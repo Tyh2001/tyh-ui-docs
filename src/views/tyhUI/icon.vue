@@ -8,25 +8,25 @@
       通过 <span>icon</span> 属性来给 icon 添加类名，来显示不同的图标
     </p>
     <tyh-icon icon="tyh-ui-tyhui" />
-    <tyh-icon icon="tyh-ui-ashbin" />
-    <tyh-icon icon="tyh-ui-data-view" />
+    <tyh-icon icon="tyh-ui-huojian-01" />
+    <tyh-icon icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
       <code id="myCode" class="html">
 &lt;tyh-icon icon="tyh-ui-tyhui" /&gt;
-&lt;tyh-icon icon="tyh-ui-ashbin" /&gt;
-&lt;tyh-icon icon="tyh-ui-data-view" /&gt;
+&lt;tyh-icon icon="tyh-ui-huojian-01" /&gt;
+&lt;tyh-icon icon="tyh-ui-PaperPlane-01" /&gt;
       </code>
     </pre>
 
     <p class="explain"><span>color</span> 属性改变 icon 的颜色</p>
-    <tyh-icon color="skyblue" icon="tyh-ui-favorite" />
-    <tyh-icon color="red" icon="tyh-ui-fabulous" />
-    <tyh-icon color="pink" icon="tyh-ui-good" />
+    <tyh-icon color="skyblue" icon="tyh-ui-tyhui" />
+    <tyh-icon color="orange" icon="tyh-ui-huojian-01" />
+    <tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;tyh-icon color="skyblue" icon="tyh-ui-favorite" /&gt;
-&lt;tyh-icon color="red" icon="tyh-ui-fabulous" /&gt;
-&lt;tyh-icon color="pink" icon="tyh-ui-good" /&gt;
+&lt;tyh-icon color="skyblue" icon="tyh-ui-tyhui" /&gt;
+&lt;tyh-icon color="orange" icon="tyh-ui-huojian-01" /&gt;
+&lt;tyh-icon color="pink" icon="tyh-ui-PaperPlane-01" /&gt;
       </code>
     </pre>
 
@@ -34,14 +34,14 @@
     <p class="explain">
       这里采用的是字体大小形式，只需要传递具体数值，并不需要传递单位
     </p>
-    <tyh-icon size="50" icon="tyh-ui-hide" />
-    <tyh-icon size="40" icon="tyh-ui-shouye-xianxing" />
-    <tyh-icon size="30" icon="tyh-ui-huojian" />
+    <tyh-icon size="50" icon="tyh-ui-tyhui" />
+    <tyh-icon size="40" icon="tyh-ui-huojian-01" />
+    <tyh-icon size="30" icon="tyh-ui-PaperPlane-01" />
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;tyh-icon size="50" icon="tyh-ui-hide" /&gt;
-&lt;tyh-icon size="40" icon="tyh-ui-shouye-xianxing" /&gt;
-&lt;tyh-icon size="30" icon="tyh-ui-huojian" /&gt;
+&lt;tyh-icon size="50" icon="tyh-ui-tyhui" /&gt;
+&lt;tyh-icon size="40" icon="tyh-ui-huojian-01" /&gt;
+&lt;tyh-icon size="30" icon="tyh-ui-PaperPlane-01" /&gt;
       </code>
     </pre>
 
@@ -72,8 +72,8 @@
 
 <script>
 import Clipboard from 'clipboard'
-import ConfiguresTable from '../components/ConfiguresTable'
-import TurnPage from '../components/TurnPage'
+import ConfiguresTable from '@/components/ConfiguresTable'
+import TurnPage from '@/components/TurnPage'
 export default {
   name: '',
   components: {
@@ -326,6 +326,7 @@ export default {
     .allIcon-li {
       width: 140px;
       height: 120px;
+      border: 1px solid #eee;
       list-style: none;
       cursor: pointer;
       padding: 5px;
@@ -338,15 +339,10 @@ export default {
         margin-top: 10px;
         font-size: 12px;
         color: rgb(138, 138, 138);
-        display: inline-block;
-        max-width: 100px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
       }
       &:hover {
         transition: background 0.3s;
-        background: #dcdfe6;
+        background: #eef5fd;
       }
     }
   }

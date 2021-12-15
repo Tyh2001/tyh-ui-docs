@@ -110,8 +110,8 @@ export default {
 </template>
 
 <script>
-import ConfiguresTable from '../components/ConfiguresTable'
-import TurnPage from '../components/TurnPage'
+import ConfiguresTable from '@/components/ConfiguresTable'
+import TurnPage from '@/components/TurnPage'
 export default {
   name: '',
   components: {

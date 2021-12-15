@@ -62,8 +62,8 @@
 </template>
 
 <script>
-import ConfiguresTable from '../components/ConfiguresTable'
-import TurnPage from '../components/TurnPage'
+import ConfiguresTable from '@/components/ConfiguresTable'
+import TurnPage from '@/components/TurnPage'
 export default {
   name: '',
   components: {
@@ -75,10 +75,11 @@ export default {
     return {
       configures: [
         { param: 'url', explain: '跳转的路径', type: 'string', value: '——', default: '——' },
-        { param: 'color', explain: '链接的字体颜色', type: 'string', value: 'primary / success / danger / warning', default: '——' },
-        { param: 'underline', explain: '下划线', type: 'boolean', value: '——', default: 'fasle' },
-        { param: 'hoverline', explain: '鼠标移入下划线', type: 'boolean', value: '——', default: 'fasle' },
-        { param: 'target', explain: '以新的窗口打开', type: 'string', value: '同原生 target 属性 _blank', default: '——' }
+        { param: 'type', explain: '链接的类型', type: 'string', value: 'primary / success / danger / warning', default: '——' },
+        { param: 'underline', explain: '无下划线', type: 'boolean', value: '——', default: 'true' },
+        { param: 'target', explain: '以新的窗口打开', type: 'string', value: '同原生 target 属性 _blank', default: '——' },
+        { param: 'icon', explain: 'icon', type: 'string', value: '——', default: '——' },
+        { param: 'prohibit', explain: '禁用状态', type: 'boolean', value: '——', default: 'false' }
       ],
       TurnPageList: [
         { text: 'Tag 标签', url: 'tag' },

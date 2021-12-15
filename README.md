@@ -32,9 +32,10 @@ npm i tyh-ui
 
 ```js
 import Vue from 'vue'
-import tyhUI from 'tyh-ui'
 import App from './App.vue'
 
+import tyhUi from 'tyh-ui'
+import 'tyh-ui/style/index.css'
 Vue.use(tyhUI)
 
 new Vue({
@@ -45,10 +46,10 @@ new Vue({
 
 ## :earth_africa:链接
 
-- [tyh-ui 官网](http://tianyuhao.icu/tyhui)
-- [tyh2001 Github](https://github.com/Tyh2001)
-- [tyh-ui 源码仓库](https://github.com/Tyh2001/tyh-ui)
-- [tyh-ui npm 官方仓库](https://www.npmjs.com/package/tyh-ui)
+- [官网](http://tianyuhao.icu/tyhui)
+- [Github](https://github.com/Tyh2001/tyh-ui)
+- [Npm](https://www.npmjs.com/package/tyh-ui)
+- [更新日志](https://github.com/Tyh2001/tyh-ui/blob/master/CHANGELOG.md)
 
 ## :wave:合作者
 

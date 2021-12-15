@@ -65,7 +65,7 @@
 
 <script>
 import Clipboard from 'clipboard'
-import TurnPage from '../components/TurnPage'
+import TurnPage from '@/components/TurnPage'
 export default {
   name: '',
   components: {
@@ -128,10 +128,14 @@ export default {
       ],
       TurnPageList: [
         { text: '快速上手', url: 'install' },
-        { text: 'Container 布局容器', url: 'container' }
+        { text: 'Button 按钮', url: 'button' }
       ]
     }
   },
+  computed: {},
+  watch: {},
+  created () { },
+  mounted () { },
   methods: {
     // 每个盒子的颜色
     ListBackgroundColor (item) {

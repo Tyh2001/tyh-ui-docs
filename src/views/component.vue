@@ -16,7 +16,7 @@
     </div>
 
     <tyh-backTop bottom="160" right="120">
-      <tyh-icon icon="tyh-ui-top" color="#409eff" />
+      <tyh-icon icon="tyh-ui-huojian-01" color="#409eff" />
     </tyh-backTop>
   </div>
 </template>
@@ -29,7 +29,6 @@ export default {
       listPush: [
         { name: '快速上手', url: '/component/install' },
         { name: 'Color 色彩', url: '/component/color' },
-        { name: 'Container 布局容器', url: '/component/container' },
         { name: 'Button 按钮', url: '/component/button' },
         { name: 'List 列表', url: '/component/list' },
         { name: 'Card 卡片', url: '/component/card' },
@@ -43,10 +42,7 @@ export default {
         { name: 'BackTop 回到顶部', url: '/component/backTop' },
         { name: 'Icon 图标', url: '/component/icon' },
         { name: 'Crumbs 面包屑', url: '/component/crumbs' },
-        { name: 'Alert 提示', url: '/component/alert' },
-        { name: 'Image 图片', url: '/component/image' },
-        { name: 'Skeleton 骨架', url: '/component/skeleton' },
-        { name: 'Avatar 头像', url: '/component/avatar' }
+        { name: 'Table 表格', url: '/component/table' }
       ]
     }
   },

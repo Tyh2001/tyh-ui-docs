@@ -2,7 +2,7 @@
   <div id="aboutIndex">
     <div id="content">
       <div id="myLogo">
-        <img draggable="false" class="logo" src="../home/images/logo.png" />
+        <img draggable="false" class="logo" src="./images/logo.png" />
       </div>
       <p>tyh-ui 是一套基于 Vue 2.0 的桌面端轻量级 UI 组件库</p>
       <h3 class="title">开发靠个人</h3>
@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import FooterList from '@/components/footerList/FooterList'
+import FooterList from '@/components/FooterList'
 export default {
   name: 'aboutIndex',
   components: {

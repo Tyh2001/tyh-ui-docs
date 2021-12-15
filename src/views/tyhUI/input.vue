@@ -163,8 +163,8 @@ export default {
 </template>
 
 <script>
-import ConfiguresTable from '../components/ConfiguresTable'
-import TurnPage from '../components/TurnPage'
+import ConfiguresTable from '@/components/ConfiguresTable'
+import TurnPage from '@/components/TurnPage'
 export default {
   name: '',
   components: {
@@ -186,14 +186,14 @@ export default {
       text10: '',
       configures: [
         { param: 'v-model', explain: '绑定值', type: 'string / number', value: '——', default: '——' },
-        { param: 'inpType', explain: '类型', type: 'string', value: 'text / password / success / danger / warning', default: 'text' },
-        { param: 'innerText', explain: '输入框占位文本', type: 'string', value: '——', default: '——' },
-        { param: 'size', explain: '文本框尺寸', type: 'string', value: 'big / medium / small / mini', default: 'medium' },
+        { param: 'type', explain: '类型', type: 'string', value: 'text / password', default: 'text' },
+        { param: 'placeholder', explain: '输入框占位文本', type: 'string', value: '——', default: '——' },
+        { param: 'size', explain: '文本框尺寸', type: 'string', value: 'large / medium / small / mini', default: 'medium' },
         { param: 'max', explain: '最大输入上限', type: 'string', value: '——', default: '——' },
-        { param: 'clear', explain: '是否可以清空文本框', type: 'boolean', value: '——', default: 'fasle' },
-        { param: 'showIcon', explain: '左侧显示的图标', type: 'string', value: '——', default: '——' },
-        { param: 'prohibit', explain: '是否禁用', type: 'boolean', value: '——', default: 'fasle' },
-        { param: 'autofocus', explain: '是否自动获取焦点', type: 'boolean', value: '——', default: 'fasle' },
+        { param: 'clear', explain: '是否可以清空文本框', type: 'boolean', value: '——', default: 'false' },
+        { param: 'icon', explain: '左侧显示的图标', type: 'string', value: '——', default: '——' },
+        { param: 'disabled', explain: '是否禁用', type: 'boolean', value: '——', default: 'false' },
+        { param: 'autofocus', explain: '是否自动获取焦点', type: 'boolean', value: '——', default: 'false' },
         { param: 'name', explain: '原生 name 属性', type: 'string', value: '——', default: '——' }
       ],
       TurnPageList: [

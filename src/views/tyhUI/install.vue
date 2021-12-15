@@ -13,8 +13,17 @@ npm i tyh-ui
     <p class="explain">在 <span>main.js</span> 中引入下面内容</p>
     <pre v-highlightjs>
       <code id="myCode" class="js">
-import tyhUI from 'tyh-ui'
+import Vue from 'vue'
+import App from './App.vue'
+
+import tyhUi from 'tyh-ui'
+import 'tyh-ui/style/index.css'
 Vue.use(tyhUI)
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
       </code>
     </pre>
 
@@ -23,7 +32,7 @@ Vue.use(tyhUI)
 </template>
 
 <script>
-import TurnPage from '../components/TurnPage'
+import TurnPage from '@/components/TurnPage'
 export default {
   name: '',
   components: {

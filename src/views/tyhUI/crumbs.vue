@@ -78,8 +78,8 @@
 </template>
 
 <script>
-import ConfiguresTable from '../components/ConfiguresTable'
-import TurnPage from '../components/TurnPage'
+import ConfiguresTable from '@/components/ConfiguresTable'
+import TurnPage from '@/components/TurnPage'
 export default {
   name: '',
   components: {
@@ -97,7 +97,7 @@ export default {
       ],
       TurnPageList: [
         { text: 'Icon 图标', url: 'icon' },
-        { text: 'Alert 提示', url: 'alert' }
+        { text: '', url: '' }
       ]
     }
   },

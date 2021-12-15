@@ -36,16 +36,30 @@
 
     <p class="explain">图标按钮</p>
     <p class="explain"><span>icon</span> 属性可以配置图标按钮</p>
-    <tyh-button icon="tyh-ui-githublogo" type="primary"></tyh-button>
-    <tyh-button icon="tyh-ui-home-filling" type="success"></tyh-button>
-    <tyh-button icon="tyh-ui-chart-bar" type="danger">火箭</tyh-button>
-    <tyh-button icon="tyh-ui-comment" type="warning">飞机</tyh-button>
+    <tyh-button icon="tyh-ui-setting-filling">设置</tyh-button>
+    <tyh-button icon="tyh-ui-tyhui" type="primary">tyh-ui</tyh-button>
+    <tyh-button icon="tyh-ui-fabulous" type="success"></tyh-button>
+    <tyh-button icon="tyh-ui-discount" type="danger"></tyh-button>
+    <tyh-button icon="tyh-ui-chart-bar" type="warning"></tyh-button>
+    <br />
+    <tyh-button simple icon="tyh-ui-setting-filling">设置</tyh-button>
+    <tyh-button simple icon="tyh-ui-tyhui" type="primary">tyh-ui</tyh-button>
+    <tyh-button simple icon="tyh-ui-fabulous" type="success"></tyh-button>
+    <tyh-button simple icon="tyh-ui-discount" type="danger"></tyh-button>
+    <tyh-button simple icon="tyh-ui-chart-bar" type="warning"></tyh-button>
     <pre v-highlightjs>
       <code id="myCode" class="html">
-&lt;tyh-button icon="tyh-ui-githublogo" type="primary"&gt;&lt;/tyh-button&gt;
-&lt;tyh-button icon="tyh-ui-home-filling" type="success"&gt;&lt;/tyh-button&gt;
-&lt;tyh-button icon="tyh-ui-chart-bar" type="danger"&gt;火箭&lt;/tyh-button&gt;
-&lt;tyh-button icon="tyh-ui-comment" type="warning"&gt;飞机&lt;/tyh-button&gt;
+&lt;tyh-button icon="tyh-ui-setting-filling"&gt;设置&lt;/tyh-button&gt;
+&lt;tyh-button icon="tyh-ui-tyhui" type="primary"&gt;tyh-ui&lt;/tyh-button&gt;
+&lt;tyh-button icon="tyh-ui-fabulous" type="success"&gt;&lt;/tyh-button&gt;
+&lt;tyh-button icon="tyh-ui-discount" type="danger"&gt;&lt;/tyh-button&gt;
+&lt;tyh-button icon="tyh-ui-chart-bar" type="warning"&gt;&lt;/tyh-button&gt;
+
+&lt;tyh-button simple icon="tyh-ui-setting-filling"&gt;设置&lt;/tyh-button&gt;
+&lt;tyh-button simple icon="tyh-ui-tyhui" type="primary"&gt;tyh-ui&lt;/tyh-button&gt;
+&lt;tyh-button simple icon="tyh-ui-fabulous" type="success"&gt;&lt;/tyh-button&gt;
+&lt;tyh-button simple icon="tyh-ui-discount" type="danger"&gt;&lt;/tyh-button&gt;
+&lt;tyh-button simple icon="tyh-ui-chart-bar" type="warning"&gt;&lt;/tyh-button&gt;
       </code>
     </pre>
 
@@ -83,6 +97,7 @@
       </code>
     </pre>
 
+    <!-- 配置项 -->
     <h3 class="Subtitle">配置项：</h3>
     <ConfiguresTable :configures="configures" />
 
@@ -91,30 +106,37 @@
 </template>
 
 <script>
-import ConfiguresTable from '../components/ConfiguresTable'
-import TurnPage from '../components/TurnPage'
+import ConfiguresTable from '@/components/ConfiguresTable'
+import TurnPage from '@/components/TurnPage'
 export default {
+  name: '',
   components: {
     ConfiguresTable,
     TurnPage
   },
+  props: {},
   data () {
     return {
       configures: [
-        { param: 'type', explain: '按钮的类型', type: 'string', value: 'primary / success / danger / warning', default: 'default' },
+        { param: 'type', explain: '按钮的类型', type: 'string', value: 'default / primary / success / danger / warning', default: 'default' },
         { param: 'round', explain: '是否为圆角按钮', type: 'boolean', value: '——', default: 'false' },
-        { param: 'prohibit', explain: '按钮是否禁用', type: 'boolean', value: '——', default: 'false' },
+        { param: 'simple', explain: '简约按钮', type: 'boolean', value: '——', default: 'false' },
+        { param: 'disabled', explain: '按钮是否禁用', type: 'boolean', value: '——', default: 'false' },
         { param: 'icon', explain: '按钮上的 icon', type: 'string', value: '——', default: '——' },
-        { param: 'simple', explain: '是否为朴素按钮', type: 'boolean', value: '——', default: 'fasle' },
-        { param: 'size', explain: '按钮尺寸', type: 'string', value: '—— / small / mini', default: '——' },
-        { param: 'big', explain: '宽度百分百的按钮', type: 'boolean', value: '', default: 'false' }
+        { param: 'size', explain: '按钮尺寸', type: 'string', value: 'large / small / mini', default: '——' },
+        { param: 'square', explain: '方形按钮', type: 'boolean', value: '——', default: 'false' }
       ],
       TurnPageList: [
-        { text: 'Container 布局容器', url: 'container' },
+        { text: 'Color 色彩', url: 'color' },
         { text: 'List 列表', url: 'list' }
       ]
     }
-  }
+  },
+  computed: {},
+  watch: {},
+  created () { },
+  mounted () { },
+  methods: {}
 }
 </script>
 
