@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="260px" src="https://www.hualigs.cn/image/60c16782369ab.jpg">
+    <img height="260px" src="https://tianyuhao.cn/images/tyh-ui/tyh-ui-logo.svg">
 </p>
 
 ## :bulb:前言
@@ -40,7 +40,7 @@ Vue.use(tyhUI)
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: (h) => h(App),
 })
 ```
 
