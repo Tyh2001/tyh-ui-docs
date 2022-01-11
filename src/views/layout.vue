@@ -5,7 +5,7 @@
         <img
           draggable="false"
           class="logo"
-          src="./images/logo.png"
+          src="./images/tyh-ui-logo.svg"
           alt="logo"
         />
         <span class="name">Tyh UI</span>
