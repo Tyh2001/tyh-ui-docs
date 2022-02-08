@@ -1,5 +1,43 @@
 <template>
   <div id="homeIndex">
+    <div v-show="isShow" class="new_ui">
+      <div id="box">
+        <span @click="isShow = false">
+          <tyh-icon size="23" icon="tyh-ui-close" />
+        </span>
+        <br /><br />
+        <h2>tyh-ui 将不在维护！</h2>
+        <br /><br />
+        <p>
+          感谢您可以来到 tyh-ui 的官网，这里是基于 vue2 版本的 ui
+          组件库，由于近期 vue3
+          已经成为默认版本，所以我也实在是没有时间一个人维护两个组件库，所以，第一代
+          tyh-ui 将永久停止维护，实在是抱歉。
+        </p>
+        <br />
+        <p>
+          相比这一代，优化更好的组件库 tyh-ui2 推荐给我大家，官网在
+          <a target="_back" href="https://tianyuhao.cn/tyhui/v3/">这里</a>
+          ，下一代组件库是基于 vue3
+          版本的一个全新升级的组件库，在这里推荐给你们～
+        </p>
+        <br />
+        <p>2022-02-08</p>
+        <br />
+        <a target="_back" href="https://tianyuhao.cn/tyhui/v3/">
+          <tyh-button type="primary">tyh-ui2</tyh-button>
+        </a>
+
+        <a
+          style="margin-left: 20px"
+          target="_back"
+          href="https://github.com/Tyh2001/tyh-ui2"
+        >
+          <tyh-button>Github</tyh-button>
+        </a>
+      </div>
+    </div>
+
     <div id="top-list">
       <img
         draggable="false"
@@ -56,12 +94,44 @@ export default {
   name: 'homeIndex',
   components: {
     FooterList
+  },
+  data () {
+    return {
+      isShow: true
+    }
   }
 }
 </script>
 
 <style lang='less' scoped>
 #homeIndex {
+  .new_ui {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999999999;
+    #box {
+      width: 600px;
+      background-color: #fff;
+      padding: 30px 30px 70px 30px;
+      box-sizing: border-box;
+      color: #333;
+      cursor: default;
+      position: relative;
+      border-radius: 15px;
+      .tyh-icon {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+      }
+    }
+  }
   #top-list {
     width: 800px;
     padding-bottom: 40px;
