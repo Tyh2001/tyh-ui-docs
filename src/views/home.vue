@@ -17,21 +17,21 @@
         <br />
         <p>
           相比这一代，优化更好的组件库 tyh-ui2 推荐给我大家，官网在
-          <a target="_back" href="https://tianyuhao.cn/tyhui/v3/">这里</a>
+          <a target="_back" href="https://tianyuhao.cn/v3/">这里</a>
           ，下一代组件库是基于 vue3
           版本的一个全新升级的组件库，在这里推荐给你们～
         </p>
         <br />
         <p>2022-02-08</p>
         <br />
-        <a target="_back" href="https://tianyuhao.cn/tyhui/v3/">
+        <a target="_back" href="https://tianyuhao.cn/v3/">
           <tyh-button type="primary">tyh-ui2</tyh-button>
         </a>
 
         <a
           style="margin-left: 20px"
           target="_back"
-          href="https://github.com/Tyh2001/tyh-ui2"
+          href="https://github.com/Tyh2001/tyh-ui-old"
         >
           <tyh-button>Github</tyh-button>
         </a>

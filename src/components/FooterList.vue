@@ -25,7 +25,7 @@
           </tyh-link>
         </li>
         <li>
-          <tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui">
+          <tyh-link target="_blank" url="https://github.com/Tyh2001/tyh-ui-old">
             官方仓库
           </tyh-link>
         </li>
@@ -37,7 +37,7 @@
         <li>
           <tyh-link
             target="_blank"
-            url="https://github.com/Tyh2001/tyh-ui/blob/master/CHANGELOG.md"
+            url="https://github.com/Tyh2001/tyh-ui-old/blob/master/CHANGELOG.md"
           >
             更新日志
           </tyh-link>
